@@ -1,0 +1,63 @@
+# Original diagram: https://diagrams.mingrammer.com/docs/getting-started/examples#clustered-web-services
+# Result: https://github.com/dmytrostriletskyi/diagrams-yaml/blob/main/assets/classical-web-service-aws-architecture.png
+diagram:
+  name: Classical Web Service AWS Architecture
+  show: true
+  resources:
+    - id: dns
+      name: DNS
+      type: aws.network.Route53
+      relates:
+        - to: elb
+          type: right
+    - id: elb
+      name: ELB
+      type: aws.network.ELB
+      relates:
+        - to: web-services.rest-api
+          type: right
+    - id: web-services
+      name: Web Services
+      type: diagrams.cluster
+      of:
+        - id: rest-api
+          name: GraphQL API
+          type: diagrams.group
+          of:
+            - id: first-ecs
+              name: GraphQL API №1
+              type: aws.compute.ECS
+            - id: second-ecs
+              name: GraphQL API №2
+              type: aws.compute.ECS
+            - id: second-ecs
+              name: GraphQL API №3
+              type: aws.compute.ECS
+          relates:
+            - to: databases.leader
+              type: right
+            - to: memcached
+              type: right
+    - id: databases
+      name: Databases
+      type: diagrams.cluster
+      of:
+        - id: leader
+          name: R/W Leader
+          type: aws.database.RDS
+          relates:
+            - to: databases.followers
+              type: unidirectional
+        - id: followers
+          name: R/O Followers
+          type: diagrams.group
+          of:
+            - id: first-follower
+              name: R/O Follower №1
+              type: aws.database.RDS
+            - id: second-follower
+              name: R/O Follower №2
+              type: aws.database.RDS
+    - id: memcached
+      name: Memcached
+      type: aws.database.ElastiCache

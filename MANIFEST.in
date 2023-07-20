@@ -1,0 +1,4 @@
+include *.md
+include LICENSE
+include requirements/project.txt
+include .project-version
