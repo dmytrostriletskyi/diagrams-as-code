@@ -9,5 +9,5 @@ class ServiceResourceType(Enum):
     Service resource type enum implementation.
     """
 
-    CLUSTER = 'diagrams.cluster'
-    GROUP = 'diagrams.group'
+    CLUSTER = 'cluster'
+    GROUP = 'group'

@@ -1,5 +1,4 @@
 # Original diagram: https://diagrams.mingrammer.com/docs/getting-started/examples#clustered-web-services
-# Result: https://github.com/dmytrostriletskyi/diagrams-yaml/blob/main/assets/classical-web-service-aws-architecture.png
 diagram:
   name: Classical Web Service AWS Architecture
   show: true

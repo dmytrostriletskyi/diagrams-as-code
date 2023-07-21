@@ -15,7 +15,7 @@ with open('.project-version', 'r') as project_version_file:
 setup(
     version=project_version,
     name='diagrams-yaml',
-    description='Diagram as Code using YAML syntax for cloud system architectures',
+    description='Diagram as Code in a declarative way using YAML for drawing cloud system architectures.',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/dmytrostriletskyi/diagrams-yaml',

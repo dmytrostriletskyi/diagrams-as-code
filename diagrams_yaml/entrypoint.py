@@ -103,7 +103,12 @@ def entrypoint():
     diagram_as_dict = yaml_as_dict.get('diagram')
     diagram = YamlDiagram(**diagram_as_dict)
 
-    with Diagram(diagram.name, show=diagram.show):
+    graph_attr = {
+        "layout": "osage"  # or ""
+    }
+
+
+    with Diagram(diagram.name, show=diagram.show, graph_attr=graph_attr):
         for resource in diagram.resources:
             process_resource(resource, 'diagram')
 
