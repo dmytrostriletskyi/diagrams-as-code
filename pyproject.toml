@@ -14,12 +14,17 @@ ignore = [
     "S113",
     "S311",
     "UP007",
+    "C901",
+    "PTH109",
 ]
 
 [tool.ruff.per-file-ignores]
 "__init__.py" = [
     "D104",
     "F401",
+]
+"schema.py" = [
+    "A003",
 ]
 
 [tool.ruff.flake8-quotes]

@@ -7,7 +7,7 @@ rules:
   document-start:
     present: true
     ignore: |
-      **/fixtures/*
+      examples/*.yaml
   line-length: disable
   colons:
     max-spaces-before: 0

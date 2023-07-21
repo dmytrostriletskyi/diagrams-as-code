@@ -1,6 +1,8 @@
 """
 Provide implementation of schemas.
 """
+from __future__ import annotations
+
 from pydantic import BaseModel
 
 
@@ -11,7 +13,7 @@ class YamlDiagram(BaseModel):
 
     name: str
     show: bool
-    resources: list['YamlDiagramResource']
+    resources: list[YamlDiagramResource]
 
 
 class YamlDiagramResource(BaseModel):
@@ -22,8 +24,8 @@ class YamlDiagramResource(BaseModel):
     id: str | int
     name: str
     type: str
-    of: list['YamlDiagramResource'] | None = []
-    relates: list['YamlDiagramResourceRelationship'] | None = []
+    of: list[YamlDiagramResource] | None = []
+    relates: list[YamlDiagramResourceRelationship] | None = []
 
 
 class YamlDiagramResourceRelationship(BaseModel):

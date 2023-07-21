@@ -1,6 +1,6 @@
 # Original diagram: https://diagrams.mingrammer.com/docs/getting-started/examples#clustered-web-services
 diagram:
-  name: Classical Web Service AWS Architecture
+  name: Web Services AWS Architecture
   show: true
   resources:
     - id: dns

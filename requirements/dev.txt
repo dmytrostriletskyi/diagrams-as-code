@@ -1,3 +1,4 @@
 isort==5.9.3
 darglint==1.8.1
 ruff==0.0.278
+yamllint==1.26.3
