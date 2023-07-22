@@ -12,7 +12,10 @@ from diagrams import (
     Node,
 )
 
-from diagrams_yaml.enums import ServiceResourceType
+from diagrams_yaml.enums import (
+    ServiceResourceType,
+    RelationType,
+)
 from diagrams_yaml.resources import DiagramGroup
 from diagrams_yaml.schema import (
     Relationship,
@@ -148,25 +151,37 @@ def entrypoint() -> None:
             is_resource_to_group = isinstance(resource_to_instance, DiagramGroup)
 
             if is_resource_from_node and is_resource_to_node:
-                if relationship.type == 'right':
+                if relationship.type == RelationType.LEFT:
+                    resource_from_instance.__lshift__(other=resource_to_instance)
+
+                if relationship.type == RelationType.RIGHT:
                     resource_from_instance.__rshift__(other=resource_to_instance)
 
-                if relationship.type == 'unidirectional':
+                if relationship.type == RelationType.UNIDIRECTIONAL:
                     resource_from_instance.__sub__(other=resource_to_instance)
 
             if is_resource_from_group and is_resource_to_node:
                 group_nodes = resource_from_instance.get_nodes()
 
-                if relationship.type == 'right':
+                if relationship.type == RelationType.LEFT:
+                    resource_to_instance.__rlshift__(other=group_nodes)
+
+                if relationship.type == RelationType.RIGHT:
                     resource_to_instance.__rrshift__(other=group_nodes)
+
+                if relationship.type == RelationType.UNIDIRECTIONAL:
+                    resource_to_instance.__sub__(other=group_nodes)
 
             if is_resource_from_node and is_resource_to_group:
                 group_nodes = resource_to_instance.get_nodes()
 
-                if relationship.type == 'right':
+                if relationship.type == RelationType.LEFT:
+                    resource_from_instance.__lshift__(other=group_nodes)
+
+                if relationship.type == RelationType.RIGHT:
                     resource_from_instance.__rshift__(other=group_nodes)
 
-                if relationship.type == 'unidirectional':
+                if relationship.type == RelationType.UNIDIRECTIONAL:
                     resource_from_instance.__sub__(other=group_nodes)
 
 

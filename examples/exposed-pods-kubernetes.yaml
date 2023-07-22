@@ -1,0 +1,48 @@
+# Original diagram: https://diagrams.mingrammer.com/docs/getting-started/examples#exposed-pod-with-3-replicas-on-kubernetes
+diagram:
+  name: Exposed Pods Architecture on Kubernetes
+  show: true
+  resources:
+    - id: ingress
+      name: Ingress
+      type: k8s.network.Ingress
+      relates:
+        - to: service
+          type: right
+    - id: service
+      name: Service
+      type: k8s.network.Service
+      relates:
+        - to: pods
+          type: right
+    - id: pods
+      name: Pods
+      type: group
+      of:
+        - id: first-pod
+          name: Pod №1
+          type: k8s.compute.Pod
+        - id: second-pod
+          name: Pod №2
+          type: k8s.compute.Pod
+        - id: third-pod
+          name: Pod №3
+          type: k8s.compute.Pod
+      relates:
+        - to: replica-set
+          type: left
+    - id: replica-set
+      name: Replica Set
+      type: k8s.compute.ReplicaSet
+      relates:
+        - to: deployment
+          type: left
+    - id: deployment
+      name: Deployment
+      type: k8s.compute.Deployment
+      relates:
+        - to: hpa
+          type: left
+    - id: hpa
+      name: HPA
+      type: k8s.clusterconfig.HPA

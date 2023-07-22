@@ -75,7 +75,7 @@ To draw an architecture, call `diagrams-yaml` command line interface, providing 
 configurations:
 
 ```bash
-$ diagrams-yaml examples/web-services-aws-architecture.yaml
+$ diagrams-yaml examples/web-services-aws.yaml
 ```
 
 The drawing will be saved in the folder the command line interface was executed from:
@@ -83,5 +83,5 @@ The drawing will be saved in the folder the command line interface was executed 
 ```bash
 $ ls
 ├── ...
-└── web_services_aws_architecture.png
+└── web_services_aws.png
 ```

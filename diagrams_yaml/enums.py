@@ -11,3 +11,13 @@ class ServiceResourceType(Enum):
 
     CLUSTER = 'cluster'
     GROUP = 'group'
+
+
+class RelationType(str, Enum):
+    """
+    Relation type enum implementation.
+    """
+
+    LEFT = 'left'
+    RIGHT = 'right'
+    UNIDIRECTIONAL = 'unidirectional'

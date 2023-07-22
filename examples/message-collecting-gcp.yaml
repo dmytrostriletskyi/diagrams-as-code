@@ -1,0 +1,94 @@
+# https://diagrams.mingrammer.com/docs/getting-started/examples#message-collecting-system-on-gcp
+diagram:
+  name: Message Collecting Architecture on GCP
+  show: true
+  resources:
+    - id: pubsub
+      name: Pubsub
+      type: gcp.analytics.PubSub
+      relates:
+        - to: targets.data-flows.data-flow
+          type: right
+    - id: source-of-data
+      name: Source of Data
+      type: cluster
+      of:
+        - id: iot
+          name: IoT
+          type: group
+          of:
+            - id: first-iot
+              name: Core №1
+              type: gcp.iot.IotCore
+            - id: second-iot
+              name: Core №2
+              type: gcp.iot.IotCore
+            - id: third-iot
+              name: Core №3
+              type: gcp.iot.IotCore
+          relates:
+            - to: pubsub
+              type: right
+    - id: targets
+      name: Targets
+      type: cluster
+      of:
+        - id: data-flows
+          name: Data Flow
+          type: cluster
+          of:
+            - id: data-flow
+              name: Data Flow
+              type: gcp.analytics.Dataflow
+              relates:
+                - to: targets.data-lake.data-lake-group
+                  type: right
+                - to: targets.event-driven.processing.engine
+                  type: right
+                - to: targets.event-driven.serverless.function
+                  type: right
+        - id: data-lake
+          name: Data Lake
+          type: cluster
+          of:
+            - id: data-lake-group
+              name: Data Lake Group
+              type: group
+              of:
+                - id: big-query
+                  name: Big Query
+                  type: gcp.analytics.BigQuery
+                - id: storage
+                  name: Storage
+                  type: gcp.storage.GCS
+        - id: event-driven
+          name: Event Driven
+          type: cluster
+          of:
+            - id: processing
+              name: Processing
+              type: cluster
+              of:
+                - id: engine
+                  name: Engine
+                  type: gcp.compute.AppEngine
+                  relates:
+                    - to: targets.event-driven.processing.bigtable
+                      type: right
+                - id: bigtable
+                  name: Bigtable
+                  type: gcp.database.BigTable
+            - id: serverless
+              name: Serverless
+              type: cluster
+              of:
+                - id: function
+                  name: Function
+                  type: gcp.compute.Functions
+                  relates:
+                    - to: targets.event-driven.serverless.application-engine
+                      type: right
+                - id: application-engine
+                  name: Application Engine
+                  type: gcp.compute.AppEngine
+
