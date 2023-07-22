@@ -1,0 +1,68 @@
+diagram:
+  name: Events Processing Architecture on AWS
+  show: true
+  resources:
+    - id: web-service
+      name: Web Service (Source)
+      type: aws.compute.EKS
+      relates:
+        - to: events-flow.workers.workers
+          type: right
+    - id: storage
+      name: Events Storage
+      type: aws.storage.S3
+    - id: analytics
+      name: Events Analytics
+      type: aws.database.Redshift
+    - id: events-flow
+      name: Events Flow
+      type: cluster
+      of:
+        - id: queue
+          name: Events Queue
+          type: aws.integration.SQS
+          relates:
+            - to: events-flow.processing.lambdas
+              type: right
+        - id: workers
+          name: Workers
+          type: cluster
+          of:
+            - id: workers
+              name: Workers
+              type: group
+              of:
+                - id: first-worker
+                  name: Worker №1
+                  type: aws.compute.ECS
+                - id: second-worker
+                  name: Worker №2
+                  type: aws.compute.ECS
+                - id: third-worker
+                  name: Worker №3
+                  type: aws.compute.ECS
+              relates:
+                - to: events-flow.queue
+                  type: right
+        - id: processing
+          name: Processing
+          type: cluster
+          of:
+            - id: lambdas
+              name: Lambdas
+              type: group
+              of:
+                - id: first-process
+                  name: Lambda №1
+                  type: aws.compute.Lambda
+                - id: second-process
+                  name: Lambda №2
+                  type: aws.compute.Lambda
+                - id: third-process
+                  name: Lambda №3
+                  type: aws.compute.Lambda
+              relates:
+                - to: storage
+                  type: right
+                - to: analytics
+                  type: right

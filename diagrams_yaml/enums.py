@@ -21,3 +21,4 @@ class RelationType(str, Enum):
     LEFT = 'left'
     RIGHT = 'right'
     UNIDIRECTIONAL = 'unidirectional'
+    BOTH = 'both'

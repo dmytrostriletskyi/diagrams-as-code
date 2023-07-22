@@ -9,6 +9,7 @@ import yaml
 from diagrams import (
     Cluster,
     Diagram,
+    Edge,
     Node,
 )
 
@@ -93,6 +94,9 @@ def process_resource(resource: YamlDiagramResource, parent_id: str, group: Diagr
                 from_=f'{parent_id}.{resource.id}',
                 to=f'diagram.{relation.to}',
                 type=relation.type,
+                label=relation.label,
+                color=relation.color,
+                style=relation.style,
             )
 
             relationships.append(relationship)
@@ -115,6 +119,9 @@ def process_resource(resource: YamlDiagramResource, parent_id: str, group: Diagr
                 from_=f'{parent_id}.{resource.id}',
                 to=f'diagram.{relation.to}',
                 type=relation.type,
+                label=relation.label,
+                color=relation.color,
+                style=relation.style,
             )
 
             relationships.append(relationship)
@@ -141,6 +148,8 @@ def entrypoint() -> None:
             process_resource(resource, 'diagram')
 
         for relationship in relationships:
+            edge = Edge(label=relationship.label, color=relationship.color, style=relationship.style)
+
             resource_from_instance = resources.get(relationship.from_)
             resource_to_instance = resources.get(relationship.to)
 
@@ -152,37 +161,58 @@ def entrypoint() -> None:
 
             if is_resource_from_node and is_resource_to_node:
                 if relationship.type == RelationType.LEFT:
-                    resource_from_instance.__lshift__(other=resource_to_instance)
+                    resource_from_instance.__lshift__(other=edge)
+                    edge.__lshift__(other=resource_to_instance)
 
                 if relationship.type == RelationType.RIGHT:
-                    resource_from_instance.__rshift__(other=resource_to_instance)
+                    resource_from_instance.__rshift__(other=edge)
+                    edge.__rshift__(other=resource_to_instance)
 
                 if relationship.type == RelationType.UNIDIRECTIONAL:
-                    resource_from_instance.__sub__(other=resource_to_instance)
+                    resource_from_instance.__sub__(other=edge)
+                    edge.__sub__(other=resource_to_instance)
+
+                if relationship.type == RelationType.BOTH:
+                    resource_from_instance.__rshift__(other=edge)
+                    edge.__lshift__(other=resource_to_instance)
 
             if is_resource_from_group and is_resource_to_node:
                 group_nodes = resource_from_instance.get_nodes()
 
                 if relationship.type == RelationType.LEFT:
-                    resource_to_instance.__rlshift__(other=group_nodes)
+                    group_nodes_edges = edge.__rlshift__(other=group_nodes)
+                    resource_to_instance.__rlshift__(other=group_nodes_edges)
 
                 if relationship.type == RelationType.RIGHT:
-                    resource_to_instance.__rrshift__(other=group_nodes)
+                    group_nodes_edges = edge.__rrshift__(other=group_nodes)
+                    resource_to_instance.__rrshift__(other=group_nodes_edges)
 
                 if relationship.type == RelationType.UNIDIRECTIONAL:
-                    resource_to_instance.__sub__(other=group_nodes)
+                    group_nodes_edges = edge.__rsub__(other=group_nodes)
+                    resource_to_instance.__rsub__(other=group_nodes_edges)
+
+                if relationship.type == RelationType.BOTH:
+                    group_nodes_edges = edge.__rrshift__(other=group_nodes)
+                    resource_to_instance.__rlshift__(other=group_nodes_edges)
 
             if is_resource_from_node and is_resource_to_group:
                 group_nodes = resource_to_instance.get_nodes()
 
                 if relationship.type == RelationType.LEFT:
-                    resource_from_instance.__lshift__(other=group_nodes)
+                    resource_from_instance.__lshift__(other=edge)
+                    edge.__lshift__(other=group_nodes)
 
                 if relationship.type == RelationType.RIGHT:
-                    resource_from_instance.__rshift__(other=group_nodes)
+                    resource_from_instance.__rshift__(other=edge)
+                    edge.__rshift__(other=group_nodes)
 
                 if relationship.type == RelationType.UNIDIRECTIONAL:
-                    resource_from_instance.__sub__(other=group_nodes)
+                    resource_from_instance.__sub__(other=edge)
+                    edge.__sub__(other=group_nodes)
+
+                if relationship.type == RelationType.BOTH:
+                    resource_from_instance.__rshift__(other=edge)
+                    edge.__lshift__(other=group_nodes)
 
 
 if __name__ == '__main__':

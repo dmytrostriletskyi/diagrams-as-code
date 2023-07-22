@@ -6,16 +6,16 @@
 [![](https://img.shields.io/pypi/l/diagrams-yaml.svg)](https://pypi.python.org/pypi/diagrams-yaml/)
 [![](https://img.shields.io/pypi/pyversions/diagrams-yaml.svg)](https://pypi.python.org/pypi/diagrams-yaml/)
 
-![](./assets/example.png)
+![](./assets/configurations-architecture-aligned.png)
 
 Table of content:
 
 * [Introduction](#introduction)
-* [Disclaimer](#disclaimer)
 * [Getting Started](#getting-started)
   * [How to Install](#how-to-install)
   * [Examples](#examples)
 * [Usage](#usage)
+* [Disclaimer](#disclaimer)
 
 ## Introduction
 
@@ -33,15 +33,6 @@ Currently, the following components are provided:
 
 Basically, with the project, you just define set of resources, compose them into groups and/or clusters and set a 
 relationship, anything else is done under the hood.
-
-## Disclaimer
-
-`diagrams-yaml` is a wrapper around original [diagrams](https://github.com/mingrammer/diagrams). The original `diagrams` 
-lets you draw the cloud system architecture in `Python` code. It was born for prototyping a new system architecture 
-design without any design tools.
-
-Under the hood, `diagrams-yaml` parse a `YAML` file and map to specific set of `diagrams`'s functions and classes, and
-executes them in proper order.
 
 ## Getting Started
 
@@ -61,13 +52,16 @@ $ pip3 install diagrams-yaml
 
 ### Examples
 
-Find examples of `YAML` files with configurations in the `examples` folder:
+You can find examples of `YAML` configurations in the [examples](https://github.com/dmytrostriletskyi/diagrams-yaml/tree/main/examples) 
+folder. Below are placed are few of them (click on the name to redirect to the configurations file).
 
-```bash
-$ ls examples
-├── ...
-└── web-services-aws-architecture.yaml
-```
+| [Web Services on AWS](https://github.com/dmytrostriletskyi/diagrams-yaml/blob/main/examples/web-services-aws.yaml)                | [Web Services On-Premise](https://github.com/dmytrostriletskyi/diagrams-yaml/blob/main/examples/web-services-on-premise.yaml)                | [Exposed Pods on Kubernetes](https://github.com/dmytrostriletskyi/diagrams-yaml/blob/main/examples/exposed-pods-kubernetes.yaml)                |
+|-----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![](./assets/web-services-architecture-on-aws.png)                                                                                | ![](./assets/web-services-architecture-on-premise.png)                                                                                       | ![](./assets/exposed-pods-architecture-on-kubernetes.png)                                                                                       |
+
+| [Message Collecting on GCP](https://github.com/dmytrostriletskyi/diagrams-yaml/blob/main/examples/message-collecting-gcp.yaml)    | [Events Processing on AWS](https://github.com/dmytrostriletskyi/diagrams-yaml/blob/main/examples/events-processing-aws.yaml)                 | [Workers on AWS](https://github.com/dmytrostriletskyi/diagrams-yaml/blob/main/examples/workers-aws.yaml)                                        |
+| --------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](./assets/message-collecting-architecture-on-gcp.png)                                                                          | ![](./assets/events-processing-on-aws.png)                                                                                                   | ![](./assets/workers-architecture-on-aws.png)                                                                                                   |
 
 ## Usage
 
@@ -85,3 +79,12 @@ $ ls
 ├── ...
 └── web_services_aws.png
 ```
+
+## Disclaimer
+
+`diagrams-yaml` is a wrapper around original [diagrams](https://github.com/mingrammer/diagrams). The original `diagrams` 
+lets you draw the cloud system architecture in `Python` code. It was born for prototyping a new system architecture 
+design without any design tools. Under the hood, `diagrams-yaml` parse a `YAML` file and map to specific set of 
+`diagrams`'s functions and classes, and executes them in proper order.
+
+But you don't have to worry about `diagrams` because `diagrams-yaml` is self-contained and encapsulates it well. 

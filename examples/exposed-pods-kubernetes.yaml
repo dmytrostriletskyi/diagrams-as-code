@@ -1,4 +1,3 @@
-# Original diagram: https://diagrams.mingrammer.com/docs/getting-started/examples#exposed-pod-with-3-replicas-on-kubernetes
 diagram:
   name: Exposed Pods Architecture on Kubernetes
   show: true

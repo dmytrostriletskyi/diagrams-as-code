@@ -1,4 +1,3 @@
-# https://diagrams.mingrammer.com/docs/getting-started/examples#message-collecting-system-on-gcp
 diagram:
   name: Message Collecting Architecture on GCP
   show: true

@@ -1,4 +1,3 @@
-# Original diagram: https://diagrams.mingrammer.com/docs/getting-started/examples#clustered-web-services
 diagram:
   name: Web Services Architecture on AWS
   show: true
@@ -39,7 +38,7 @@ diagram:
               type: right
     - id: databases
       name: Databases
-      type: diagrams.cluster
+      type: cluster
       of:
         - id: leader
           name: R/W Leader

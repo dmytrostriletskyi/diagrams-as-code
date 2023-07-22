@@ -37,6 +37,9 @@ class YamlDiagramResourceRelationship(BaseModel):
 
     to: str
     type: RelationType
+    label: str | None = None
+    color: str | None = None
+    style: str | None = None
 
 
 class Relationship(BaseModel):
@@ -49,3 +52,6 @@ class Relationship(BaseModel):
     from_: str
     to: str
     type: str
+    label: str | None = None
+    color: str | None = None
+    style: str | None = None

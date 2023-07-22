@@ -1,0 +1,39 @@
+diagram:
+  name: Workers Architecture on AWS
+  direction: top-to-bottom
+  show: true
+  resources:
+    - id: elb
+      name: ELB
+      type: aws.network.ELB
+      relates:
+        - to: workers
+          type: right
+    - id: workers
+      name: Workers
+      type: group
+      of:
+        - id: first-worker
+          name: Worker №1
+          type: aws.compute.EC2
+        - id: second-worker
+          name: Worker №2
+          type: aws.compute.EC2
+        - id: third-worker
+          name: Worker №3
+          type: aws.compute.EC2
+        - id: fourth-worker
+          name: Worker №4
+          type: aws.compute.EC2
+        - id: fifth-worker
+          name: Worker №5
+          type: aws.compute.EC2
+        - id: sixth-worker
+          name: Worker №6
+          type: aws.compute.EC2
+      relates:
+        - to: database
+          type: right
+    - id: database
+      name: Events
+      type: aws.database.RDS

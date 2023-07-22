@@ -1,5 +1,5 @@
 diagram:
-  name: Web Services AWS Architecture
+  name: Web Services Architecture on AWS
   show: true
   resources:
     - id: dns
