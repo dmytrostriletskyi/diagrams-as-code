@@ -14,7 +14,7 @@ Table of content:
 * [Getting Started](#getting-started)
   * [How to Install](#how-to-install)
   * [Examples](#examples)
-* [Usage](#usage)
+  * [Usage](#usage)
 * [Disclaimer](#disclaimer)
 
 ## Introduction
@@ -31,8 +31,8 @@ Currently, the following components are provided:
 * Programming languages and frameworks.
 * And other generic things such as C4.
 
-Basically, with the project, you just define set of resources, compose them into groups and/or clusters and set a 
-relationship, anything else is done under the hood.
+Basically, with the project, you just define set of resources, compose them into groups and/or clusters and set 
+relationships, anything else is done under the hood.
 
 ## Getting Started
 
@@ -63,7 +63,7 @@ folder. Below are placed are few of them (click on the name to redirect to the c
 | --------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](./assets/message-collecting-architecture-on-gcp.png)                                                                          | ![](./assets/events-processing-on-aws.png)                                                                                                   | ![](./assets/workers-architecture-on-aws.png)                                                                                                   |
 
-## Usage
+### Usage
 
 To draw an architecture, call `diagrams-yaml` command line interface, providing a path to a `YAML` file with 
 configurations:
@@ -77,7 +77,7 @@ The drawing will be saved in the folder the command line interface was executed 
 ```bash
 $ ls
 ├── ...
-└── web_services_aws.png
+└── web-services-aws.png
 ```
 
 ## Disclaimer
