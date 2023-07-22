@@ -1,7 +1,6 @@
 diagram:
   name: Workers Architecture on AWS
-  direction: top-to-bottom
-  show: true
+  open: true
   resources:
     - id: elb
       name: ELB

@@ -1,6 +1,6 @@
 diagram:
   name: Events Processing Architecture on AWS
-  show: true
+  open: true
   resources:
     - id: web-service
       name: Web Service (Source)

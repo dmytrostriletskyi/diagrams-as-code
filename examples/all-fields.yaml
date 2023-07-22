@@ -1,5 +1,16 @@
 diagram:
   name: Web Services Architecture on AWS
+  file_name: web-services-architecture-aws
+  format: jpg
+  direction: top-to-bottom
+  style:
+    graph:
+      splines: ortho
+    node:
+      shape: circle
+    edge:
+      color: '#000000'
+  label_resources: false
   open: true
   resources:
     - id: dns
@@ -12,13 +23,13 @@ diagram:
       name: ELB
       type: aws.network.ELB
       relates:
-        - to: web-services.rest-api
+        - to: web-services.graphql-api
           type: right
     - id: web-services
       name: Web Services
       type: cluster
       of:
-        - id: rest-api
+        - id: graphql-api
           name: GraphQL API
           type: group
           of:
@@ -28,13 +39,8 @@ diagram:
             - id: second-ecs
               name: GraphQL API №2
               type: aws.compute.ECS
-            - id: third-ecs
-              name: GraphQL API №3
-              type: aws.compute.ECS
           relates:
             - to: databases.leader
-              type: right
-            - to: memcached
               type: right
     - id: databases
       name: Databases
@@ -44,18 +50,8 @@ diagram:
           name: R/W Leader
           type: aws.database.RDS
           relates:
-            - to: databases.followers
+            - to: databases.follower
               type: unidirectional
-        - id: followers
-          name: R/O Followers
-          type: group
-          of:
-            - id: first-follower
-              name: R/O Follower №1
-              type: aws.database.RDS
-            - id: second-follower
-              name: R/O Follower №2
-              type: aws.database.RDS
-    - id: memcached
-      name: Memcached
-      type: aws.database.ElastiCache
+        - id: follower
+          name: R/O Follower
+          type: aws.database.RDS

@@ -1,6 +1,6 @@
 diagram:
   name: Web Services Architecture On-Premise
-  show: true
+  open: true
   resources:
     - id: ingress
       name: Ingress

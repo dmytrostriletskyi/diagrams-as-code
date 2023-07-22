@@ -1,6 +1,6 @@
 diagram:
   name: Web Services Architecture on AWS
-  show: true
+  open: true
   resources:
     - id: dns
       name: DNS

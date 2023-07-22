@@ -19,6 +19,7 @@ from diagrams_yaml.enums import (
 )
 from diagrams_yaml.resources import DiagramGroup
 from diagrams_yaml.schema import (
+    DiagramDirection,
     Relationship,
     YamlDiagram,
     YamlDiagramResource,
@@ -143,7 +144,21 @@ def entrypoint() -> None:
     diagram_as_dict = yaml_as_dict.get('diagram')
     diagram = YamlDiagram(**diagram_as_dict)
 
-    with Diagram(diagram.name, show=diagram.show):
+    graph_style = Diagram._default_graph_attrs | diagram.style.graph
+    node_style = Diagram._default_node_attrs | diagram.style.node
+    edge_style = Diagram._default_edge_attrs | diagram.style.edge
+
+    with Diagram(
+        name=diagram.name,
+        filename=diagram.file_name,
+        direction=diagram.direction.mapped,
+        outformat=diagram.format,
+        autolabel=diagram.label_resources,
+        show=diagram.open,
+        graph_attr=graph_style,
+        node_attr=node_style,
+        edge_attr=edge_style,
+    ):
         for resource in diagram.resources:
             process_resource(resource, 'diagram')
 

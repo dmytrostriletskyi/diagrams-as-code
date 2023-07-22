@@ -1,6 +1,6 @@
 diagram:
   name: Message Collecting Architecture on GCP
-  show: true
+  open: true
   resources:
     - id: pubsub
       name: Pubsub

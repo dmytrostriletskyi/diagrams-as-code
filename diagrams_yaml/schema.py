@@ -5,16 +5,38 @@ from __future__ import annotations
 
 from pydantic import BaseModel
 
-from diagrams_yaml.enums import RelationType
+from diagrams_yaml.enums import (
+    RelationType,
+    DiagramDirection,
+    DiagramFormat,
+)
+
+
+class YamlDiagramStyle(BaseModel):
+    """
+    YAML diagram style schema implementation.
+    """
+
+    graph: dict = {}
+    node: dict = {}
+    edge: dict = {}
 
 
 class YamlDiagram(BaseModel):
     """
     YAML diagram schema implementation.
+
+    References:
+        - https://github.com/mingrammer/diagrams/blob/b19b09761db6f0037fd76e527b9ce6918fbdfcfc/diagrams/__init__.py#L79
     """
 
     name: str
-    show: bool
+    file_name: str | None = None
+    format: DiagramFormat = DiagramFormat.PNG
+    direction: DiagramDirection = DiagramDirection.LEFT_TO_RIGHT
+    style: YamlDiagramStyle | None = {}
+    label_resources: bool = False
+    open: bool = False
     resources: list[YamlDiagramResource]
 
 

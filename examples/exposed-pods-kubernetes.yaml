@@ -1,6 +1,6 @@
 diagram:
   name: Exposed Pods Architecture on Kubernetes
-  show: true
+  open: true
   resources:
     - id: ingress
       name: Ingress
