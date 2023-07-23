@@ -1,6 +1,6 @@
 ## Elastic
 
-Table of content:
+Table of Content:
 
 * [Agent](#agent)
 * [Beats](#beats)

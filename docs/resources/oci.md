@@ -1,6 +1,6 @@
 ## OCI
 
-Table of content:
+Table of Content:
 
 * [Compute](#compute)
 * [Connectivity](#connectivity)

@@ -1,6 +1,6 @@
 ## GCP
 
-Table of content:
+Table of Content:
 
 * [Analytics](#analytics)
 * [Api](#api)

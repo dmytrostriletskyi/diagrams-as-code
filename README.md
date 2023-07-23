@@ -34,6 +34,11 @@ Currently, the following components are provided:
 Basically, with the project, you just define set of resources, compose them into groups and/or clusters and set 
 relationships, anything else is done under the hood.
 
+## Roadmap
+
+* Add support of [C4](https://diagrams.mingrammer.com/docs/nodes/c4).
+* Add support of [Custom](https://diagrams.mingrammer.com/docs/nodes/custom).
+
 ## Getting Started
 
 ### How to install

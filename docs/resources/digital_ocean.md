@@ -1,6 +1,6 @@
 ## DigitalOcean
 
-Table of content:
+Table of Content:
 
 * [Compute](#compute)
 * [Database](#database)

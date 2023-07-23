@@ -1,6 +1,6 @@
 ## Kubernetes
 
-Table of content:
+Table of Content:
 
 * [Chaos](#chaos)
 * [ClusterConfig](#clusterconfig)

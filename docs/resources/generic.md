@@ -1,6 +1,6 @@
 ## Generic
 
-Table of content:
+Table of Content:
 
 * [Blank](#blank)
 * [Compute](#compute)

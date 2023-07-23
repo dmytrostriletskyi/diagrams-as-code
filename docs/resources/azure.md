@@ -1,6 +1,6 @@
 ## Azure
 
-Table of content:
+Table of Content:
 
 * [Analytics](#analytics)
 * [Compute](#compute)

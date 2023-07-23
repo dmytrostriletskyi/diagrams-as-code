@@ -1,6 +1,6 @@
 ## Alibaba Cloud
 
-Table of content:
+Table of Content:
 
 * [Analytics](#analytics)
 * [Application](#application)

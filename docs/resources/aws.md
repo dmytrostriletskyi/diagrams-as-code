@@ -1,6 +1,6 @@
 ## AWS
 
-Table of content:
+Table of Content:
 
 * [Analytics](#analytics)
 * [Ar](#ar)

@@ -3460,6 +3460,2319 @@
                         },
                         {
                             "const": "generic.virtualization.XEN"
+                        },
+                        {
+                            "const": "ibm.analytics.Analytics"
+                        },
+                        {
+                            "const": "ibm.analytics.DataIntegration"
+                        },
+                        {
+                            "const": "ibm.analytics.DataRepositories"
+                        },
+                        {
+                            "const": "ibm.analytics.DeviceAnalytics"
+                        },
+                        {
+                            "const": "ibm.analytics.StreamingComputing"
+                        },
+                        {
+                            "const": "ibm.applications.ActionableInsight"
+                        },
+                        {
+                            "const": "ibm.applications.Annotate"
+                        },
+                        {
+                            "const": "ibm.applications.ApiDeveloperPortal"
+                        },
+                        {
+                            "const": "ibm.applications.ApiPolyglotRuntimes"
+                        },
+                        {
+                            "const": "ibm.applications.AppServer"
+                        },
+                        {
+                            "const": "ibm.applications.ApplicationLogic"
+                        },
+                        {
+                            "const": "ibm.applications.EnterpriseApplications"
+                        },
+                        {
+                            "const": "ibm.applications.Index"
+                        },
+                        {
+                            "const": "ibm.applications.IotApplication"
+                        },
+                        {
+                            "const": "ibm.applications.Microservice"
+                        },
+                        {
+                            "const": "ibm.applications.MobileApp"
+                        },
+                        {
+                            "const": "ibm.applications.Ontology"
+                        },
+                        {
+                            "const": "ibm.applications.OpenSourceTools"
+                        },
+                        {
+                            "const": "ibm.applications.RuntimeServices"
+                        },
+                        {
+                            "const": "ibm.applications.SaasApplications"
+                        },
+                        {
+                            "const": "ibm.applications.ServiceBroker"
+                        },
+                        {
+                            "const": "ibm.applications.SpeechToText"
+                        },
+                        {
+                            "const": "ibm.applications.VisualRecognition"
+                        },
+                        {
+                            "const": "ibm.applications.Visualization"
+                        },
+                        {
+                            "const": "ibm.blockchain.BlockchainDeveloper"
+                        },
+                        {
+                            "const": "ibm.blockchain.Blockchain"
+                        },
+                        {
+                            "const": "ibm.blockchain.CertificateAuthority"
+                        },
+                        {
+                            "const": "ibm.blockchain.ClientApplication"
+                        },
+                        {
+                            "const": "ibm.blockchain.Communication"
+                        },
+                        {
+                            "const": "ibm.blockchain.Consensus"
+                        },
+                        {
+                            "const": "ibm.blockchain.EventListener"
+                        },
+                        {
+                            "const": "ibm.blockchain.Event"
+                        },
+                        {
+                            "const": "ibm.blockchain.ExistingEnterpriseSystems"
+                        },
+                        {
+                            "const": "ibm.blockchain.HyperledgerFabric"
+                        },
+                        {
+                            "const": "ibm.blockchain.KeyManagement"
+                        },
+                        {
+                            "const": "ibm.blockchain.Ledger"
+                        },
+                        {
+                            "const": "ibm.blockchain.MembershipServicesProviderApi"
+                        },
+                        {
+                            "const": "ibm.blockchain.Membership"
+                        },
+                        {
+                            "const": "ibm.blockchain.MessageBus"
+                        },
+                        {
+                            "const": "ibm.blockchain.Node"
+                        },
+                        {
+                            "const": "ibm.blockchain.Services"
+                        },
+                        {
+                            "const": "ibm.blockchain.SmartContract"
+                        },
+                        {
+                            "const": "ibm.blockchain.TransactionManager"
+                        },
+                        {
+                            "const": "ibm.blockchain.Wallet"
+                        },
+                        {
+                            "const": "ibm.compute.BareMetalServer"
+                        },
+                        {
+                            "const": "ibm.compute.ImageService"
+                        },
+                        {
+                            "const": "ibm.compute.Instance"
+                        },
+                        {
+                            "const": "ibm.compute.Key"
+                        },
+                        {
+                            "const": "ibm.compute.PowerInstance"
+                        },
+                        {
+                            "const": "ibm.data.Caches"
+                        },
+                        {
+                            "const": "ibm.data.Cloud"
+                        },
+                        {
+                            "const": "ibm.data.ConversationTrainedDeployed"
+                        },
+                        {
+                            "const": "ibm.data.DataServices"
+                        },
+                        {
+                            "const": "ibm.data.DataSources"
+                        },
+                        {
+                            "const": "ibm.data.DeviceIdentityService"
+                        },
+                        {
+                            "const": "ibm.data.DeviceRegistry"
+                        },
+                        {
+                            "const": "ibm.data.EnterpriseData"
+                        },
+                        {
+                            "const": "ibm.data.EnterpriseUserDirectory"
+                        },
+                        {
+                            "const": "ibm.data.FileRepository"
+                        },
+                        {
+                            "const": "ibm.data.GroundTruth"
+                        },
+                        {
+                            "const": "ibm.data.Model"
+                        },
+                        {
+                            "const": "ibm.data.TmsDataInterface"
+                        },
+                        {
+                            "const": "ibm.devops.ArtifactManagement"
+                        },
+                        {
+                            "const": "ibm.devops.BuildTest"
+                        },
+                        {
+                            "const": "ibm.devops.CodeEditor"
+                        },
+                        {
+                            "const": "ibm.devops.CollaborativeDevelopment"
+                        },
+                        {
+                            "const": "ibm.devops.ConfigurationManagement"
+                        },
+                        {
+                            "const": "ibm.devops.ContinuousDeploy"
+                        },
+                        {
+                            "const": "ibm.devops.ContinuousTesting"
+                        },
+                        {
+                            "const": "ibm.devops.Devops"
+                        },
+                        {
+                            "const": "ibm.devops.Provision"
+                        },
+                        {
+                            "const": "ibm.devops.ReleaseManagement"
+                        },
+                        {
+                            "const": "ibm.general.CloudMessaging"
+                        },
+                        {
+                            "const": "ibm.general.CloudServices"
+                        },
+                        {
+                            "const": "ibm.general.Cloudant"
+                        },
+                        {
+                            "const": "ibm.general.CognitiveServices"
+                        },
+                        {
+                            "const": "ibm.general.DataSecurity"
+                        },
+                        {
+                            "const": "ibm.general.Enterprise"
+                        },
+                        {
+                            "const": "ibm.general.GovernanceRiskCompliance"
+                        },
+                        {
+                            "const": "ibm.general.IBMContainers"
+                        },
+                        {
+                            "const": "ibm.general.IBMPublicCloud"
+                        },
+                        {
+                            "const": "ibm.general.IdentityAccessManagement"
+                        },
+                        {
+                            "const": "ibm.general.IdentityProvider"
+                        },
+                        {
+                            "const": "ibm.general.InfrastructureSecurity"
+                        },
+                        {
+                            "const": "ibm.general.Internet"
+                        },
+                        {
+                            "const": "ibm.general.IotCloud"
+                        },
+                        {
+                            "const": "ibm.general.MicroservicesApplication"
+                        },
+                        {
+                            "const": "ibm.general.MicroservicesMesh"
+                        },
+                        {
+                            "const": "ibm.general.MonitoringLogging"
+                        },
+                        {
+                            "const": "ibm.general.Monitoring"
+                        },
+                        {
+                            "const": "ibm.general.ObjectStorage"
+                        },
+                        {
+                            "const": "ibm.general.OfflineCapabilities"
+                        },
+                        {
+                            "const": "ibm.general.Openwhisk"
+                        },
+                        {
+                            "const": "ibm.general.PeerCloud"
+                        },
+                        {
+                            "const": "ibm.general.RetrieveRank"
+                        },
+                        {
+                            "const": "ibm.general.Scalable"
+                        },
+                        {
+                            "const": "ibm.general.ServiceDiscoveryConfiguration"
+                        },
+                        {
+                            "const": "ibm.general.TextToSpeech"
+                        },
+                        {
+                            "const": "ibm.general.TransformationConnectivity"
+                        },
+                        {
+                            "const": "ibm.infrastructure.Channels"
+                        },
+                        {
+                            "const": "ibm.infrastructure.CloudMessaging"
+                        },
+                        {
+                            "const": "ibm.infrastructure.Dashboard"
+                        },
+                        {
+                            "const": "ibm.infrastructure.Diagnostics"
+                        },
+                        {
+                            "const": "ibm.infrastructure.EdgeServices"
+                        },
+                        {
+                            "const": "ibm.infrastructure.EnterpriseMessaging"
+                        },
+                        {
+                            "const": "ibm.infrastructure.EventFeed"
+                        },
+                        {
+                            "const": "ibm.infrastructure.InfrastructureServices"
+                        },
+                        {
+                            "const": "ibm.infrastructure.InterserviceCommunication"
+                        },
+                        {
+                            "const": "ibm.infrastructure.LoadBalancingRouting"
+                        },
+                        {
+                            "const": "ibm.infrastructure.MicroservicesMesh"
+                        },
+                        {
+                            "const": "ibm.infrastructure.MobileBackend"
+                        },
+                        {
+                            "const": "ibm.infrastructure.MobileProviderNetwork"
+                        },
+                        {
+                            "const": "ibm.infrastructure.MonitoringLogging"
+                        },
+                        {
+                            "const": "ibm.infrastructure.Monitoring"
+                        },
+                        {
+                            "const": "ibm.infrastructure.PeerServices"
+                        },
+                        {
+                            "const": "ibm.infrastructure.ServiceDiscoveryConfiguration"
+                        },
+                        {
+                            "const": "ibm.infrastructure.TransformationConnectivity"
+                        },
+                        {
+                            "const": "ibm.management.AlertNotification"
+                        },
+                        {
+                            "const": "ibm.management.ApiManagement"
+                        },
+                        {
+                            "const": "ibm.management.CloudManagement"
+                        },
+                        {
+                            "const": "ibm.management.ClusterManagement"
+                        },
+                        {
+                            "const": "ibm.management.ContentManagement"
+                        },
+                        {
+                            "const": "ibm.management.DataServices"
+                        },
+                        {
+                            "const": "ibm.management.DeviceManagement"
+                        },
+                        {
+                            "const": "ibm.management.InformationGovernance"
+                        },
+                        {
+                            "const": "ibm.management.ItServiceManagement"
+                        },
+                        {
+                            "const": "ibm.management.Management"
+                        },
+                        {
+                            "const": "ibm.management.MonitoringMetrics"
+                        },
+                        {
+                            "const": "ibm.management.ProcessManagement"
+                        },
+                        {
+                            "const": "ibm.management.ProviderCloudPortalService"
+                        },
+                        {
+                            "const": "ibm.management.PushNotifications"
+                        },
+                        {
+                            "const": "ibm.management.ServiceManagementTools"
+                        },
+                        {
+                            "const": "ibm.network.Bridge"
+                        },
+                        {
+                            "const": "ibm.network.DirectLink"
+                        },
+                        {
+                            "const": "ibm.network.Enterprise"
+                        },
+                        {
+                            "const": "ibm.network.Firewall"
+                        },
+                        {
+                            "const": "ibm.network.FloatingIp"
+                        },
+                        {
+                            "const": "ibm.network.Gateway"
+                        },
+                        {
+                            "const": "ibm.network.InternetServices"
+                        },
+                        {
+                            "const": "ibm.network.LoadBalancerListener"
+                        },
+                        {
+                            "const": "ibm.network.LoadBalancerPool"
+                        },
+                        {
+                            "const": "ibm.network.LoadBalancer"
+                        },
+                        {
+                            "const": "ibm.network.LoadBalancingRouting"
+                        },
+                        {
+                            "const": "ibm.network.PublicGateway"
+                        },
+                        {
+                            "const": "ibm.network.Region"
+                        },
+                        {
+                            "const": "ibm.network.Router"
+                        },
+                        {
+                            "const": "ibm.network.Rules"
+                        },
+                        {
+                            "const": "ibm.network.Subnet"
+                        },
+                        {
+                            "const": "ibm.network.TransitGateway"
+                        },
+                        {
+                            "const": "ibm.network.Vpc"
+                        },
+                        {
+                            "const": "ibm.network.VpnConnection"
+                        },
+                        {
+                            "const": "ibm.network.VpnGateway"
+                        },
+                        {
+                            "const": "ibm.network.VpnPolicy"
+                        },
+                        {
+                            "const": "ibm.security.ApiSecurity"
+                        },
+                        {
+                            "const": "ibm.security.BlockchainSecurityService"
+                        },
+                        {
+                            "const": "ibm.security.DataSecurity"
+                        },
+                        {
+                            "const": "ibm.security.Firewall"
+                        },
+                        {
+                            "const": "ibm.security.Gateway"
+                        },
+                        {
+                            "const": "ibm.security.GovernanceRiskCompliance"
+                        },
+                        {
+                            "const": "ibm.security.IdentityAccessManagement"
+                        },
+                        {
+                            "const": "ibm.security.IdentityProvider"
+                        },
+                        {
+                            "const": "ibm.security.InfrastructureSecurity"
+                        },
+                        {
+                            "const": "ibm.security.PhysicalSecurity"
+                        },
+                        {
+                            "const": "ibm.security.SecurityMonitoringIntelligence"
+                        },
+                        {
+                            "const": "ibm.security.SecurityServices"
+                        },
+                        {
+                            "const": "ibm.security.TrustendComputing"
+                        },
+                        {
+                            "const": "ibm.security.Vpn"
+                        },
+                        {
+                            "const": "ibm.social.Communities"
+                        },
+                        {
+                            "const": "ibm.social.FileSync"
+                        },
+                        {
+                            "const": "ibm.social.LiveCollaboration"
+                        },
+                        {
+                            "const": "ibm.social.Messaging"
+                        },
+                        {
+                            "const": "ibm.social.Networking"
+                        },
+                        {
+                            "const": "ibm.storage.BlockStorage"
+                        },
+                        {
+                            "const": "ibm.storage.ObjectStorage"
+                        },
+                        {
+                            "const": "ibm.user.Browser"
+                        },
+                        {
+                            "const": "ibm.user.Device"
+                        },
+                        {
+                            "const": "ibm.user.IntegratedDigitalExperiences"
+                        },
+                        {
+                            "const": "ibm.user.PhysicalEntity"
+                        },
+                        {
+                            "const": "ibm.user.Sensor"
+                        },
+                        {
+                            "const": "ibm.user.User"
+                        },
+                        {
+                            "const": "k8s.chaos.ChaosMesh"
+                        },
+                        {
+                            "const": "k8s.chaos.LitmusChaos"
+                        },
+                        {
+                            "const": "k8s.clusterconfig.HPA"
+                        },
+                        {
+                            "const": "k8s.clusterconfig.HorizontalPodAutoscaler"
+                        },
+                        {
+                            "const": "k8s.clusterconfig.Limits"
+                        },
+                        {
+                            "const": "k8s.clusterconfig.LimitRange"
+                        },
+                        {
+                            "const": "k8s.clusterconfig.Quota"
+                        },
+                        {
+                            "const": "k8s.compute.Cronjob"
+                        },
+                        {
+                            "const": "k8s.compute.Deploy"
+                        },
+                        {
+                            "const": "k8s.compute.Deployment"
+                        },
+                        {
+                            "const": "k8s.compute.DS"
+                        },
+                        {
+                            "const": "k8s.compute.DaemonSet"
+                        },
+                        {
+                            "const": "k8s.compute.Job"
+                        },
+                        {
+                            "const": "k8s.compute.Pod"
+                        },
+                        {
+                            "const": "k8s.compute.RS"
+                        },
+                        {
+                            "const": "k8s.compute.ReplicaSet"
+                        },
+                        {
+                            "const": "k8s.compute.STS"
+                        },
+                        {
+                            "const": "k8s.compute.StatefulSet"
+                        },
+                        {
+                            "const": "k8s.controlplane.API"
+                        },
+                        {
+                            "const": "k8s.controlplane.APIServer"
+                        },
+                        {
+                            "const": "k8s.controlplane.CCM"
+                        },
+                        {
+                            "const": "k8s.controlplane.CM"
+                        },
+                        {
+                            "const": "k8s.controlplane.ControllerManager"
+                        },
+                        {
+                            "const": "k8s.controlplane.KProxy"
+                        },
+                        {
+                            "const": "k8s.controlplane.KubeProxy"
+                        },
+                        {
+                            "const": "k8s.controlplane.Kubelet"
+                        },
+                        {
+                            "const": "k8s.controlplane.Sched"
+                        },
+                        {
+                            "const": "k8s.controlplane.Scheduler"
+                        },
+                        {
+                            "const": "k8s.ecosystem.ExternalDns"
+                        },
+                        {
+                            "const": "k8s.ecosystem.Helm"
+                        },
+                        {
+                            "const": "k8s.ecosystem.Krew"
+                        },
+                        {
+                            "const": "k8s.ecosystem.Kustomize"
+                        },
+                        {
+                            "const": "k8s.group.NS"
+                        },
+                        {
+                            "const": "k8s.group.Namespace"
+                        },
+                        {
+                            "const": "k8s.infra.ETCD"
+                        },
+                        {
+                            "const": "k8s.infra.Master"
+                        },
+                        {
+                            "const": "k8s.infra.Node"
+                        },
+                        {
+                            "const": "k8s.network.Ep"
+                        },
+                        {
+                            "const": "k8s.network.Endpoint"
+                        },
+                        {
+                            "const": "k8s.network.Ing"
+                        },
+                        {
+                            "const": "k8s.network.Ingress"
+                        },
+                        {
+                            "const": "k8s.network.Netpol"
+                        },
+                        {
+                            "const": "k8s.network.NetworkPolicy"
+                        },
+                        {
+                            "const": "k8s.network.SVC"
+                        },
+                        {
+                            "const": "k8s.network.Service"
+                        },
+                        {
+                            "const": "k8s.others.CRD"
+                        },
+                        {
+                            "const": "k8s.others.PSP"
+                        },
+                        {
+                            "const": "k8s.podconfig.CM"
+                        },
+                        {
+                            "const": "k8s.podconfig.ConfigMap"
+                        },
+                        {
+                            "const": "k8s.podconfig.Secret"
+                        },
+                        {
+                            "const": "k8s.rbac.CRole"
+                        },
+                        {
+                            "const": "k8s.rbac.ClusterRole"
+                        },
+                        {
+                            "const": "k8s.rbac.CRB"
+                        },
+                        {
+                            "const": "k8s.rbac.ClusterRoleBinding"
+                        },
+                        {
+                            "const": "k8s.rbac.Group"
+                        },
+                        {
+                            "const": "k8s.rbac.RB"
+                        },
+                        {
+                            "const": "k8s.rbac.RoleBinding"
+                        },
+                        {
+                            "const": "k8s.rbac.Role"
+                        },
+                        {
+                            "const": "k8s.rbac.SA"
+                        },
+                        {
+                            "const": "k8s.rbac.ServiceAccount"
+                        },
+                        {
+                            "const": "k8s.rbac.User"
+                        },
+                        {
+                            "const": "k8s.storage.PV"
+                        },
+                        {
+                            "const": "k8s.storage.PersistentVolume"
+                        },
+                        {
+                            "const": "k8s.storage.PVC"
+                        },
+                        {
+                            "const": "k8s.storage.PersistentVolumeClaim"
+                        },
+                        {
+                            "const": "k8s.storage.SC"
+                        },
+                        {
+                            "const": "k8s.storage.StorageClass"
+                        },
+                        {
+                            "const": "k8s.storage.Vol"
+                        },
+                        {
+                            "const": "k8s.storage.Volume"
+                        },
+                        {
+                            "const": "oci.compute.AutoscaleWhite"
+                        },
+                        {
+                            "const": "oci.compute.Autoscale"
+                        },
+                        {
+                            "const": "oci.compute.BMWhite"
+                        },
+                        {
+                            "const": "oci.compute.BareMetalWhite"
+                        },
+                        {
+                            "const": "oci.compute.BM"
+                        },
+                        {
+                            "const": "oci.compute.BareMetal"
+                        },
+                        {
+                            "const": "oci.compute.ContainerWhite"
+                        },
+                        {
+                            "const": "oci.compute.Container"
+                        },
+                        {
+                            "const": "oci.compute.FunctionsWhite"
+                        },
+                        {
+                            "const": "oci.compute.Functions"
+                        },
+                        {
+                            "const": "oci.compute.InstancePoolsWhite"
+                        },
+                        {
+                            "const": "oci.compute.InstancePools"
+                        },
+                        {
+                            "const": "oci.compute.OCIRWhite"
+                        },
+                        {
+                            "const": "oci.compute.OCIRegistryWhite"
+                        },
+                        {
+                            "const": "oci.compute.OCIR"
+                        },
+                        {
+                            "const": "oci.compute.OCIRegistry"
+                        },
+                        {
+                            "const": "oci.compute.OKEWhite"
+                        },
+                        {
+                            "const": "oci.compute.ContainerEngineWhite"
+                        },
+                        {
+                            "const": "oci.compute.OKE"
+                        },
+                        {
+                            "const": "oci.compute.ContainerEngine"
+                        },
+                        {
+                            "const": "oci.compute.VMWhite"
+                        },
+                        {
+                            "const": "oci.compute.VirtualMachineWhite"
+                        },
+                        {
+                            "const": "oci.compute.VM"
+                        },
+                        {
+                            "const": "oci.compute.VirtualMachine"
+                        },
+                        {
+                            "const": "oci.connectivity.BackboneWhite"
+                        },
+                        {
+                            "const": "oci.connectivity.Backbone"
+                        },
+                        {
+                            "const": "oci.connectivity.CDNWhite"
+                        },
+                        {
+                            "const": "oci.connectivity.CDN"
+                        },
+                        {
+                            "const": "oci.connectivity.CustomerDatacenter"
+                        },
+                        {
+                            "const": "oci.connectivity.CustomerDatacntrWhite"
+                        },
+                        {
+                            "const": "oci.connectivity.CustomerPremiseWhite"
+                        },
+                        {
+                            "const": "oci.connectivity.CustomerPremise"
+                        },
+                        {
+                            "const": "oci.connectivity.DisconnectedRegionsWhite"
+                        },
+                        {
+                            "const": "oci.connectivity.DisconnectedRegions"
+                        },
+                        {
+                            "const": "oci.connectivity.DNSWhite"
+                        },
+                        {
+                            "const": "oci.connectivity.DNS"
+                        },
+                        {
+                            "const": "oci.connectivity.FastConnectWhite"
+                        },
+                        {
+                            "const": "oci.connectivity.FastConnect"
+                        },
+                        {
+                            "const": "oci.connectivity.NATGatewayWhite"
+                        },
+                        {
+                            "const": "oci.connectivity.NATGateway"
+                        },
+                        {
+                            "const": "oci.connectivity.VPNWhite"
+                        },
+                        {
+                            "const": "oci.connectivity.VPN"
+                        },
+                        {
+                            "const": "oci.database.AutonomousWhite"
+                        },
+                        {
+                            "const": "oci.database.ADBWhite"
+                        },
+                        {
+                            "const": "oci.database.Autonomous"
+                        },
+                        {
+                            "const": "oci.database.ADB"
+                        },
+                        {
+                            "const": "oci.database.BigdataServiceWhite"
+                        },
+                        {
+                            "const": "oci.database.BigdataService"
+                        },
+                        {
+                            "const": "oci.database.DatabaseServiceWhite"
+                        },
+                        {
+                            "const": "oci.database.DBServiceWhite"
+                        },
+                        {
+                            "const": "oci.database.DatabaseService"
+                        },
+                        {
+                            "const": "oci.database.DBService"
+                        },
+                        {
+                            "const": "oci.database.DataflowApacheWhite"
+                        },
+                        {
+                            "const": "oci.database.DataflowApache"
+                        },
+                        {
+                            "const": "oci.database.DcatWhite"
+                        },
+                        {
+                            "const": "oci.database.Dcat"
+                        },
+                        {
+                            "const": "oci.database.DisWhite"
+                        },
+                        {
+                            "const": "oci.database.Dis"
+                        },
+                        {
+                            "const": "oci.database.DMSWhite"
+                        },
+                        {
+                            "const": "oci.database.DMS"
+                        },
+                        {
+                            "const": "oci.database.ScienceWhite"
+                        },
+                        {
+                            "const": "oci.database.Science"
+                        },
+                        {
+                            "const": "oci.database.StreamWhite"
+                        },
+                        {
+                            "const": "oci.database.Stream"
+                        },
+                        {
+                            "const": "oci.devops.APIGatewayWhite"
+                        },
+                        {
+                            "const": "oci.devops.APIGateway"
+                        },
+                        {
+                            "const": "oci.devops.APIServiceWhite"
+                        },
+                        {
+                            "const": "oci.devops.APIService"
+                        },
+                        {
+                            "const": "oci.devops.ResourceMgmtWhite"
+                        },
+                        {
+                            "const": "oci.devops.ResourceMgmt"
+                        },
+                        {
+                            "const": "oci.governance.AuditWhite"
+                        },
+                        {
+                            "const": "oci.governance.Audit"
+                        },
+                        {
+                            "const": "oci.governance.CompartmentsWhite"
+                        },
+                        {
+                            "const": "oci.governance.Compartments"
+                        },
+                        {
+                            "const": "oci.governance.GroupsWhite"
+                        },
+                        {
+                            "const": "oci.governance.Groups"
+                        },
+                        {
+                            "const": "oci.governance.LoggingWhite"
+                        },
+                        {
+                            "const": "oci.governance.Logging"
+                        },
+                        {
+                            "const": "oci.governance.OCIDWhite"
+                        },
+                        {
+                            "const": "oci.governance.OCID"
+                        },
+                        {
+                            "const": "oci.governance.PoliciesWhite"
+                        },
+                        {
+                            "const": "oci.governance.Policies"
+                        },
+                        {
+                            "const": "oci.governance.TaggingWhite"
+                        },
+                        {
+                            "const": "oci.governance.Tagging"
+                        },
+                        {
+                            "const": "oci.monitoring.AlarmWhite"
+                        },
+                        {
+                            "const": "oci.monitoring.Alarm"
+                        },
+                        {
+                            "const": "oci.monitoring.EmailWhite"
+                        },
+                        {
+                            "const": "oci.monitoring.Email"
+                        },
+                        {
+                            "const": "oci.monitoring.EventsWhite"
+                        },
+                        {
+                            "const": "oci.monitoring.Events"
+                        },
+                        {
+                            "const": "oci.monitoring.HealthCheckWhite"
+                        },
+                        {
+                            "const": "oci.monitoring.HealthCheck"
+                        },
+                        {
+                            "const": "oci.monitoring.NotificationsWhite"
+                        },
+                        {
+                            "const": "oci.monitoring.Notifications"
+                        },
+                        {
+                            "const": "oci.monitoring.QueueWhite"
+                        },
+                        {
+                            "const": "oci.monitoring.Queue"
+                        },
+                        {
+                            "const": "oci.monitoring.SearchWhite"
+                        },
+                        {
+                            "const": "oci.monitoring.Search"
+                        },
+                        {
+                            "const": "oci.monitoring.TelemetryWhite"
+                        },
+                        {
+                            "const": "oci.monitoring.Telemetry"
+                        },
+                        {
+                            "const": "oci.monitoring.WorkflowWhite"
+                        },
+                        {
+                            "const": "oci.monitoring.Workflow"
+                        },
+                        {
+                            "const": "oci.network.DrgWhite"
+                        },
+                        {
+                            "const": "oci.network.Drg"
+                        },
+                        {
+                            "const": "oci.network.FirewallWhite"
+                        },
+                        {
+                            "const": "oci.network.Firewall"
+                        },
+                        {
+                            "const": "oci.network.InternetGatewayWhite"
+                        },
+                        {
+                            "const": "oci.network.InternetGateway"
+                        },
+                        {
+                            "const": "oci.network.LoadBalancerWhite"
+                        },
+                        {
+                            "const": "oci.network.LoadBalancer"
+                        },
+                        {
+                            "const": "oci.network.RouteTableWhite"
+                        },
+                        {
+                            "const": "oci.network.RouteTable"
+                        },
+                        {
+                            "const": "oci.network.SecurityListsWhite"
+                        },
+                        {
+                            "const": "oci.network.SecurityLists"
+                        },
+                        {
+                            "const": "oci.network.ServiceGatewayWhite"
+                        },
+                        {
+                            "const": "oci.network.ServiceGateway"
+                        },
+                        {
+                            "const": "oci.network.VcnWhite"
+                        },
+                        {
+                            "const": "oci.network.Vcn"
+                        },
+                        {
+                            "const": "oci.security.CloudGuardWhite"
+                        },
+                        {
+                            "const": "oci.security.CloudGuard"
+                        },
+                        {
+                            "const": "oci.security.DDOSWhite"
+                        },
+                        {
+                            "const": "oci.security.DDOS"
+                        },
+                        {
+                            "const": "oci.security.EncryptionWhite"
+                        },
+                        {
+                            "const": "oci.security.Encryption"
+                        },
+                        {
+                            "const": "oci.security.IDAccessWhite"
+                        },
+                        {
+                            "const": "oci.security.IDAccess"
+                        },
+                        {
+                            "const": "oci.security.KeyManagementWhite"
+                        },
+                        {
+                            "const": "oci.security.KeyManagement"
+                        },
+                        {
+                            "const": "oci.security.MaxSecurityZoneWhite"
+                        },
+                        {
+                            "const": "oci.security.MaxSecurityZone"
+                        },
+                        {
+                            "const": "oci.security.VaultWhite"
+                        },
+                        {
+                            "const": "oci.security.Vault"
+                        },
+                        {
+                            "const": "oci.security.WAFWhite"
+                        },
+                        {
+                            "const": "oci.security.WAF"
+                        },
+                        {
+                            "const": "oci.storage.BackupRestoreWhite"
+                        },
+                        {
+                            "const": "oci.storage.BackupRestore"
+                        },
+                        {
+                            "const": "oci.storage.BlockStorageCloneWhite"
+                        },
+                        {
+                            "const": "oci.storage.BlockStorageClone"
+                        },
+                        {
+                            "const": "oci.storage.BlockStorageWhite"
+                        },
+                        {
+                            "const": "oci.storage.BlockStorage"
+                        },
+                        {
+                            "const": "oci.storage.BucketsWhite"
+                        },
+                        {
+                            "const": "oci.storage.Buckets"
+                        },
+                        {
+                            "const": "oci.storage.DataTransferWhite"
+                        },
+                        {
+                            "const": "oci.storage.DataTransfer"
+                        },
+                        {
+                            "const": "oci.storage.ElasticPerformanceWhite"
+                        },
+                        {
+                            "const": "oci.storage.ElasticPerformance"
+                        },
+                        {
+                            "const": "oci.storage.FileStorageWhite"
+                        },
+                        {
+                            "const": "oci.storage.FileStorage"
+                        },
+                        {
+                            "const": "oci.storage.ObjectStorageWhite"
+                        },
+                        {
+                            "const": "oci.storage.ObjectStorage"
+                        },
+                        {
+                            "const": "oci.storage.StorageGatewayWhite"
+                        },
+                        {
+                            "const": "oci.storage.StorageGateway"
+                        },
+                        {
+                            "const": "onprem.aggregator.Fluentd"
+                        },
+                        {
+                            "const": "onprem.aggregator.Vector"
+                        },
+                        {
+                            "const": "onprem.analytics.Beam"
+                        },
+                        {
+                            "const": "onprem.analytics.Databricks"
+                        },
+                        {
+                            "const": "onprem.analytics.Dbt"
+                        },
+                        {
+                            "const": "onprem.analytics.Dremio"
+                        },
+                        {
+                            "const": "onprem.analytics.Flink"
+                        },
+                        {
+                            "const": "onprem.analytics.Hadoop"
+                        },
+                        {
+                            "const": "onprem.analytics.Hive"
+                        },
+                        {
+                            "const": "onprem.analytics.Metabase"
+                        },
+                        {
+                            "const": "onprem.analytics.Norikra"
+                        },
+                        {
+                            "const": "onprem.analytics.Powerbi"
+                        },
+                        {
+                            "const": "onprem.analytics.PowerBI"
+                        },
+                        {
+                            "const": "onprem.analytics.Presto"
+                        },
+                        {
+                            "const": "onprem.analytics.Singer"
+                        },
+                        {
+                            "const": "onprem.analytics.Spark"
+                        },
+                        {
+                            "const": "onprem.analytics.Storm"
+                        },
+                        {
+                            "const": "onprem.analytics.Superset"
+                        },
+                        {
+                            "const": "onprem.analytics.Tableau"
+                        },
+                        {
+                            "const": "onprem.auth.Boundary"
+                        },
+                        {
+                            "const": "onprem.auth.BuzzfeedSso"
+                        },
+                        {
+                            "const": "onprem.auth.Oauth2Proxy"
+                        },
+                        {
+                            "const": "onprem.cd.Spinnaker"
+                        },
+                        {
+                            "const": "onprem.cd.TektonCli"
+                        },
+                        {
+                            "const": "onprem.cd.Tekton"
+                        },
+                        {
+                            "const": "onprem.certificates.CertManager"
+                        },
+                        {
+                            "const": "onprem.certificates.LetsEncrypt"
+                        },
+                        {
+                            "const": "onprem.ci.Circleci"
+                        },
+                        {
+                            "const": "onprem.ci.CircleCI"
+                        },
+                        {
+                            "const": "onprem.ci.Concourseci"
+                        },
+                        {
+                            "const": "onprem.ci.ConcourseCI"
+                        },
+                        {
+                            "const": "onprem.ci.Droneci"
+                        },
+                        {
+                            "const": "onprem.ci.DroneCI"
+                        },
+                        {
+                            "const": "onprem.ci.GithubActions"
+                        },
+                        {
+                            "const": "onprem.ci.Gitlabci"
+                        },
+                        {
+                            "const": "onprem.ci.GitlabCI"
+                        },
+                        {
+                            "const": "onprem.ci.Jenkins"
+                        },
+                        {
+                            "const": "onprem.ci.Teamcity"
+                        },
+                        {
+                            "const": "onprem.ci.TC"
+                        },
+                        {
+                            "const": "onprem.ci.Travisci"
+                        },
+                        {
+                            "const": "onprem.ci.TravisCI"
+                        },
+                        {
+                            "const": "onprem.ci.Zuulci"
+                        },
+                        {
+                            "const": "onprem.ci.ZuulCI"
+                        },
+                        {
+                            "const": "onprem.client.Client"
+                        },
+                        {
+                            "const": "onprem.client.User"
+                        },
+                        {
+                            "const": "onprem.client.Users"
+                        },
+                        {
+                            "const": "onprem.compute.Nomad"
+                        },
+                        {
+                            "const": "onprem.compute.Server"
+                        },
+                        {
+                            "const": "onprem.container.Containerd"
+                        },
+                        {
+                            "const": "onprem.container.Crio"
+                        },
+                        {
+                            "const": "onprem.container.Docker"
+                        },
+                        {
+                            "const": "onprem.container.Firecracker"
+                        },
+                        {
+                            "const": "onprem.container.Gvisor"
+                        },
+                        {
+                            "const": "onprem.container.K3S"
+                        },
+                        {
+                            "const": "onprem.container.Lxc"
+                        },
+                        {
+                            "const": "onprem.container.LXC"
+                        },
+                        {
+                            "const": "onprem.container.Rkt"
+                        },
+                        {
+                            "const": "onprem.container.RKT"
+                        },
+                        {
+                            "const": "onprem.database.Cassandra"
+                        },
+                        {
+                            "const": "onprem.database.Clickhouse"
+                        },
+                        {
+                            "const": "onprem.database.ClickHouse"
+                        },
+                        {
+                            "const": "onprem.database.Cockroachdb"
+                        },
+                        {
+                            "const": "onprem.database.CockroachDB"
+                        },
+                        {
+                            "const": "onprem.database.Couchbase"
+                        },
+                        {
+                            "const": "onprem.database.Couchdb"
+                        },
+                        {
+                            "const": "onprem.database.CouchDB"
+                        },
+                        {
+                            "const": "onprem.database.Dgraph"
+                        },
+                        {
+                            "const": "onprem.database.Druid"
+                        },
+                        {
+                            "const": "onprem.database.Hbase"
+                        },
+                        {
+                            "const": "onprem.database.HBase"
+                        },
+                        {
+                            "const": "onprem.database.Influxdb"
+                        },
+                        {
+                            "const": "onprem.database.InfluxDB"
+                        },
+                        {
+                            "const": "onprem.database.Janusgraph"
+                        },
+                        {
+                            "const": "onprem.database.JanusGraph"
+                        },
+                        {
+                            "const": "onprem.database.Mariadb"
+                        },
+                        {
+                            "const": "onprem.database.MariaDB"
+                        },
+                        {
+                            "const": "onprem.database.Mongodb"
+                        },
+                        {
+                            "const": "onprem.database.MongoDB"
+                        },
+                        {
+                            "const": "onprem.database.Mssql"
+                        },
+                        {
+                            "const": "onprem.database.MSSQL"
+                        },
+                        {
+                            "const": "onprem.database.Mysql"
+                        },
+                        {
+                            "const": "onprem.database.MySQL"
+                        },
+                        {
+                            "const": "onprem.database.Neo4J"
+                        },
+                        {
+                            "const": "onprem.database.Oracle"
+                        },
+                        {
+                            "const": "onprem.database.Postgresql"
+                        },
+                        {
+                            "const": "onprem.database.PostgreSQL"
+                        },
+                        {
+                            "const": "onprem.database.Scylla"
+                        },
+                        {
+                            "const": "onprem.dns.Coredns"
+                        },
+                        {
+                            "const": "onprem.dns.Powerdns"
+                        },
+                        {
+                            "const": "onprem.etl.Embulk"
+                        },
+                        {
+                            "const": "onprem.gitops.Argocd"
+                        },
+                        {
+                            "const": "onprem.gitops.ArgoCD"
+                        },
+                        {
+                            "const": "onprem.gitops.Flagger"
+                        },
+                        {
+                            "const": "onprem.gitops.Flux"
+                        },
+                        {
+                            "const": "onprem.groupware.Nextcloud"
+                        },
+                        {
+                            "const": "onprem.iac.Ansible"
+                        },
+                        {
+                            "const": "onprem.iac.Atlantis"
+                        },
+                        {
+                            "const": "onprem.iac.Awx"
+                        },
+                        {
+                            "const": "onprem.iac.Puppet"
+                        },
+                        {
+                            "const": "onprem.iac.Terraform"
+                        },
+                        {
+                            "const": "onprem.identity.Dex"
+                        },
+                        {
+                            "const": "onprem.inmemory.Aerospike"
+                        },
+                        {
+                            "const": "onprem.inmemory.Hazelcast"
+                        },
+                        {
+                            "const": "onprem.inmemory.Memcached"
+                        },
+                        {
+                            "const": "onprem.inmemory.Redis"
+                        },
+                        {
+                            "const": "onprem.logging.Fluentbit"
+                        },
+                        {
+                            "const": "onprem.logging.FluentBit"
+                        },
+                        {
+                            "const": "onprem.logging.Graylog"
+                        },
+                        {
+                            "const": "onprem.logging.Loki"
+                        },
+                        {
+                            "const": "onprem.logging.Rsyslog"
+                        },
+                        {
+                            "const": "onprem.logging.RSyslog"
+                        },
+                        {
+                            "const": "onprem.logging.SyslogNg"
+                        },
+                        {
+                            "const": "onprem.messaging.Centrifugo"
+                        },
+                        {
+                            "const": "onprem.mlops.Mlflow"
+                        },
+                        {
+                            "const": "onprem.mlops.Polyaxon"
+                        },
+                        {
+                            "const": "onprem.monitoring.Cortex"
+                        },
+                        {
+                            "const": "onprem.monitoring.Datadog"
+                        },
+                        {
+                            "const": "onprem.monitoring.Dynatrace"
+                        },
+                        {
+                            "const": "onprem.monitoring.Grafana"
+                        },
+                        {
+                            "const": "onprem.monitoring.Humio"
+                        },
+                        {
+                            "const": "onprem.monitoring.Mimir"
+                        },
+                        {
+                            "const": "onprem.monitoring.Nagios"
+                        },
+                        {
+                            "const": "onprem.monitoring.Newrelic"
+                        },
+                        {
+                            "const": "onprem.monitoring.PrometheusOperator"
+                        },
+                        {
+                            "const": "onprem.monitoring.Prometheus"
+                        },
+                        {
+                            "const": "onprem.monitoring.Sentry"
+                        },
+                        {
+                            "const": "onprem.monitoring.Splunk"
+                        },
+                        {
+                            "const": "onprem.monitoring.Thanos"
+                        },
+                        {
+                            "const": "onprem.monitoring.Zabbix"
+                        },
+                        {
+                            "const": "onprem.network.Ambassador"
+                        },
+                        {
+                            "const": "onprem.network.Apache"
+                        },
+                        {
+                            "const": "onprem.network.Bind9"
+                        },
+                        {
+                            "const": "onprem.network.Caddy"
+                        },
+                        {
+                            "const": "onprem.network.Consul"
+                        },
+                        {
+                            "const": "onprem.network.Envoy"
+                        },
+                        {
+                            "const": "onprem.network.Etcd"
+                        },
+                        {
+                            "const": "onprem.network.ETCD"
+                        },
+                        {
+                            "const": "onprem.network.Glassfish"
+                        },
+                        {
+                            "const": "onprem.network.Gunicorn"
+                        },
+                        {
+                            "const": "onprem.network.Haproxy"
+                        },
+                        {
+                            "const": "onprem.network.HAProxy"
+                        },
+                        {
+                            "const": "onprem.network.Internet"
+                        },
+                        {
+                            "const": "onprem.network.Istio"
+                        },
+                        {
+                            "const": "onprem.network.Jbossas"
+                        },
+                        {
+                            "const": "onprem.network.Jetty"
+                        },
+                        {
+                            "const": "onprem.network.Kong"
+                        },
+                        {
+                            "const": "onprem.network.Linkerd"
+                        },
+                        {
+                            "const": "onprem.network.Nginx"
+                        },
+                        {
+                            "const": "onprem.network.Ocelot"
+                        },
+                        {
+                            "const": "onprem.network.OpenServiceMesh"
+                        },
+                        {
+                            "const": "onprem.network.OSM"
+                        },
+                        {
+                            "const": "onprem.network.Opnsense"
+                        },
+                        {
+                            "const": "onprem.network.OPNSense"
+                        },
+                        {
+                            "const": "onprem.network.Pfsense"
+                        },
+                        {
+                            "const": "onprem.network.PFSense"
+                        },
+                        {
+                            "const": "onprem.network.Pomerium"
+                        },
+                        {
+                            "const": "onprem.network.Powerdns"
+                        },
+                        {
+                            "const": "onprem.network.Tomcat"
+                        },
+                        {
+                            "const": "onprem.network.Traefik"
+                        },
+                        {
+                            "const": "onprem.network.Tyk"
+                        },
+                        {
+                            "const": "onprem.network.Vyos"
+                        },
+                        {
+                            "const": "onprem.network.VyOS"
+                        },
+                        {
+                            "const": "onprem.network.Wildfly"
+                        },
+                        {
+                            "const": "onprem.network.Yarp"
+                        },
+                        {
+                            "const": "onprem.network.Zookeeper"
+                        },
+                        {
+                            "const": "onprem.proxmox.Pve"
+                        },
+                        {
+                            "const": "onprem.proxmox.ProxmoxVE"
+                        },
+                        {
+                            "const": "onprem.queue.Activemq"
+                        },
+                        {
+                            "const": "onprem.queue.ActiveMQ"
+                        },
+                        {
+                            "const": "onprem.queue.Celery"
+                        },
+                        {
+                            "const": "onprem.queue.Emqx"
+                        },
+                        {
+                            "const": "onprem.queue.EMQX"
+                        },
+                        {
+                            "const": "onprem.queue.Kafka"
+                        },
+                        {
+                            "const": "onprem.queue.Nats"
+                        },
+                        {
+                            "const": "onprem.queue.Rabbitmq"
+                        },
+                        {
+                            "const": "onprem.queue.RabbitMQ"
+                        },
+                        {
+                            "const": "onprem.queue.Zeromq"
+                        },
+                        {
+                            "const": "onprem.queue.ZeroMQ"
+                        },
+                        {
+                            "const": "onprem.registry.Harbor"
+                        },
+                        {
+                            "const": "onprem.registry.Jfrog"
+                        },
+                        {
+                            "const": "onprem.search.Solr"
+                        },
+                        {
+                            "const": "onprem.security.Bitwarden"
+                        },
+                        {
+                            "const": "onprem.security.Trivy"
+                        },
+                        {
+                            "const": "onprem.security.Vault"
+                        },
+                        {
+                            "const": "onprem.storage.CephOsd"
+                        },
+                        {
+                            "const": "onprem.storage.CEPH_OSD"
+                        },
+                        {
+                            "const": "onprem.storage.Ceph"
+                        },
+                        {
+                            "const": "onprem.storage.CEPH"
+                        },
+                        {
+                            "const": "onprem.storage.Glusterfs"
+                        },
+                        {
+                            "const": "onprem.storage.Portworx"
+                        },
+                        {
+                            "const": "onprem.tracing.Jaeger"
+                        },
+                        {
+                            "const": "onprem.tracing.Tempo"
+                        },
+                        {
+                            "const": "onprem.vcs.Git"
+                        },
+                        {
+                            "const": "onprem.vcs.Gitea"
+                        },
+                        {
+                            "const": "onprem.vcs.Github"
+                        },
+                        {
+                            "const": "onprem.vcs.Gitlab"
+                        },
+                        {
+                            "const": "onprem.vcs.Svn"
+                        },
+                        {
+                            "const": "onprem.workflow.Airflow"
+                        },
+                        {
+                            "const": "onprem.workflow.Digdag"
+                        },
+                        {
+                            "const": "onprem.workflow.Kubeflow"
+                        },
+                        {
+                            "const": "onprem.workflow.KubeFlow"
+                        },
+                        {
+                            "const": "onprem.workflow.Nifi"
+                        },
+                        {
+                            "const": "onprem.workflow.NiFi"
+                        },
+                        {
+                            "const": "openstack.apiproxies.EC2API"
+                        },
+                        {
+                            "const": "openstack.applicationlifecycle.Freezer"
+                        },
+                        {
+                            "const": "openstack.applicationlifecycle.Masakari"
+                        },
+                        {
+                            "const": "openstack.applicationlifecycle.Murano"
+                        },
+                        {
+                            "const": "openstack.applicationlifecycle.Solum"
+                        },
+                        {
+                            "const": "openstack.baremetal.Cyborg"
+                        },
+                        {
+                            "const": "openstack.baremetal.Ironic"
+                        },
+                        {
+                            "const": "openstack.billing.Cloudkitty"
+                        },
+                        {
+                            "const": "openstack.billing.CloudKitty"
+                        },
+                        {
+                            "const": "openstack.compute.Nova"
+                        },
+                        {
+                            "const": "openstack.compute.Qinling"
+                        },
+                        {
+                            "const": "openstack.compute.Zun"
+                        },
+                        {
+                            "const": "openstack.containerservices.Kuryr"
+                        },
+                        {
+                            "const": "openstack.deployment.Ansible"
+                        },
+                        {
+                            "const": "openstack.deployment.Charms"
+                        },
+                        {
+                            "const": "openstack.deployment.Chef"
+                        },
+                        {
+                            "const": "openstack.deployment.Helm"
+                        },
+                        {
+                            "const": "openstack.deployment.Kolla"
+                        },
+                        {
+                            "const": "openstack.deployment.KollaAnsible"
+                        },
+                        {
+                            "const": "openstack.deployment.Tripleo"
+                        },
+                        {
+                            "const": "openstack.deployment.TripleO"
+                        },
+                        {
+                            "const": "openstack.frontend.Horizon"
+                        },
+                        {
+                            "const": "openstack.monitoring.Monasca"
+                        },
+                        {
+                            "const": "openstack.monitoring.Telemetry"
+                        },
+                        {
+                            "const": "openstack.multiregion.Tricircle"
+                        },
+                        {
+                            "const": "openstack.networking.Designate"
+                        },
+                        {
+                            "const": "openstack.networking.Neutron"
+                        },
+                        {
+                            "const": "openstack.networking.Octavia"
+                        },
+                        {
+                            "const": "openstack.nfv.Tacker"
+                        },
+                        {
+                            "const": "openstack.optimization.Congress"
+                        },
+                        {
+                            "const": "openstack.optimization.Rally"
+                        },
+                        {
+                            "const": "openstack.optimization.Vitrage"
+                        },
+                        {
+                            "const": "openstack.optimization.Watcher"
+                        },
+                        {
+                            "const": "openstack.orchestration.Blazar"
+                        },
+                        {
+                            "const": "openstack.orchestration.Heat"
+                        },
+                        {
+                            "const": "openstack.orchestration.Mistral"
+                        },
+                        {
+                            "const": "openstack.orchestration.Senlin"
+                        },
+                        {
+                            "const": "openstack.orchestration.Zaqar"
+                        },
+                        {
+                            "const": "openstack.packaging.LOCI"
+                        },
+                        {
+                            "const": "openstack.packaging.Puppet"
+                        },
+                        {
+                            "const": "openstack.packaging.RPM"
+                        },
+                        {
+                            "const": "openstack.sharedservices.Barbican"
+                        },
+                        {
+                            "const": "openstack.sharedservices.Glance"
+                        },
+                        {
+                            "const": "openstack.sharedservices.Karbor"
+                        },
+                        {
+                            "const": "openstack.sharedservices.Keystone"
+                        },
+                        {
+                            "const": "openstack.sharedservices.Searchlight"
+                        },
+                        {
+                            "const": "openstack.storage.Cinder"
+                        },
+                        {
+                            "const": "openstack.storage.Manila"
+                        },
+                        {
+                            "const": "openstack.storage.Swift"
+                        },
+                        {
+                            "const": "openstack.user.Openstackclient"
+                        },
+                        {
+                            "const": "openstack.user.OpenStackClient"
+                        },
+                        {
+                            "const": "openstack.workloadprovisioning.Magnum"
+                        },
+                        {
+                            "const": "openstack.workloadprovisioning.Sahara"
+                        },
+                        {
+                            "const": "openstack.workloadprovisioning.Trove"
+                        },
+                        {
+                            "const": "outscale.compute.Compute"
+                        },
+                        {
+                            "const": "outscale.compute.DirectConnect"
+                        },
+                        {
+                            "const": "outscale.network.ClientVpn"
+                        },
+                        {
+                            "const": "outscale.network.InternetService"
+                        },
+                        {
+                            "const": "outscale.network.LoadBalancer"
+                        },
+                        {
+                            "const": "outscale.network.NatService"
+                        },
+                        {
+                            "const": "outscale.network.Net"
+                        },
+                        {
+                            "const": "outscale.network.SiteToSiteVpng"
+                        },
+                        {
+                            "const": "outscale.security.Firewall"
+                        },
+                        {
+                            "const": "outscale.security.IdentityAndAccessManagement"
+                        },
+                        {
+                            "const": "outscale.storage.SimpleStorageService"
+                        },
+                        {
+                            "const": "outscale.storage.Storage"
+                        },
+                        {
+                            "const": "programming.flowchart.Action"
+                        },
+                        {
+                            "const": "programming.flowchart.Collate"
+                        },
+                        {
+                            "const": "programming.flowchart.Database"
+                        },
+                        {
+                            "const": "programming.flowchart.Decision"
+                        },
+                        {
+                            "const": "programming.flowchart.Delay"
+                        },
+                        {
+                            "const": "programming.flowchart.Display"
+                        },
+                        {
+                            "const": "programming.flowchart.Document"
+                        },
+                        {
+                            "const": "programming.flowchart.InputOutput"
+                        },
+                        {
+                            "const": "programming.flowchart.Inspection"
+                        },
+                        {
+                            "const": "programming.flowchart.InternalStorage"
+                        },
+                        {
+                            "const": "programming.flowchart.LoopLimit"
+                        },
+                        {
+                            "const": "programming.flowchart.ManualInput"
+                        },
+                        {
+                            "const": "programming.flowchart.ManualLoop"
+                        },
+                        {
+                            "const": "programming.flowchart.Merge"
+                        },
+                        {
+                            "const": "programming.flowchart.MultipleDocuments"
+                        },
+                        {
+                            "const": "programming.flowchart.OffPageConnectorLeft"
+                        },
+                        {
+                            "const": "programming.flowchart.OffPageConnectorRight"
+                        },
+                        {
+                            "const": "programming.flowchart.Or"
+                        },
+                        {
+                            "const": "programming.flowchart.PredefinedProcess"
+                        },
+                        {
+                            "const": "programming.flowchart.Preparation"
+                        },
+                        {
+                            "const": "programming.flowchart.Sort"
+                        },
+                        {
+                            "const": "programming.flowchart.StartEnd"
+                        },
+                        {
+                            "const": "programming.flowchart.StoredData"
+                        },
+                        {
+                            "const": "programming.flowchart.SummingJunction"
+                        },
+                        {
+                            "const": "programming.framework.Angular"
+                        },
+                        {
+                            "const": "programming.framework.Backbone"
+                        },
+                        {
+                            "const": "programming.framework.Django"
+                        },
+                        {
+                            "const": "programming.framework.Ember"
+                        },
+                        {
+                            "const": "programming.framework.Fastapi"
+                        },
+                        {
+                            "const": "programming.framework.FastAPI"
+                        },
+                        {
+                            "const": "programming.framework.Flask"
+                        },
+                        {
+                            "const": "programming.framework.Flutter"
+                        },
+                        {
+                            "const": "programming.framework.Graphql"
+                        },
+                        {
+                            "const": "programming.framework.GraphQL"
+                        },
+                        {
+                            "const": "programming.framework.Laravel"
+                        },
+                        {
+                            "const": "programming.framework.Micronaut"
+                        },
+                        {
+                            "const": "programming.framework.Rails"
+                        },
+                        {
+                            "const": "programming.framework.React"
+                        },
+                        {
+                            "const": "programming.framework.Spring"
+                        },
+                        {
+                            "const": "programming.framework.Starlette"
+                        },
+                        {
+                            "const": "programming.framework.Svelte"
+                        },
+                        {
+                            "const": "programming.framework.Vue"
+                        },
+                        {
+                            "const": "programming.language.Bash"
+                        },
+                        {
+                            "const": "programming.language.C"
+                        },
+                        {
+                            "const": "programming.language.Cpp"
+                        },
+                        {
+                            "const": "programming.language.Csharp"
+                        },
+                        {
+                            "const": "programming.language.Dart"
+                        },
+                        {
+                            "const": "programming.language.Elixir"
+                        },
+                        {
+                            "const": "programming.language.Erlang"
+                        },
+                        {
+                            "const": "programming.language.Go"
+                        },
+                        {
+                            "const": "programming.language.Java"
+                        },
+                        {
+                            "const": "programming.language.Javascript"
+                        },
+                        {
+                            "const": "programming.language.JavaScript"
+                        },
+                        {
+                            "const": "programming.language.Kotlin"
+                        },
+                        {
+                            "const": "programming.language.Latex"
+                        },
+                        {
+                            "const": "programming.language.Matlab"
+                        },
+                        {
+                            "const": "programming.language.Nodejs"
+                        },
+                        {
+                            "const": "programming.language.NodeJS"
+                        },
+                        {
+                            "const": "programming.language.Php"
+                        },
+                        {
+                            "const": "programming.language.PHP"
+                        },
+                        {
+                            "const": "programming.language.Python"
+                        },
+                        {
+                            "const": "programming.language.R"
+                        },
+                        {
+                            "const": "programming.language.Ruby"
+                        },
+                        {
+                            "const": "programming.language.Rust"
+                        },
+                        {
+                            "const": "programming.language.Scala"
+                        },
+                        {
+                            "const": "programming.language.Swift"
+                        },
+                        {
+                            "const": "programming.language.Typescript"
+                        },
+                        {
+                            "const": "programming.language.TypeScript"
+                        },
+                        {
+                            "const": "programming.runtime.Dapr"
+                        },
+                        {
+                            "const": "saas.alerting.Newrelic"
+                        },
+                        {
+                            "const": "saas.alerting.Opsgenie"
+                        },
+                        {
+                            "const": "saas.alerting.Pushover"
+                        },
+                        {
+                            "const": "saas.alerting.Xmatters"
+                        },
+                        {
+                            "const": "saas.alerting.Pagerduty"
+                        },
+                        {
+                            "const": "saas.analytics.Dataform"
+                        },
+                        {
+                            "const": "saas.analytics.Snowflake"
+                        },
+                        {
+                            "const": "saas.analytics.Stitch"
+                        },
+                        {
+                            "const": "saas.cdn.Akamai"
+                        },
+                        {
+                            "const": "saas.cdn.Cloudflare"
+                        },
+                        {
+                            "const": "saas.cdn.Fastly"
+                        },
+                        {
+                            "const": "saas.chat.Discord"
+                        },
+                        {
+                            "const": "saas.chat.Line"
+                        },
+                        {
+                            "const": "saas.chat.Mattermost"
+                        },
+                        {
+                            "const": "saas.chat.Messenger"
+                        },
+                        {
+                            "const": "saas.chat.RocketChat"
+                        },
+                        {
+                            "const": "saas.chat.Slack"
+                        },
+                        {
+                            "const": "saas.chat.Teams"
+                        },
+                        {
+                            "const": "saas.chat.Telegram"
+                        },
+                        {
+                            "const": "saas.communication.Twilio"
+                        },
+                        {
+                            "const": "saas.filesharing.Nextcloud"
+                        },
+                        {
+                            "const": "saas.identity.Auth0"
+                        },
+                        {
+                            "const": "saas.identity.Okta"
+                        },
+                        {
+                            "const": "saas.logging.Datadog"
+                        },
+                        {
+                            "const": "saas.logging.DataDog"
+                        },
+                        {
+                            "const": "saas.logging.Newrelic"
+                        },
+                        {
+                            "const": "saas.logging.NewRelic"
+                        },
+                        {
+                            "const": "saas.logging.Papertrail"
+                        },
+                        {
+                            "const": "saas.media.Cloudinary"
+                        },
+                        {
+                            "const": "saas.recommendation.Recombee"
+                        },
+                        {
+                            "const": "saas.social.Facebook"
+                        },
+                        {
+                            "const": "saas.social.Twitter"
                         }
                     ]
                 },

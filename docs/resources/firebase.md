@@ -1,6 +1,6 @@
 ## Firebase
 
-Table of content:
+Table of Content:
 
 * [Base](#base)
 * [Develop](#develop)

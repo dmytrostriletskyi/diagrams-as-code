@@ -1,6 +1,6 @@
 ## IBM
 
-Table of content:
+Table of Content:
 
 * [Analytics](#analytics)
 * [Applications](#applications)

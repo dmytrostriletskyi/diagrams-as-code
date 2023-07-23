@@ -1,6 +1,6 @@
 ## On-Premise
 
-Table of content:
+Table of Content:
 
 * [Aggregator](#aggregator)
 * [Analytics](#analytics)
