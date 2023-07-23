@@ -144,9 +144,10 @@ def entrypoint() -> None:
     diagram_as_dict = yaml_as_dict.get('diagram')
     diagram = YamlDiagram(**diagram_as_dict)
 
-    graph_style = Diagram._default_graph_attrs | diagram.style.graph
-    node_style = Diagram._default_node_attrs | diagram.style.node
-    edge_style = Diagram._default_edge_attrs | diagram.style.edge
+    # TODO: figure out how to pass empty `YamlDiagramStyle` to `diagram.style` in Pydantic to remove the if condition.
+    graph_style = Diagram._default_graph_attrs | diagram.style.graph if diagram.style else {}
+    node_style = Diagram._default_node_attrs | diagram.style.node if diagram.style else {}
+    edge_style = Diagram._default_edge_attrs | diagram.style.edge if diagram.style else {}
 
     with Diagram(
         name=diagram.name,

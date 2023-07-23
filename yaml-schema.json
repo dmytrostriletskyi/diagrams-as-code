@@ -111,10 +111,403 @@
                     "description": "A type of the resource.",
                     "oneOf": [
                         {
-                          "const": "cluster"
+                            "const": "cluster"
                         },
                         {
-                          "const": "group"
+                            "const": "group"
+                        },
+                        {
+                            "const": "alibabacloud.analytics.AnalyticDb"
+                        },
+                        {
+                            "const": "alibabacloud.analytics.ClickHouse"
+                        },
+                        {
+                            "const": "alibabacloud.analytics.DataLakeAnalytics"
+                        },
+                        {
+                            "const": "alibabacloud.analytics.ElaticMapReduce"
+                        },
+                        {
+                            "const": "alibabacloud.analytics.OpenSearch"
+                        },
+                        {
+                            "const": "alibabacloud.application.ApiGateway"
+                        },
+                        {
+                            "const": "alibabacloud.application.BeeBot"
+                        },
+                        {
+                            "const": "alibabacloud.application.BlockchainAsAService"
+                        },
+                        {
+                            "const": "alibabacloud.application.CloudCallCenter"
+                        },
+                        {
+                            "const": "alibabacloud.application.CodePipeline"
+                        },
+                        {
+                            "const": "alibabacloud.application.DirectMail"
+                        },
+                        {
+                            "const": "alibabacloud.application.LogService"
+                        },
+                        {
+                            "const": "alibabacloud.application.SLS"
+                        },
+                        {
+                            "const": "alibabacloud.application.MessageNotificationService"
+                        },
+                        {
+                            "const": "alibabacloud.application.MNS"
+                        },
+                        {
+                            "const": "alibabacloud.application.NodeJsPerformancePlatform"
+                        },
+                        {
+                            "const": "alibabacloud.application.OpenSearch"
+                        },
+                        {
+                            "const": "alibabacloud.application.PerformanceTestingService"
+                        },
+                        {
+                            "const": "alibabacloud.application.PTS"
+                        },
+                        {
+                            "const": "alibabacloud.application.RdCloud"
+                        },
+                        {
+                            "const": "alibabacloud.application.SmartConversationAnalysis"
+                        },
+                        {
+                            "const": "alibabacloud.application.SCA"
+                        },
+                        {
+                            "const": "alibabacloud.application.Yida"
+                        },
+                        {
+                            "const": "alibabacloud.communication.DirectMail"
+                        },
+                        {
+                            "const": "alibabacloud.communication.MobilePush"
+                        },
+                        {
+                            "const": "alibabacloud.compute.AutoScaling"
+                        },
+                        {
+                            "const": "alibabacloud.compute.ESS"
+                        },
+                        {
+                            "const": "alibabacloud.compute.BatchCompute"
+                        },
+                        {
+                            "const": "alibabacloud.compute.ContainerRegistry"
+                        },
+                        {
+                            "const": "alibabacloud.compute.ContainerService"
+                        },
+                        {
+                            "const": "alibabacloud.compute.ElasticComputeService"
+                        },
+                        {
+                            "const": "alibabacloud.compute.ECS"
+                        },
+                        {
+                            "const": "alibabacloud.compute.ElasticContainerInstance"
+                        },
+                        {
+                            "const": "alibabacloud.compute.ECI"
+                        },
+                        {
+                            "const": "alibabacloud.compute.ElasticHighPerformanceComputing"
+                        },
+                        {
+                            "const": "alibabacloud.compute.EHPC"
+                        },
+                        {
+                            "const": "alibabacloud.compute.ElasticSearch"
+                        },
+                        {
+                            "const": "alibabacloud.compute.FunctionCompute"
+                        },
+                        {
+                            "const": "alibabacloud.compute.FC"
+                        },
+                        {
+                            "const": "alibabacloud.compute.OperationOrchestrationService"
+                        },
+                        {
+                            "const": "alibabacloud.compute.OOS"
+                        },
+                        {
+                            "const": "alibabacloud.compute.ResourceOrchestrationService"
+                        },
+                        {
+                            "const": "alibabacloud.compute.ROS"
+                        },
+                        {
+                            "const": "alibabacloud.compute.ServerLoadBalancer"
+                        },
+                        {
+                            "const": "alibabacloud.compute.SLB"
+                        },
+                        {
+                            "const": "alibabacloud.compute.ServerlessAppEngine"
+                        },
+                        {
+                            "const": "alibabacloud.compute.SAE"
+                        },
+                        {
+                            "const": "alibabacloud.compute.SimpleApplicationServer"
+                        },
+                        {
+                            "const": "alibabacloud.compute.SAS"
+                        },
+                        {
+                            "const": "alibabacloud.compute.WebAppService"
+                        },
+                        {
+                            "const": "alibabacloud.compute.WAS"
+                        },
+                        {
+                            "const": "alibabacloud.database.ApsaradbCassandra"
+                        },
+                        {
+                            "const": "alibabacloud.database.ApsaradbHbase"
+                        },
+                        {
+                            "const": "alibabacloud.database.ApsaradbMemcache"
+                        },
+                        {
+                            "const": "alibabacloud.database.ApsaradbMongodb"
+                        },
+                        {
+                            "const": "alibabacloud.database.ApsaradbOceanbase"
+                        },
+                        {
+                            "const": "alibabacloud.database.ApsaradbPolardb"
+                        },
+                        {
+                            "const": "alibabacloud.database.ApsaradbPostgresql"
+                        },
+                        {
+                            "const": "alibabacloud.database.ApsaradbPpas"
+                        },
+                        {
+                            "const": "alibabacloud.database.ApsaradbRedis"
+                        },
+                        {
+                            "const": "alibabacloud.database.ApsaradbSqlserver"
+                        },
+                        {
+                            "const": "alibabacloud.database.DataManagementService"
+                        },
+                        {
+                            "const": "alibabacloud.database.DMS"
+                        },
+                        {
+                            "const": "alibabacloud.database.DataTransmissionService"
+                        },
+                        {
+                            "const": "alibabacloud.database.DTS"
+                        },
+                        {
+                            "const": "alibabacloud.database.DatabaseBackupService"
+                        },
+                        {
+                            "const": "alibabacloud.database.DBS"
+                        },
+                        {
+                            "const": "alibabacloud.database.DisributeRelationalDatabaseService"
+                        },
+                        {
+                            "const": "alibabacloud.database.DRDS"
+                        },
+                        {
+                            "const": "alibabacloud.database.GraphDatabaseService"
+                        },
+                        {
+                            "const": "alibabacloud.database.GDS"
+                        },
+                        {
+                            "const": "alibabacloud.database.HybriddbForMysql"
+                        },
+                        {
+                            "const": "alibabacloud.database.RelationalDatabaseService"
+                        },
+                        {
+                            "const": "alibabacloud.database.RDS"
+                        },
+                        {
+                            "const": "alibabacloud.iot.IotInternetDeviceId"
+                        },
+                        {
+                            "const": "alibabacloud.iot.IotLinkWan"
+                        },
+                        {
+                            "const": "alibabacloud.iot.IotMobileConnectionPackage"
+                        },
+                        {
+                            "const": "alibabacloud.iot.IotPlatform"
+                        },
+                        {
+                            "const": "alibabacloud.network.Cdn"
+                        },
+                        {
+                            "const": "alibabacloud.network.CloudEnterpriseNetwork"
+                        },
+                        {
+                            "const": "alibabacloud.network.CEN"
+                        },
+                        {
+                            "const": "alibabacloud.network.ElasticIpAddress"
+                        },
+                        {
+                            "const": "alibabacloud.network.EIP"
+                        },
+                        {
+                            "const": "alibabacloud.network.ExpressConnect"
+                        },
+                        {
+                            "const": "alibabacloud.network.NatGateway"
+                        },
+                        {
+                            "const": "alibabacloud.network.ServerLoadBalancer"
+                        },
+                        {
+                            "const": "alibabacloud.network.SLB"
+                        },
+                        {
+                            "const": "alibabacloud.network.SmartAccessGateway"
+                        },
+                        {
+                            "const": "alibabacloud.network.VirtualPrivateCloud"
+                        },
+                        {
+                            "const": "alibabacloud.network.VPC"
+                        },
+                        {
+                            "const": "alibabacloud.network.VpnGateway"
+                        },
+                        {
+                            "const": "alibabacloud.security.AntiBotService"
+                        },
+                        {
+                            "const": "alibabacloud.security.ABS"
+                        },
+                        {
+                            "const": "alibabacloud.security.AntiDdosBasic"
+                        },
+                        {
+                            "const": "alibabacloud.security.AntiDdosPro"
+                        },
+                        {
+                            "const": "alibabacloud.security.AntifraudService"
+                        },
+                        {
+                            "const": "alibabacloud.security.AS"
+                        },
+                        {
+                            "const": "alibabacloud.security.BastionHost"
+                        },
+                        {
+                            "const": "alibabacloud.security.CloudFirewall"
+                        },
+                        {
+                            "const": "alibabacloud.security.CFW"
+                        },
+                        {
+                            "const": "alibabacloud.security.CloudSecurityScanner"
+                        },
+                        {
+                            "const": "alibabacloud.security.ContentModeration"
+                        },
+                        {
+                            "const": "alibabacloud.security.CM"
+                        },
+                        {
+                            "const": "alibabacloud.security.CrowdsourcedSecurityTesting"
+                        },
+                        {
+                            "const": "alibabacloud.security.DataEncryptionService"
+                        },
+                        {
+                            "const": "alibabacloud.security.DES"
+                        },
+                        {
+                            "const": "alibabacloud.security.DbAudit"
+                        },
+                        {
+                            "const": "alibabacloud.security.GameShield"
+                        },
+                        {
+                            "const": "alibabacloud.security.IdVerification"
+                        },
+                        {
+                            "const": "alibabacloud.security.ManagedSecurityService"
+                        },
+                        {
+                            "const": "alibabacloud.security.SecurityCenter"
+                        },
+                        {
+                            "const": "alibabacloud.security.ServerGuard"
+                        },
+                        {
+                            "const": "alibabacloud.security.SslCertificates"
+                        },
+                        {
+                            "const": "alibabacloud.security.WebApplicationFirewall"
+                        },
+                        {
+                            "const": "alibabacloud.security.WAF"
+                        },
+                        {
+                            "const": "alibabacloud.storage.CloudStorageGateway"
+                        },
+                        {
+                            "const": "alibabacloud.storage.FileStorageHdfs"
+                        },
+                        {
+                            "const": "alibabacloud.storage.HDFS"
+                        },
+                        {
+                            "const": "alibabacloud.storage.FileStorageNas"
+                        },
+                        {
+                            "const": "alibabacloud.storage.NAS"
+                        },
+                        {
+                            "const": "alibabacloud.storage.HybridBackupRecovery"
+                        },
+                        {
+                            "const": "alibabacloud.storage.HBR"
+                        },
+                        {
+                            "const": "alibabacloud.storage.HybridCloudDisasterRecovery"
+                        },
+                        {
+                            "const": "alibabacloud.storage.HDR"
+                        },
+                        {
+                            "const": "alibabacloud.storage.Imm"
+                        },
+                        {
+                            "const": "alibabacloud.storage.ObjectStorageService"
+                        },
+                        {
+                            "const": "alibabacloud.storage.OSS"
+                        },
+                        {
+                            "const": "alibabacloud.storage.ObjectTableStore"
+                        },
+                        {
+                            "const": "alibabacloud.storage.OTS"
+                        },
+                        {
+                            "const": "alibabacloud.web.Dns"
+                        },
+                        {
+                            "const": "alibabacloud.web.Domain"
                         },
                         {
                             "const": "aws.analytics.Analytics"
