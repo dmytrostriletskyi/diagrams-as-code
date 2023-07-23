@@ -27,7 +27,7 @@ are aligned as well. It allows you to track an architecture's diagram changes wi
 Currently, the following components are provided:
 
 * Major cloud providers: AWS, Azure, GCP, IBM, Alibaba, Oracle, OpenStack, DigitalOcean and so on.
-* On premise, Kubernetes, Firebase, Elastic, SaaS.
+* On-Premise, Kubernetes, Firebase, Elastic, SaaS.
 * Programming languages and frameworks.
 * And other generic things such as C4.
 
