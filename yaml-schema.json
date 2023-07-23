@@ -1,0 +1,2685 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Diagrams YAML",
+    "description": "Diagrams YAML's JSON schema",
+    "$ref": "#/definitions/Welcome5",
+    "definitions": {
+        "Welcome5": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "diagram": {
+                    "$ref": "#/definitions/Diagram"
+                }
+            },
+            "required": [
+                "diagram"
+            ],
+            "title": "Welcome5"
+        },
+        "Diagram": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "A name of the diagram which is shown in the image."
+                },
+                "file_name": {
+                    "type": "string",
+                    "description": "A file name of the image that would be created."
+                },
+                "format": {
+                    "type": "string",
+                    "description": "A format of the image that would be created.",
+                    "oneOf": [
+                        {
+                          "const": "png"
+                        },
+                        {
+                          "const": "jpg"
+                        },
+                        {
+                          "const": "svg"
+                        },
+                        {
+                          "const": "pdf"
+                        },
+                        {
+                          "const": "dot"
+                        }
+                    ]
+                },
+                "direction": {
+                    "type": "string",
+                    "description": "A direction of the diagram's resource.",
+                    "oneOf": [
+                        {
+                          "const": "left-to-right"
+                        },
+                        {
+                          "const": "right-to-left"
+                        },
+                        {
+                          "const": "top-to-bottom"
+                        },
+                        {
+                          "const": "bottom-to-top"
+                        }
+                    ]
+                },
+                "style": {
+                    "$ref": "#/definitions/Style",
+                    "description": "Style of the diagram."
+                },
+                "label_resources": {
+                    "type": "boolean",
+                    "description": "Whether to label the diagram's resources."
+                },
+                "open": {
+                    "type": "boolean",
+                    "description": "Whether to open the diagram's image after creating it."
+                },
+                "resources": {
+                    "type": "array",
+                    "description": "Resources of the diagram.",
+                    "items": {
+                        "$ref": "#/definitions/Resource"
+                    }
+                }
+            },
+            "required": [
+                "name",
+                "resources"
+            ],
+            "title": "Diagram"
+        },
+        "Resource": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "An unique identifier of the resource."
+                },
+                "name": {
+                    "type": "string",
+                    "description": "A name of the resource."
+                },
+                "type": {
+                    "type": "string",
+                    "description": "A type of the resource.",
+                    "oneOf": [
+                        {
+                          "const": "cluster"
+                        },
+                        {
+                          "const": "group"
+                        },
+                        {
+                            "const": "aws.analytics.Analytics"
+                        },
+                        {
+                            "const": "aws.analytics.Athena"
+                        },
+                        {
+                            "const": "aws.analytics.CloudsearchSearchDocuments"
+                        },
+                        {
+                            "const": "aws.analytics.Cloudsearch"
+                        },
+                        {
+                            "const": "aws.analytics.DataLakeResource"
+                        },
+                        {
+                            "const": "aws.analytics.DataPipeline"
+                        },
+                        {
+                            "const": "aws.analytics.ElasticsearchService"
+                        },
+                        {
+                            "const": "aws.analytics.ES"
+                        },
+                        {
+                            "const": "aws.analytics.EMRCluster"
+                        },
+                        {
+                            "const": "aws.analytics.EMREngineMaprM3"
+                        },
+                        {
+                            "const": "aws.analytics.EMREngineMaprM5"
+                        },
+                        {
+                            "const": "aws.analytics.EMREngineMaprM7"
+                        },
+                        {
+                            "const": "aws.analytics.EMREngine"
+                        },
+                        {
+                            "const": "aws.analytics.EMRHdfsCluster"
+                        },
+                        {
+                            "const": "aws.analytics.EMR"
+                        },
+                        {
+                            "const": "aws.analytics.GlueCrawlers"
+                        },
+                        {
+                            "const": "aws.analytics.GlueDataCatalog"
+                        },
+                        {
+                            "const": "aws.analytics.Glue"
+                        },
+                        {
+                            "const": "aws.analytics.KinesisDataAnalytics"
+                        },
+                        {
+                            "const": "aws.analytics.KinesisDataFirehose"
+                        },
+                        {
+                            "const": "aws.analytics.KinesisDataStreams"
+                        },
+                        {
+                            "const": "aws.analytics.KinesisVideoStreams"
+                        },
+                        {
+                            "const": "aws.analytics.Kinesis"
+                        },
+                        {
+                            "const": "aws.analytics.LakeFormation"
+                        },
+                        {
+                            "const": "aws.analytics.ManagedStreamingForKafka"
+                        },
+                        {
+                            "const": "aws.analytics.Quicksight"
+                        },
+                        {
+                            "const": "aws.analytics.RedshiftDenseComputeNode"
+                        },
+                        {
+                            "const": "aws.analytics.RedshiftDenseStorageNode"
+                        },
+                        {
+                            "const": "aws.analytics.Redshift"
+                        },
+                        {
+                            "const": "aws.ar.ArVr"
+                        },
+                        {
+                            "const": "aws.ar.Sumerian"
+                        },
+                        {
+                            "const": "aws.blockchain.BlockchainResource"
+                        },
+                        {
+                            "const": "aws.blockchain.Blockchain"
+                        },
+                        {
+                            "const": "aws.blockchain.ManagedBlockchain"
+                        },
+                        {
+                            "const": "aws.blockchain.QuantumLedgerDatabaseQldb"
+                        },
+                        {
+                            "const": "aws.blockchain.QLDB"
+                        },
+                        {
+                            "const": "aws.business.AlexaForBusiness"
+                        },
+                        {
+                            "const": "aws.business.A4B"
+                        },
+                        {
+                            "const": "aws.business.BusinessApplications"
+                        },
+                        {
+                            "const": "aws.business.Chime"
+                        },
+                        {
+                            "const": "aws.business.Workmail"
+                        },
+                        {
+                            "const": "aws.compute.AppRunner"
+                        },
+                        {
+                            "const": "aws.compute.ApplicationAutoScaling"
+                        },
+                        {
+                            "const": "aws.compute.AutoScaling"
+                        },
+                        {
+                            "const": "aws.compute.Batch"
+                        },
+                        {
+                            "const": "aws.compute.ComputeOptimizer"
+                        },
+                        {
+                            "const": "aws.compute.Compute"
+                        },
+                        {
+                            "const": "aws.compute.EC2Ami"
+                        },
+                        {
+                            "const": "aws.compute.AMI"
+                        },
+                        {
+                            "const": "aws.compute.EC2AutoScaling"
+                        },
+                        {
+                            "const": "aws.compute.EC2ContainerRegistryImage"
+                        },
+                        {
+                            "const": "aws.compute.EC2ContainerRegistryRegistry"
+                        },
+                        {
+                            "const": "aws.compute.EC2ContainerRegistry"
+                        },
+                        {
+                            "const": "aws.compute.ECR"
+                        },
+                        {
+                            "const": "aws.compute.EC2ElasticIpAddress"
+                        },
+                        {
+                            "const": "aws.compute.EC2ImageBuilder"
+                        },
+                        {
+                            "const": "aws.compute.EC2Instance"
+                        },
+                        {
+                            "const": "aws.compute.EC2Instances"
+                        },
+                        {
+                            "const": "aws.compute.EC2Rescue"
+                        },
+                        {
+                            "const": "aws.compute.EC2SpotInstance"
+                        },
+                        {
+                            "const": "aws.compute.EC2"
+                        },
+                        {
+                            "const": "aws.compute.ElasticBeanstalkApplication"
+                        },
+                        {
+                            "const": "aws.compute.ElasticBeanstalkDeployment"
+                        },
+                        {
+                            "const": "aws.compute.ElasticBeanstalk"
+                        },
+                        {
+                            "const": "aws.compute.EB"
+                        },
+                        {
+                            "const": "aws.compute.ElasticContainerServiceContainer"
+                        },
+                        {
+                            "const": "aws.compute.ElasticContainerServiceService"
+                        },
+                        {
+                            "const": "aws.compute.ElasticContainerService"
+                        },
+                        {
+                            "const": "aws.compute.ECS"
+                        },
+                        {
+                            "const": "aws.compute.ElasticKubernetesService"
+                        },
+                        {
+                            "const": "aws.compute.EKS"
+                        },
+                        {
+                            "const": "aws.compute.Fargate"
+                        },
+                        {
+                            "const": "aws.compute.LambdaFunction"
+                        },
+                        {
+                            "const": "aws.compute.Lambda"
+                        },
+                        {
+                            "const": "aws.compute.Lightsail"
+                        },
+                        {
+                            "const": "aws.compute.LocalZones"
+                        },
+                        {
+                            "const": "aws.compute.Outposts"
+                        },
+                        {
+                            "const": "aws.compute.ServerlessApplicationRepository"
+                        },
+                        {
+                            "const": "aws.compute.SAR"
+                        },
+                        {
+                            "const": "aws.compute.ThinkboxDeadline"
+                        },
+                        {
+                            "const": "aws.compute.ThinkboxDraft"
+                        },
+                        {
+                            "const": "aws.compute.ThinkboxFrost"
+                        },
+                        {
+                            "const": "aws.compute.ThinkboxKrakatoa"
+                        },
+                        {
+                            "const": "aws.compute.ThinkboxSequoia"
+                        },
+                        {
+                            "const": "aws.compute.ThinkboxStoke"
+                        },
+                        {
+                            "const": "aws.compute.ThinkboxXmesh"
+                        },
+                        {
+                            "const": "aws.compute.VmwareCloudOnAWS"
+                        },
+                        {
+                            "const": "aws.compute.Wavelength"
+                        },
+                        {
+                            "const": "aws.cost.Budgets"
+                        },
+                        {
+                            "const": "aws.cost.CostAndUsageReport"
+                        },
+                        {
+                            "const": "aws.cost.CostExplorer"
+                        },
+                        {
+                            "const": "aws.cost.CostManagement"
+                        },
+                        {
+                            "const": "aws.cost.ReservedInstanceReporting"
+                        },
+                        {
+                            "const": "aws.cost.SavingsPlans"
+                        },
+                        {
+                            "const": "aws.database.AuroraInstance"
+                        },
+                        {
+                            "const": "aws.database.Aurora"
+                        },
+                        {
+                            "const": "aws.database.DatabaseMigrationServiceDatabaseMigrationWorkflow"
+                        },
+                        {
+                            "const": "aws.database.DatabaseMigrationService"
+                        },
+                        {
+                            "const": "aws.database.DMS"
+                        },
+                        {
+                            "const": "aws.database.Database"
+                        },
+                        {
+                            "const": "aws.database.DB"
+                        },
+                        {
+                            "const": "aws.database.DocumentdbMongodbCompatibility"
+                        },
+                        {
+                            "const": "aws.database.DocumentDB"
+                        },
+                        {
+                            "const": "aws.database.DynamodbAttribute"
+                        },
+                        {
+                            "const": "aws.database.DynamodbAttributes"
+                        },
+                        {
+                            "const": "aws.database.DynamodbDax"
+                        },
+                        {
+                            "const": "aws.database.DAX"
+                        },
+                        {
+                            "const": "aws.database.DynamodbGlobalSecondaryIndex"
+                        },
+                        {
+                            "const": "aws.database.DynamodbGSI"
+                        },
+                        {
+                            "const": "aws.database.DynamodbItem"
+                        },
+                        {
+                            "const": "aws.database.DynamodbItems"
+                        },
+                        {
+                            "const": "aws.database.DynamodbTable"
+                        },
+                        {
+                            "const": "aws.database.Dynamodb"
+                        },
+                        {
+                            "const": "aws.database.DDB"
+                        },
+                        {
+                            "const": "aws.database.ElasticacheCacheNode"
+                        },
+                        {
+                            "const": "aws.database.ElasticacheForMemcached"
+                        },
+                        {
+                            "const": "aws.database.ElasticacheForRedis"
+                        },
+                        {
+                            "const": "aws.database.Elasticache"
+                        },
+                        {
+                            "const": "aws.database.ElastiCache"
+                        },
+                        {
+                            "const": "aws.database.KeyspacesManagedApacheCassandraService"
+                        },
+                        {
+                            "const": "aws.database.Neptune"
+                        },
+                        {
+                            "const": "aws.database.QuantumLedgerDatabaseQldb"
+                        },
+                        {
+                            "const": "aws.database.QLDB"
+                        },
+                        {
+                            "const": "aws.database.RDSInstance"
+                        },
+                        {
+                            "const": "aws.database.RDSMariadbInstance"
+                        },
+                        {
+                            "const": "aws.database.RDSMysqlInstance"
+                        },
+                        {
+                            "const": "aws.database.RDSOnVmware"
+                        },
+                        {
+                            "const": "aws.database.RDSOracleInstance"
+                        },
+                        {
+                            "const": "aws.database.RDSPostgresqlInstance"
+                        },
+                        {
+                            "const": "aws.database.RDSSqlServerInstance"
+                        },
+                        {
+                            "const": "aws.database.RDS"
+                        },
+                        {
+                            "const": "aws.database.RedshiftDenseComputeNode"
+                        },
+                        {
+                            "const": "aws.database.RedshiftDenseStorageNode"
+                        },
+                        {
+                            "const": "aws.database.Redshift"
+                        },
+                        {
+                            "const": "aws.database.Timestream"
+                        },
+                        {
+                            "const": "aws.devtools.CloudDevelopmentKit"
+                        },
+                        {
+                            "const": "aws.devtools.Cloud9Resource"
+                        },
+                        {
+                            "const": "aws.devtools.Cloud9"
+                        },
+                        {
+                            "const": "aws.devtools.Codebuild"
+                        },
+                        {
+                            "const": "aws.devtools.Codecommit"
+                        },
+                        {
+                            "const": "aws.devtools.Codedeploy"
+                        },
+                        {
+                            "const": "aws.devtools.Codepipeline"
+                        },
+                        {
+                            "const": "aws.devtools.Codestar"
+                        },
+                        {
+                            "const": "aws.devtools.CommandLineInterface"
+                        },
+                        {
+                            "const": "aws.devtools.CLI"
+                        },
+                        {
+                            "const": "aws.devtools.DeveloperTools"
+                        },
+                        {
+                            "const": "aws.devtools.DevTools"
+                        },
+                        {
+                            "const": "aws.devtools.ToolsAndSdks"
+                        },
+                        {
+                            "const": "aws.devtools.XRay"
+                        },
+                        {
+                            "const": "aws.enablement.CustomerEnablement"
+                        },
+                        {
+                            "const": "aws.enablement.Iq"
+                        },
+                        {
+                            "const": "aws.enablement.ManagedServices"
+                        },
+                        {
+                            "const": "aws.enablement.ProfessionalServices"
+                        },
+                        {
+                            "const": "aws.enablement.Support"
+                        },
+                        {
+                            "const": "aws.enduser.Appstream20"
+                        },
+                        {
+                            "const": "aws.enduser.DesktopAndAppStreaming"
+                        },
+                        {
+                            "const": "aws.enduser.Workdocs"
+                        },
+                        {
+                            "const": "aws.enduser.Worklink"
+                        },
+                        {
+                            "const": "aws.enduser.Workspaces"
+                        },
+                        {
+                            "const": "aws.engagement.Connect"
+                        },
+                        {
+                            "const": "aws.engagement.CustomerEngagement"
+                        },
+                        {
+                            "const": "aws.engagement.Pinpoint"
+                        },
+                        {
+                            "const": "aws.engagement.SimpleEmailServiceSesEmail"
+                        },
+                        {
+                            "const": "aws.engagement.SimpleEmailServiceSes"
+                        },
+                        {
+                            "const": "aws.engagement.SES"
+                        },
+                        {
+                            "const": "aws.game.GameTech"
+                        },
+                        {
+                            "const": "aws.game.Gamelift"
+                        },
+                        {
+                            "const": "aws.general.Client"
+                        },
+                        {
+                            "const": "aws.general.Disk"
+                        },
+                        {
+                            "const": "aws.general.Forums"
+                        },
+                        {
+                            "const": "aws.general.General"
+                        },
+                        {
+                            "const": "aws.general.GenericDatabase"
+                        },
+                        {
+                            "const": "aws.general.GenericFirewall"
+                        },
+                        {
+                            "const": "aws.general.GenericOfficeBuilding"
+                        },
+                        {
+                            "const": "aws.general.OfficeBuilding"
+                        },
+                        {
+                            "const": "aws.general.GenericSamlToken"
+                        },
+                        {
+                            "const": "aws.general.GenericSDK"
+                        },
+                        {
+                            "const": "aws.general.InternetAlt1"
+                        },
+                        {
+                            "const": "aws.general.InternetAlt2"
+                        },
+                        {
+                            "const": "aws.general.InternetGateway"
+                        },
+                        {
+                            "const": "aws.general.Marketplace"
+                        },
+                        {
+                            "const": "aws.general.MobileClient"
+                        },
+                        {
+                            "const": "aws.general.Multimedia"
+                        },
+                        {
+                            "const": "aws.general.OfficeBuilding"
+                        },
+                        {
+                            "const": "aws.general.SamlToken"
+                        },
+                        {
+                            "const": "aws.general.SDK"
+                        },
+                        {
+                            "const": "aws.general.SslPadlock"
+                        },
+                        {
+                            "const": "aws.general.TapeStorage"
+                        },
+                        {
+                            "const": "aws.general.Toolkit"
+                        },
+                        {
+                            "const": "aws.general.TraditionalServer"
+                        },
+                        {
+                            "const": "aws.general.User"
+                        },
+                        {
+                            "const": "aws.general.Users"
+                        },
+                        {
+                            "const": "aws.integration.ApplicationIntegration"
+                        },
+                        {
+                            "const": "aws.integration.Appsync"
+                        },
+                        {
+                            "const": "aws.integration.ConsoleMobileApplication"
+                        },
+                        {
+                            "const": "aws.integration.EventResource"
+                        },
+                        {
+                            "const": "aws.integration.EventbridgeCustomEventBusResource"
+                        },
+                        {
+                            "const": "aws.integration.EventbridgeDefaultEventBusResource"
+                        },
+                        {
+                            "const": "aws.integration.EventbridgeSaasPartnerEventBusResource"
+                        },
+                        {
+                            "const": "aws.integration.Eventbridge"
+                        },
+                        {
+                            "const": "aws.integration.ExpressWorkflows"
+                        },
+                        {
+                            "const": "aws.integration.MQ"
+                        },
+                        {
+                            "const": "aws.integration.SimpleNotificationServiceSnsEmailNotification"
+                        },
+                        {
+                            "const": "aws.integration.SimpleNotificationServiceSnsHttpNotification"
+                        },
+                        {
+                            "const": "aws.integration.SimpleNotificationServiceSnsTopic"
+                        },
+                        {
+                            "const": "aws.integration.SimpleNotificationServiceSns"
+                        },
+                        {
+                            "const": "aws.integration.SNS"
+                        },
+                        {
+                            "const": "aws.integration.SimpleQueueServiceSqsMessage"
+                        },
+                        {
+                            "const": "aws.integration.SimpleQueueServiceSqsQueue"
+                        },
+                        {
+                            "const": "aws.integration.SimpleQueueServiceSqs"
+                        },
+                        {
+                            "const": "aws.integration.SQS"
+                        },
+                        {
+                            "const": "aws.integration.StepFunctions"
+                        },
+                        {
+                            "const": "aws.integration.SF"
+                        },
+                        {
+                            "const": "aws.iot.Freertos"
+                        },
+                        {
+                            "const": "aws.iot.FreeRTOS"
+                        },
+                        {
+                            "const": "aws.iot.InternetOfThings"
+                        },
+                        {
+                            "const": "aws.iot.Iot1Click"
+                        },
+                        {
+                            "const": "aws.iot.IotAction"
+                        },
+                        {
+                            "const": "aws.iot.IotActuator"
+                        },
+                        {
+                            "const": "aws.iot.IotAlexaEcho"
+                        },
+                        {
+                            "const": "aws.iot.IotAlexaEnabledDevice"
+                        },
+                        {
+                            "const": "aws.iot.IotAlexaSkill"
+                        },
+                        {
+                            "const": "aws.iot.IotAlexaVoiceService"
+                        },
+                        {
+                            "const": "aws.iot.IotAnalyticsChannel"
+                        },
+                        {
+                            "const": "aws.iot.IotAnalyticsDataSet"
+                        },
+                        {
+                            "const": "aws.iot.IotAnalyticsDataStore"
+                        },
+                        {
+                            "const": "aws.iot.IotAnalyticsNotebook"
+                        },
+                        {
+                            "const": "aws.iot.IotAnalyticsPipeline"
+                        },
+                        {
+                            "const": "aws.iot.IotAnalytics"
+                        },
+                        {
+                            "const": "aws.iot.IotBank"
+                        },
+                        {
+                            "const": "aws.iot.IotBicycle"
+                        },
+                        {
+                            "const": "aws.iot.IotButton"
+                        },
+                        {
+                            "const": "aws.iot.IotCamera"
+                        },
+                        {
+                            "const": "aws.iot.IotCar"
+                        },
+                        {
+                            "const": "aws.iot.IotCart"
+                        },
+                        {
+                            "const": "aws.iot.IotCertificate"
+                        },
+                        {
+                            "const": "aws.iot.IotCoffeePot"
+                        },
+                        {
+                            "const": "aws.iot.IotCore"
+                        },
+                        {
+                            "const": "aws.iot.IotDesiredState"
+                        },
+                        {
+                            "const": "aws.iot.IotDeviceDefender"
+                        },
+                        {
+                            "const": "aws.iot.IotDeviceGateway"
+                        },
+                        {
+                            "const": "aws.iot.IotDeviceManagement"
+                        },
+                        {
+                            "const": "aws.iot.IotDoorLock"
+                        },
+                        {
+                            "const": "aws.iot.IotEvents"
+                        },
+                        {
+                            "const": "aws.iot.IotFactory"
+                        },
+                        {
+                            "const": "aws.iot.IotFireTvStick"
+                        },
+                        {
+                            "const": "aws.iot.IotFireTv"
+                        },
+                        {
+                            "const": "aws.iot.IotGeneric"
+                        },
+                        {
+                            "const": "aws.iot.IotGreengrassConnector"
+                        },
+                        {
+                            "const": "aws.iot.IotGreengrass"
+                        },
+                        {
+                            "const": "aws.iot.IotHardwareBoard"
+                        },
+                        {
+                            "const": "aws.iot.IotBoard"
+                        },
+                        {
+                            "const": "aws.iot.IotHouse"
+                        },
+                        {
+                            "const": "aws.iot.IotHttp"
+                        },
+                        {
+                            "const": "aws.iot.IotHttp2"
+                        },
+                        {
+                            "const": "aws.iot.IotJobs"
+                        },
+                        {
+                            "const": "aws.iot.IotLambda"
+                        },
+                        {
+                            "const": "aws.iot.IotLightbulb"
+                        },
+                        {
+                            "const": "aws.iot.IotMedicalEmergency"
+                        },
+                        {
+                            "const": "aws.iot.IotMqtt"
+                        },
+                        {
+                            "const": "aws.iot.IotOverTheAirUpdate"
+                        },
+                        {
+                            "const": "aws.iot.IotPolicyEmergency"
+                        },
+                        {
+                            "const": "aws.iot.IotPolicy"
+                        },
+                        {
+                            "const": "aws.iot.IotReportedState"
+                        },
+                        {
+                            "const": "aws.iot.IotRule"
+                        },
+                        {
+                            "const": "aws.iot.IotSensor"
+                        },
+                        {
+                            "const": "aws.iot.IotServo"
+                        },
+                        {
+                            "const": "aws.iot.IotShadow"
+                        },
+                        {
+                            "const": "aws.iot.IotSimulator"
+                        },
+                        {
+                            "const": "aws.iot.IotSitewise"
+                        },
+                        {
+                            "const": "aws.iot.IotThermostat"
+                        },
+                        {
+                            "const": "aws.iot.IotThingsGraph"
+                        },
+                        {
+                            "const": "aws.iot.IotTopic"
+                        },
+                        {
+                            "const": "aws.iot.IotTravel"
+                        },
+                        {
+                            "const": "aws.iot.IotUtility"
+                        },
+                        {
+                            "const": "aws.iot.IotWindfarm"
+                        },
+                        {
+                            "const": "aws.management.AutoScaling"
+                        },
+                        {
+                            "const": "aws.management.Chatbot"
+                        },
+                        {
+                            "const": "aws.management.CloudformationChangeSet"
+                        },
+                        {
+                            "const": "aws.management.CloudformationStack"
+                        },
+                        {
+                            "const": "aws.management.CloudformationTemplate"
+                        },
+                        {
+                            "const": "aws.management.Cloudformation"
+                        },
+                        {
+                            "const": "aws.management.Cloudtrail"
+                        },
+                        {
+                            "const": "aws.management.CloudwatchAlarm"
+                        },
+                        {
+                            "const": "aws.management.CloudwatchEventEventBased"
+                        },
+                        {
+                            "const": "aws.management.CloudwatchEventTimeBased"
+                        },
+                        {
+                            "const": "aws.management.CloudwatchRule"
+                        },
+                        {
+                            "const": "aws.management.Cloudwatch"
+                        },
+                        {
+                            "const": "aws.management.Codeguru"
+                        },
+                        {
+                            "const": "aws.management.CommandLineInterface"
+                        },
+                        {
+                            "const": "aws.management.Config"
+                        },
+                        {
+                            "const": "aws.management.ControlTower"
+                        },
+                        {
+                            "const": "aws.management.LicenseManager"
+                        },
+                        {
+                            "const": "aws.management.ManagedServices"
+                        },
+                        {
+                            "const": "aws.management.ManagementAndGovernance"
+                        },
+                        {
+                            "const": "aws.management.ManagementConsole"
+                        },
+                        {
+                            "const": "aws.management.OpsworksApps"
+                        },
+                        {
+                            "const": "aws.management.OpsworksDeployments"
+                        },
+                        {
+                            "const": "aws.management.OpsworksInstances"
+                        },
+                        {
+                            "const": "aws.management.OpsworksLayers"
+                        },
+                        {
+                            "const": "aws.management.OpsworksMonitoring"
+                        },
+                        {
+                            "const": "aws.management.OpsworksPermissions"
+                        },
+                        {
+                            "const": "aws.management.OpsworksResources"
+                        },
+                        {
+                            "const": "aws.management.OpsworksStack"
+                        },
+                        {
+                            "const": "aws.management.Opsworks"
+                        },
+                        {
+                            "const": "aws.management.OrganizationsAccount"
+                        },
+                        {
+                            "const": "aws.management.OrganizationsOrganizationalUnit"
+                        },
+                        {
+                            "const": "aws.management.Organizations"
+                        },
+                        {
+                            "const": "aws.management.PersonalHealthDashboard"
+                        },
+                        {
+                            "const": "aws.management.ServiceCatalog"
+                        },
+                        {
+                            "const": "aws.management.SystemsManagerAutomation"
+                        },
+                        {
+                            "const": "aws.management.SystemsManagerDocuments"
+                        },
+                        {
+                            "const": "aws.management.SystemsManagerInventory"
+                        },
+                        {
+                            "const": "aws.management.SystemsManagerMaintenanceWindows"
+                        },
+                        {
+                            "const": "aws.management.SystemsManagerOpscenter"
+                        },
+                        {
+                            "const": "aws.management.SystemsManagerParameterStore"
+                        },
+                        {
+                            "const": "aws.management.ParameterStore"
+                        },
+                        {
+                            "const": "aws.management.SystemsManagerPatchManager"
+                        },
+                        {
+                            "const": "aws.management.SystemsManagerRunCommand"
+                        },
+                        {
+                            "const": "aws.management.SystemsManagerStateManager"
+                        },
+                        {
+                            "const": "aws.management.SystemsManager"
+                        },
+                        {
+                            "const": "aws.management.SSM"
+                        },
+                        {
+                            "const": "aws.management.TrustedAdvisorChecklistCost"
+                        },
+                        {
+                            "const": "aws.management.TrustedAdvisorChecklistFaultTolerant"
+                        },
+                        {
+                            "const": "aws.management.TrustedAdvisorChecklistPerformance"
+                        },
+                        {
+                            "const": "aws.management.TrustedAdvisorChecklistSecurity"
+                        },
+                        {
+                            "const": "aws.management.TrustedAdvisorChecklist"
+                        },
+                        {
+                            "const": "aws.management.TrustedAdvisor"
+                        },
+                        {
+                            "const": "aws.management.WellArchitectedTool"
+                        },
+                        {
+                            "const": "aws.media.ElasticTranscoder"
+                        },
+                        {
+                            "const": "aws.media.ElementalConductor"
+                        },
+                        {
+                            "const": "aws.media.ElementalDelta"
+                        },
+                        {
+                            "const": "aws.media.ElementalLive"
+                        },
+                        {
+                            "const": "aws.media.ElementalMediaconnect"
+                        },
+                        {
+                            "const": "aws.media.ElementalMediaconvert"
+                        },
+                        {
+                            "const": "aws.media.ElementalMedialive"
+                        },
+                        {
+                            "const": "aws.media.ElementalMediapackage"
+                        },
+                        {
+                            "const": "aws.media.ElementalMediastore"
+                        },
+                        {
+                            "const": "aws.media.ElementalMediatailor"
+                        },
+                        {
+                            "const": "aws.media.ElementalServer"
+                        },
+                        {
+                            "const": "aws.media.KinesisVideoStreams"
+                        },
+                        {
+                            "const": "aws.media.MediaServices"
+                        },
+                        {
+                            "const": "aws.migration.ApplicationDiscoveryService"
+                        },
+                        {
+                            "const": "aws.migration.ADS"
+                        },
+                        {
+                            "const": "aws.migration.CloudendureMigration"
+                        },
+                        {
+                            "const": "aws.migration.CEM"
+                        },
+                        {
+                            "const": "aws.migration.DatabaseMigrationService"
+                        },
+                        {
+                            "const": "aws.migration.DMS"
+                        },
+                        {
+                            "const": "aws.migration.DatasyncAgent"
+                        },
+                        {
+                            "const": "aws.migration.Datasync"
+                        },
+                        {
+                            "const": "aws.migration.MigrationAndTransfer"
+                        },
+                        {
+                            "const": "aws.migration.MAT"
+                        },
+                        {
+                            "const": "aws.migration.MigrationHub"
+                        },
+                        {
+                            "const": "aws.migration.ServerMigrationService"
+                        },
+                        {
+                            "const": "aws.migration.SMS"
+                        },
+                        {
+                            "const": "aws.migration.SnowballEdge"
+                        },
+                        {
+                            "const": "aws.migration.Snowball"
+                        },
+                        {
+                            "const": "aws.migration.Snowmobile"
+                        },
+                        {
+                            "const": "aws.migration.TransferForSftp"
+                        },
+                        {
+                            "const": "aws.ml.ApacheMxnetOnAWS"
+                        },
+                        {
+                            "const": "aws.ml.AugmentedAi"
+                        },
+                        {
+                            "const": "aws.ml.Comprehend"
+                        },
+                        {
+                            "const": "aws.ml.DeepLearningAmis"
+                        },
+                        {
+                            "const": "aws.ml.DeepLearningContainers"
+                        },
+                        {
+                            "const": "aws.ml.DLC"
+                        },
+                        {
+                            "const": "aws.ml.Deepcomposer"
+                        },
+                        {
+                            "const": "aws.ml.Deeplens"
+                        },
+                        {
+                            "const": "aws.ml.Deepracer"
+                        },
+                        {
+                            "const": "aws.ml.ElasticInference"
+                        },
+                        {
+                            "const": "aws.ml.Forecast"
+                        },
+                        {
+                            "const": "aws.ml.FraudDetector"
+                        },
+                        {
+                            "const": "aws.ml.Kendra"
+                        },
+                        {
+                            "const": "aws.ml.Lex"
+                        },
+                        {
+                            "const": "aws.ml.MachineLearning"
+                        },
+                        {
+                            "const": "aws.ml.Personalize"
+                        },
+                        {
+                            "const": "aws.ml.Polly"
+                        },
+                        {
+                            "const": "aws.ml.RekognitionImage"
+                        },
+                        {
+                            "const": "aws.ml.RekognitionVideo"
+                        },
+                        {
+                            "const": "aws.ml.Rekognition"
+                        },
+                        {
+                            "const": "aws.ml.SagemakerGroundTruth"
+                        },
+                        {
+                            "const": "aws.ml.SagemakerModel"
+                        },
+                        {
+                            "const": "aws.ml.SagemakerNotebook"
+                        },
+                        {
+                            "const": "aws.ml.SagemakerTrainingJob"
+                        },
+                        {
+                            "const": "aws.ml.Sagemaker"
+                        },
+                        {
+                            "const": "aws.ml.TensorflowOnAWS"
+                        },
+                        {
+                            "const": "aws.ml.Textract"
+                        },
+                        {
+                            "const": "aws.ml.Transcribe"
+                        },
+                        {
+                            "const": "aws.ml.Translate"
+                        },
+                        {
+                            "const": "aws.mobile.Amplify"
+                        },
+                        {
+                            "const": "aws.mobile.APIGatewayEndpoint"
+                        },
+                        {
+                            "const": "aws.mobile.APIGateway"
+                        },
+                        {
+                            "const": "aws.mobile.Appsync"
+                        },
+                        {
+                            "const": "aws.mobile.DeviceFarm"
+                        },
+                        {
+                            "const": "aws.mobile.Mobile"
+                        },
+                        {
+                            "const": "aws.mobile.Pinpoint"
+                        },
+                        {
+                            "const": "aws.network.APIGatewayEndpoint"
+                        },
+                        {
+                            "const": "aws.network.APIGateway"
+                        },
+                        {
+                            "const": "aws.network.AppMesh"
+                        },
+                        {
+                            "const": "aws.network.ClientVpn"
+                        },
+                        {
+                            "const": "aws.network.CloudMap"
+                        },
+                        {
+                            "const": "aws.network.CloudFrontDownloadDistribution"
+                        },
+                        {
+                            "const": "aws.network.CloudFrontEdgeLocation"
+                        },
+                        {
+                            "const": "aws.network.CloudFrontStreamingDistribution"
+                        },
+                        {
+                            "const": "aws.network.CloudFront"
+                        },
+                        {
+                            "const": "aws.network.CF"
+                        },
+                        {
+                            "const": "aws.network.DirectConnect"
+                        },
+                        {
+                            "const": "aws.network.ElasticLoadBalancing"
+                        },
+                        {
+                            "const": "aws.network.ELB"
+                        },
+                        {
+                            "const": "aws.network.ElbApplicationLoadBalancer"
+                        },
+                        {
+                            "const": "aws.network.ALB"
+                        },
+                        {
+                            "const": "aws.network.ElbClassicLoadBalancer"
+                        },
+                        {
+                            "const": "aws.network.CLB"
+                        },
+                        {
+                            "const": "aws.network.ElbNetworkLoadBalancer"
+                        },
+                        {
+                            "const": "aws.network.NLB"
+                        },
+                        {
+                            "const": "aws.network.Endpoint"
+                        },
+                        {
+                            "const": "aws.network.GlobalAccelerator"
+                        },
+                        {
+                            "const": "aws.network.GAX"
+                        },
+                        {
+                            "const": "aws.network.InternetGateway"
+                        },
+                        {
+                            "const": "aws.network.Nacl"
+                        },
+                        {
+                            "const": "aws.network.NATGateway"
+                        },
+                        {
+                            "const": "aws.network.NetworkingAndContentDelivery"
+                        },
+                        {
+                            "const": "aws.network.PrivateSubnet"
+                        },
+                        {
+                            "const": "aws.network.Privatelink"
+                        },
+                        {
+                            "const": "aws.network.PublicSubnet"
+                        },
+                        {
+                            "const": "aws.network.Route53HostedZone"
+                        },
+                        {
+                            "const": "aws.network.Route53"
+                        },
+                        {
+                            "const": "aws.network.RouteTable"
+                        },
+                        {
+                            "const": "aws.network.SiteToSiteVpn"
+                        },
+                        {
+                            "const": "aws.network.TransitGateway"
+                        },
+                        {
+                            "const": "aws.network.VPCCustomerGateway"
+                        },
+                        {
+                            "const": "aws.network.VPCElasticNetworkAdapter"
+                        },
+                        {
+                            "const": "aws.network.VPCElasticNetworkInterface"
+                        },
+                        {
+                            "const": "aws.network.VPCFlowLogs"
+                        },
+                        {
+                            "const": "aws.network.VPCPeering"
+                        },
+                        {
+                            "const": "aws.network.VPCRouter"
+                        },
+                        {
+                            "const": "aws.network.VPCTrafficMirroring"
+                        },
+                        {
+                            "const": "aws.network.VPC"
+                        },
+                        {
+                            "const": "aws.network.VpnConnection"
+                        },
+                        {
+                            "const": "aws.network.VpnGateway"
+                        },
+                        {
+                            "const": "aws.quantum.Braket"
+                        },
+                        {
+                            "const": "aws.quantum.QuantumTechnologies"
+                        },
+                        {
+                            "const": "aws.robotics.RobomakerCloudExtensionRos"
+                        },
+                        {
+                            "const": "aws.robotics.RobomakerDevelopmentEnvironment"
+                        },
+                        {
+                            "const": "aws.robotics.RobomakerFleetManagement"
+                        },
+                        {
+                            "const": "aws.robotics.RobomakerSimulator"
+                        },
+                        {
+                            "const": "aws.robotics.Robomaker"
+                        },
+                        {
+                            "const": "aws.robotics.Robotics"
+                        },
+                        {
+                            "const": "aws.satellite.GroundStation"
+                        },
+                        {
+                            "const": "aws.satellite.Satellite"
+                        },
+                        {
+                            "const": "aws.security.AdConnector"
+                        },
+                        {
+                            "const": "aws.security.Artifact"
+                        },
+                        {
+                            "const": "aws.security.CertificateAuthority"
+                        },
+                        {
+                            "const": "aws.security.CertificateManager"
+                        },
+                        {
+                            "const": "aws.security.ACM"
+                        },
+                        {
+                            "const": "aws.security.CloudDirectory"
+                        },
+                        {
+                            "const": "aws.security.Cloudhsm"
+                        },
+                        {
+                            "const": "aws.security.CloudHSM"
+                        },
+                        {
+                            "const": "aws.security.Cognito"
+                        },
+                        {
+                            "const": "aws.security.Detective"
+                        },
+                        {
+                            "const": "aws.security.DirectoryService"
+                        },
+                        {
+                            "const": "aws.security.DS"
+                        },
+                        {
+                            "const": "aws.security.FirewallManager"
+                        },
+                        {
+                            "const": "aws.security.FMS"
+                        },
+                        {
+                            "const": "aws.security.Guardduty"
+                        },
+                        {
+                            "const": "aws.security.IdentityAndAccessManagementIamAccessAnalyzer"
+                        },
+                        {
+                            "const": "aws.security.IAMAccessAnalyzer"
+                        },
+                        {
+                            "const": "aws.security.IdentityAndAccessManagementIamAddOn"
+                        },
+                        {
+                            "const": "aws.security.IdentityAndAccessManagementIamAWSStsAlternate"
+                        },
+                        {
+                            "const": "aws.security.IdentityAndAccessManagementIamAWSSts"
+                        },
+                        {
+                            "const": "aws.security.IAMAWSSts"
+                        },
+                        {
+                            "const": "aws.security.IdentityAndAccessManagementIamDataEncryptionKey"
+                        },
+                        {
+                            "const": "aws.security.IdentityAndAccessManagementIamEncryptedData"
+                        },
+                        {
+                            "const": "aws.security.IdentityAndAccessManagementIamLongTermSecurityCredential"
+                        },
+                        {
+                            "const": "aws.security.IdentityAndAccessManagementIamMfaToken"
+                        },
+                        {
+                            "const": "aws.security.IdentityAndAccessManagementIamPermissions"
+                        },
+                        {
+                            "const": "aws.security.IAMPermissions"
+                        },
+                        {
+                            "const": "aws.security.IdentityAndAccessManagementIamRole"
+                        },
+                        {
+                            "const": "aws.security.IAMRole"
+                        },
+                        {
+                            "const": "aws.security.IdentityAndAccessManagementIamTemporarySecurityCredential"
+                        },
+                        {
+                            "const": "aws.security.IdentityAndAccessManagementIam"
+                        },
+                        {
+                            "const": "aws.security.IAM"
+                        },
+                        {
+                            "const": "aws.security.InspectorAgent"
+                        },
+                        {
+                            "const": "aws.security.Inspector"
+                        },
+                        {
+                            "const": "aws.security.KeyManagementService"
+                        },
+                        {
+                            "const": "aws.security.KMS"
+                        },
+                        {
+                            "const": "aws.security.Macie"
+                        },
+                        {
+                            "const": "aws.security.ManagedMicrosoftAd"
+                        },
+                        {
+                            "const": "aws.security.ResourceAccessManager"
+                        },
+                        {
+                            "const": "aws.security.RAM"
+                        },
+                        {
+                            "const": "aws.security.SecretsManager"
+                        },
+                        {
+                            "const": "aws.security.SecurityHubFinding"
+                        },
+                        {
+                            "const": "aws.security.SecurityHub"
+                        },
+                        {
+                            "const": "aws.security.SecurityIdentityAndCompliance"
+                        },
+                        {
+                            "const": "aws.security.ShieldAdvanced"
+                        },
+                        {
+                            "const": "aws.security.Shield"
+                        },
+                        {
+                            "const": "aws.security.SimpleAd"
+                        },
+                        {
+                            "const": "aws.security.SingleSignOn"
+                        },
+                        {
+                            "const": "aws.security.WAFFilteringRule"
+                        },
+                        {
+                            "const": "aws.security.WAF"
+                        },
+                        {
+                            "const": "aws.storage.Backup"
+                        },
+                        {
+                            "const": "aws.storage.CloudendureDisasterRecovery"
+                        },
+                        {
+                            "const": "aws.storage.CDR"
+                        },
+                        {
+                            "const": "aws.storage.EFSInfrequentaccessPrimaryBg"
+                        },
+                        {
+                            "const": "aws.storage.EFSStandardPrimaryBg"
+                        },
+                        {
+                            "const": "aws.storage.ElasticBlockStoreEBSSnapshot"
+                        },
+                        {
+                            "const": "aws.storage.ElasticBlockStoreEBSVolume"
+                        },
+                        {
+                            "const": "aws.storage.ElasticBlockStoreEBS"
+                        },
+                        {
+                            "const": "aws.storage.EBS"
+                        },
+                        {
+                            "const": "aws.storage.ElasticFileSystemEFSFileSystem"
+                        },
+                        {
+                            "const": "aws.storage.ElasticFileSystemEFS"
+                        },
+                        {
+                            "const": "aws.storage.EFS"
+                        },
+                        {
+                            "const": "aws.storage.FsxForLustre"
+                        },
+                        {
+                            "const": "aws.storage.FsxForWindowsFileServer"
+                        },
+                        {
+                            "const": "aws.storage.Fsx"
+                        },
+                        {
+                            "const": "aws.storage.FSx"
+                        },
+                        {
+                            "const": "aws.storage.MultipleVolumesResource"
+                        },
+                        {
+                            "const": "aws.storage.S3GlacierArchive"
+                        },
+                        {
+                            "const": "aws.storage.S3GlacierVault"
+                        },
+                        {
+                            "const": "aws.storage.S3Glacier"
+                        },
+                        {
+                            "const": "aws.storage.SimpleStorageServiceS3BucketWithObjects"
+                        },
+                        {
+                            "const": "aws.storage.SimpleStorageServiceS3Bucket"
+                        },
+                        {
+                            "const": "aws.storage.SimpleStorageServiceS3Object"
+                        },
+                        {
+                            "const": "aws.storage.SimpleStorageServiceS3"
+                        },
+                        {
+                            "const": "aws.storage.S3"
+                        },
+                        {
+                            "const": "aws.storage.SnowFamilySnowballImportExport"
+                        },
+                        {
+                            "const": "aws.storage.SnowballEdge"
+                        },
+                        {
+                            "const": "aws.storage.Snowball"
+                        },
+                        {
+                            "const": "aws.storage.Snowmobile"
+                        },
+                        {
+                            "const": "aws.storage.StorageGatewayCachedVolume"
+                        },
+                        {
+                            "const": "aws.storage.StorageGatewayNonCachedVolume"
+                        },
+                        {
+                            "const": "aws.storage.StorageGatewayVirtualTapeLibrary"
+                        },
+                        {
+                            "const": "aws.storage.StorageGateway"
+                        },
+                        {
+                            "const": "aws.storage.Storage"
+                        }
+                    ]
+                },
+                "relates": {
+                    "type": "array",
+                    "description": "Relations of the resource.",
+                    "items": {
+                        "$ref": "#/definitions/Relates"
+                    }
+                },
+                "of": {
+                    "type": "array",
+                    "description": "Clusters and groups can have a list of resources inside them.",
+                    "items": {
+                        "$ref": "#/definitions/Resource"
+                    }
+                }
+            },
+            "required": [
+                "id",
+                "name",
+                "type"
+            ],
+            "title": "Resource"
+        },
+        "Relates": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "to": {
+                    "type": "string",
+                    "description": "An chain of identifiers to a resource via a dot from root."
+                },
+                "type": {
+                    "type": "string",
+                    "description": "A type of a relationship.",
+                    "oneOf": [
+                          {
+                            "const": "left"
+                          },
+                          {
+                            "const": "right"
+                          },
+                          {
+                            "const": "unidirectional"
+                          },
+                          {
+                            "const": "both"
+                          }
+                    ]
+                }
+            },
+            "required": [
+                "to",
+                "type"
+            ],
+            "title": "Relate"
+        },
+        "Style": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "graph": {
+                    "$ref": "#/definitions/Graph"
+                },
+                "node": {
+                    "$ref": "#/definitions/Node"
+                },
+                "edge": {
+                    "$ref": "#/definitions/Edge"
+                }
+            },
+            "title": "Style"
+        },
+        "Node": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "area": {
+                    "type": {},
+                    "description": "Indicates the preferred area for a node or empty cluster. For patchwork only."
+                },
+                "class": {
+                    "type": {},
+                    "description": "Classnames to attach to the node, edge, graph, or cluster's SVG element. For svg only."
+                },
+                "color": {
+                    "type": {},
+                    "description": "Basic drawing color for graphics, not text."
+                },
+                "colorscheme": {
+                    "type": {},
+                    "description": "A color scheme namespace: the context for interpreting color names."
+                },
+                "comment": {
+                    "type": {},
+                    "description": "Comments are inserted into output."
+                },
+                "distortion": {
+                    "type": {},
+                    "description": "Distortion factor for shape=polygon."
+                },
+                "fillcolor": {
+                    "type": {},
+                    "description": "Color used to fill the background of a node or cluster."
+                },
+                "fixedsize": {
+                    "type": {},
+                    "description": "Whether to use the specified width and height attributes to choose node size (rather than sizing to fit the node contents)."
+                },
+                "fontcolor": {
+                    "type": {},
+                    "description": "Color used for text."
+                },
+                "fontname": {
+                    "type": {},
+                    "description": "Font used for text."
+                },
+                "fontsize": {
+                    "type": {},
+                    "description": "Font size, in points, used for text."
+                },
+                "gradientangle": {
+                    "type": {},
+                    "description": "If a gradient fill is being used, this determines the angle of the fill."
+                },
+                "group": {
+                    "type": {},
+                    "description": "Name for a group of nodes, for bundling edges avoiding crossings. For dot only."
+                },
+                "height": {
+                    "type": {},
+                    "description": "Height of node, in inches."
+                },
+                "href": {
+                    "type": {},
+                    "description": "Synonym for URL. For map, postscript, svg only."
+                },
+                "id": {
+                    "type": {},
+                    "description": "Identifier for graph objects. For map, postscript, svg only."
+                },
+                "image": {
+                    "type": {},
+                    "description": "Gives the name of a file containing an image to be displayed inside a node."
+                },
+                "imagepos": {
+                    "type": {},
+                    "description": "Controls how an image is positioned within its containing node."
+                },
+                "imagescale": {
+                    "type": {},
+                    "description": "Controls how an image fills its containing node."
+                },
+                "label": {
+                    "type": {},
+                    "description": "Text label attached to objects."
+                },
+                "labelloc": {
+                    "type": {},
+                    "description": "Vertical placement of labels for nodes, root graphs and clusters."
+                },
+                "layer": {
+                    "type": {},
+                    "description": "Specifies layers in which the node, edge or cluster is present."
+                },
+                "margin": {
+                    "type": {},
+                    "description": "For graphs, this sets x and y margins of canvas, in inches."
+                },
+                "nojustify": {
+                    "type": {},
+                    "description": "Whether to justify multiline text vs the previous text line (rather than the side of the container)."
+                },
+                "ordering": {
+                    "type": {},
+                    "description": "Constrains the left-to-right ordering of node edges. For dot only."
+                },
+                "orientation": {
+                    "type": {},
+                    "description": "node shape rotation angle, or graph orientation."
+                },
+                "penwidth": {
+                    "type": {},
+                    "description": "Specifies the width of the pen, in points, used to draw lines and curves."
+                },
+                "peripheries": {
+                    "type": {},
+                    "description": "Set number of peripheries used in polygonal shapes and cluster boundaries."
+                },
+                "pin": {
+                    "type": {},
+                    "description": "Keeps the node at the node's given input position. For neato, fdp only."
+                },
+                "pos": {
+                    "type": {},
+                    "description": "Position of node, or spline control points. For neato, fdp only."
+                },
+                "rects": {
+                    "type": {},
+                    "description": "Rectangles for fields of records, in points. For write only."
+                },
+                "regular": {
+                    "type": {},
+                    "description": "If true, force polygon to be regular."
+                },
+                "root": {
+                    "type": {},
+                    "description": "Specifies nodes to be used as the center of the layout. For twopi, circo only."
+                },
+                "samplepoints": {
+                    "type": {},
+                    "description": "Gives the number of points used for a circle/ellipse node."
+                },
+                "shape": {
+                    "type": {},
+                    "description": "Sets the shape of a node."
+                },
+                "shapefile": {
+                    "type": {},
+                    "description": "A file containing user-supplied node content."
+                },
+                "showboxes": {
+                    "type": {},
+                    "description": "Print guide boxes for debugging. For dot only."
+                },
+                "sides": {
+                    "type": {},
+                    "description": "Number of sides when shape=polygon."
+                },
+                "skew": {
+                    "type": {},
+                    "description": "Skew factor for shape=polygon."
+                },
+                "sortv": {
+                    "type": {},
+                    "description": "Sort order of graph components for ordering packmode packing."
+                },
+                "style": {
+                    "type": {},
+                    "description": "Set style information for components of the graph."
+                },
+                "target": {
+                    "type": {},
+                    "description": "If the object has a URL, this attribute determines which window of the browser is used for the URL. For map, svg only."
+                },
+                "tooltip": {
+                    "type": {},
+                    "description": "Tooltip (mouse hover text) attached to the node, edge, cluster, or graph. For cmap, svg only."
+                },
+                "URL": {
+                    "type": {},
+                    "description": "Hyperlinks incorporated into device-dependent output. For map, postscript, svg only."
+                },
+                "vertices": {
+                    "type": {},
+                    "description": "Sets the coordinates of the vertices of the node's polygon, in inches. For write only."
+                },
+                "width": {
+                    "type": {},
+                    "description": "Width of node, in inches."
+                },
+                "xlabel": {
+                    "type": {},
+                    "description": "External label for a node or edge."
+                },
+                "xlp": {
+                    "type": {},
+                    "description": "Position of an exterior label, in points. For write only."
+                },
+                "z": {
+                    "type": {},
+                    "description": "Z-coordinate value for 3D layouts and displays."
+                }
+            },
+            "title": "Node"
+        },
+        "Graph": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "_background": {
+                    "type": {},
+                    "description": "A string in the xdot format specifying an arbitrary background."
+                },
+                "bb": {
+                    "type": {},
+                    "description": "Bounding box of drawing in points. For write only."
+                },
+                "beautify": {
+                    "type": {},
+                    "description": "Whether to draw leaf nodes uniformly in a circle around the root node in sfdp. For sfdp only."
+                },
+                "bgcolor": {
+                    "type": {},
+                    "description": "Canvas background color."
+                },
+                "center": {
+                    "type": {},
+                    "description": "Whether to center the drawing in the output canvas."
+                },
+                "charset": {
+                    "type": {},
+                    "description": "Character encoding used when interpreting string input as a text label."
+                },
+                "class": {
+                    "type": {},
+                    "description": "Classnames to attach to the node, edge, graph, or cluster's SVG element. For svg only."
+                },
+                "clusterrank": {
+                    "type": {},
+                    "description": "Mode used for handling clusters. For dot only."
+                },
+                "colorscheme": {
+                    "type": {},
+                    "description": "A color scheme namespace: the context for interpreting color names."
+                },
+                "comment": {
+                    "type": {},
+                    "description": "Comments are inserted into output."
+                },
+                "compound": {
+                    "type": {},
+                    "description": "If true, allow edges between clusters. For dot only."
+                },
+                "concentrate": {
+                    "type": {},
+                    "description": "If true, use edge concentrators."
+                },
+                "Damping": {
+                    "type": {},
+                    "description": "Factor damping force motions. For neato only."
+                },
+                "defaultdist": {
+                    "type": {},
+                    "description": "The distance between nodes in separate connected components. For neato only."
+                },
+                "dim": {
+                    "type": {},
+                    "description": "Set the number of dimensions used for the layout. For neato, fdp, sfdp only."
+                },
+                "dimen": {
+                    "type": {},
+                    "description": "Set the number of dimensions used for rendering. For neato, fdp, sfdp only."
+                },
+                "diredgeconstraints": {
+                    "type": {},
+                    "description": "Whether to constrain most edges to point downwards. For neato only."
+                },
+                "dpi": {
+                    "type": {},
+                    "description": "Specifies the expected number of pixels per inch on a display device. For bitmap output, svg only."
+                },
+                "epsilon": {
+                    "type": {},
+                    "description": "Terminating condition. For neato only."
+                },
+                "esep": {
+                    "type": {},
+                    "description": "Margin used around polygons for purposes of spline edge routing. For neato only."
+                },
+                "fontcolor": {
+                    "type": {},
+                    "description": "Color used for text."
+                },
+                "fontname": {
+                    "type": {},
+                    "description": "Font used for text."
+                },
+                "fontnames": {
+                    "type": {},
+                    "description": "Allows user control of how basic fontnames are represented in SVG output. For svg only."
+                },
+                "fontpath": {
+                    "type": {},
+                    "description": "Directory list used by libgd to search for bitmap fonts."
+                },
+                "fontsize": {
+                    "type": {},
+                    "description": "Font size, in points, used for text."
+                },
+                "forcelabels": {
+                    "type": {},
+                    "description": "Whether to force placement of all xlabels, even if overlapping."
+                },
+                "gradientangle": {
+                    "type": {},
+                    "description": "If a gradient fill is being used, this determines the angle of the fill."
+                },
+                "href": {
+                    "type": {},
+                    "description": "Synonym for URL. For map, postscript, svg only."
+                },
+                "id": {
+                    "type": {},
+                    "description": "Identifier for graph objects. For map, postscript, svg only."
+                },
+                "imagepath": {
+                    "type": {},
+                    "description": "A list of directories in which to look for image files."
+                },
+                "inputscale": {
+                    "type": {},
+                    "description": "Scales the input positions to convert between length units. For neato, fdp only."
+                },
+                "K": {
+                    "type": {},
+                    "description": "Spring constant used in virtual physical model. For fdp, sfdp only."
+                },
+                "label": {
+                    "type": {},
+                    "description": "Text label attached to objects."
+                },
+                "label_scheme": {
+                    "type": {},
+                    "description": "Whether to treat a node whose name has the form |edgelabel|* as a special node representing an edge label. For sfdp only."
+                },
+                "labeljust": {
+                    "type": {},
+                    "description": "Justification for graph & cluster labels."
+                },
+                "labelloc": {
+                    "type": {},
+                    "description": "Vertical placement of labels for nodes, root graphs and clusters."
+                },
+                "landscape": {
+                    "type": {},
+                    "description": "If true, the graph is rendered in landscape mode."
+                },
+                "layerlistsep": {
+                    "type": {},
+                    "description": "The separator characters used to split attributes of type layerRange into a list of ranges."
+                },
+                "layers": {
+                    "type": {},
+                    "description": "A linearly ordered list of layer names attached to the graph."
+                },
+                "layerselect": {
+                    "type": {},
+                    "description": "Selects a list of layers to be emitted."
+                },
+                "layersep": {
+                    "type": {},
+                    "description": "The separator characters for splitting the layers attribute into a list of layer names."
+                },
+                "layout": {
+                    "type": {},
+                    "description": "Which layout engine to use."
+                },
+                "levels": {
+                    "type": {},
+                    "description": "Number of levels allowed in the multilevel scheme. For sfdp only."
+                },
+                "levelsgap": {
+                    "type": {},
+                    "description": "strictness of neato level constraints. For neato only."
+                },
+                "lheight": {
+                    "type": {},
+                    "description": "Height of graph or cluster label, in inches. For write only."
+                },
+                "linelength": {
+                    "type": {},
+                    "description": "How long strings should get before overflowing to next line, for text output."
+                },
+                "lp": {
+                    "type": {},
+                    "description": "Label center position. For write only."
+                },
+                "lwidth": {
+                    "type": {},
+                    "description": "Width of graph or cluster label, in inches. For write only."
+                },
+                "margin": {
+                    "type": {},
+                    "description": "For graphs, this sets x and y margins of canvas, in inches."
+                },
+                "maxiter": {
+                    "type": {},
+                    "description": "Sets the number of iterations used. For neato, fdp only."
+                },
+                "mclimit": {
+                    "type": {},
+                    "description": "Scale factor for mincross (mc) edge crossing minimiser parameters. For dot only."
+                },
+                "mindist": {
+                    "type": {},
+                    "description": "Specifies the minimum separation between all nodes. For circo only."
+                },
+                "mode": {
+                    "type": {},
+                    "description": "Technique for optimizing the layout. For neato only."
+                },
+                "model": {
+                    "type": {},
+                    "description": "Specifies how the distance matrix is computed for the input graph. For neato only."
+                },
+                "newrank": {
+                    "type": {},
+                    "description": "Whether to use a single global ranking, ignoring clusters. For dot only."
+                },
+                "nodesep": {
+                    "type": {},
+                    "description": "In dot, nodesep specifies the minimum space between two adjacent nodes in the same rank, in inches."
+                },
+                "nojustify": {
+                    "type": {},
+                    "description": "Whether to justify multiline text vs the previous text line (rather than the side of the container)."
+                },
+                "normalize": {
+                    "type": {},
+                    "description": "normalizes coordinates of final layout. For neato, fdp, sfdp, twopi, circo only."
+                },
+                "notranslate": {
+                    "type": {},
+                    "description": "Whether to avoid translating layout to the origin point. For neato only."
+                },
+                "nslimit": {
+                    "type": {},
+                    "description": "Sets number of iterations in network simplex applications. For dot only."
+                },
+                "nslimit1": {
+                    "type": {},
+                    "description": "Sets number of iterations in network simplex applications. For dot only."
+                },
+                "oneblock": {
+                    "type": {},
+                    "description": "Whether to draw circo graphs around one circle. For circo only."
+                },
+                "ordering": {
+                    "type": {},
+                    "description": "Constrains the left-to-right ordering of node edges. For dot only."
+                },
+                "orientation": {
+                    "type": {},
+                    "description": "node shape rotation angle, or graph orientation."
+                },
+                "outputorder": {
+                    "type": {},
+                    "description": "Specify order in which nodes and edges are drawn."
+                },
+                "overlap": {
+                    "type": {},
+                    "description": "Determines if and how node overlaps should be removed. For fdp, neato only."
+                },
+                "overlap_scaling": {
+                    "type": {},
+                    "description": "Scale layout by factor, to reduce node overlap. For prism, neato, sfdp, fdp, circo, twopi only."
+                },
+                "overlap_shrink": {
+                    "type": {},
+                    "description": "Whether the overlap removal algorithm should perform a compression pass to reduce the size of the layout. For prism only."
+                },
+                "pack": {
+                    "type": {},
+                    "description": "Whether each connected component of the graph should be laid out separately, and then the graphs packed together."
+                },
+                "packmode": {
+                    "type": {},
+                    "description": "How connected components should be packed."
+                },
+                "pad": {
+                    "type": {},
+                    "description": "Inches to extend the drawing area around the minimal area needed to draw the graph."
+                },
+                "page": {
+                    "type": {},
+                    "description": "Width and height of output pages, in inches."
+                },
+                "pagedir": {
+                    "type": {},
+                    "description": "The order in which pages are emitted."
+                },
+                "quadtree": {
+                    "type": {},
+                    "description": "Quadtree scheme to use. For sfdp only."
+                },
+                "quantum": {
+                    "type": {},
+                    "description": "If quantum > 0.0, node label dimensions will be rounded to integral multiples of the quantum."
+                },
+                "rankdir": {
+                    "type": {},
+                    "description": "Sets direction of graph layout. For dot only."
+                },
+                "ranksep": {
+                    "type": {},
+                    "description": "Specifies separation between ranks. For dot, twopi only."
+                },
+                "ratio": {
+                    "type": {},
+                    "description": "Sets the aspect ratio (drawing height/drawing width) for the drawing."
+                },
+                "remincross": {
+                    "type": {},
+                    "description": "If there are multiple clusters, whether to run edge crossing minimization a second time. For dot only."
+                },
+                "repulsiveforce": {
+                    "type": {},
+                    "description": "The power of the repulsive force used in an extended Fruchterman-Reingold. For sfdp only."
+                },
+                "resolution": {
+                    "type": {},
+                    "description": "Synonym for dpi. For bitmap output, svg only."
+                },
+                "root": {
+                    "type": {},
+                    "description": "Specifies nodes to be used as the center of the layout. For twopi, circo only."
+                },
+                "rotate": {
+                    "type": {},
+                    "description": "If rotate=90, sets drawing orientation to landscape."
+                },
+                "rotation": {
+                    "type": {},
+                    "description": "Rotates the final layout counter-clockwise by the specified number of degrees. For sfdp only."
+                },
+                "scale": {
+                    "type": {},
+                    "description": "Scales layout by the given factor after the initial layout. For neato, twopi only."
+                },
+                "searchsize": {
+                    "type": {},
+                    "description": "During network simplex, the maximum number of edges with negative cut values to search when looking for an edge with minimum cut value. For dot only."
+                },
+                "sep": {
+                    "type": {},
+                    "description": "Margin to leave around nodes when removing node overlap. For fdp, neato only."
+                },
+                "showboxes": {
+                    "type": {},
+                    "description": "Print guide boxes for debugging. For dot only."
+                },
+                "size": {
+                    "type": {},
+                    "description": "Maximum width and height of drawing, in inches."
+                },
+                "smoothing": {
+                    "type": {},
+                    "description": "Specifies a post-processing step used to smooth out an uneven distribution of nodes. For sfdp only."
+                },
+                "sortv": {
+                    "type": {},
+                    "description": "Sort order of graph components for ordering packmode packing."
+                },
+                "splines": {
+                    "type": {},
+                    "description": "Controls how, and if, edges are represented."
+                },
+                "start": {
+                    "type": {},
+                    "description": "Parameter used to determine the initial layout of nodes. For neato, fdp, sfdp only."
+                },
+                "style": {
+                    "type": {},
+                    "description": "Set style information for components of the graph."
+                },
+                "stylesheet": {
+                    "type": {},
+                    "description": "A URL or pathname specifying an XML style sheet, used in SVG output. For svg only."
+                },
+                "target": {
+                    "type": {},
+                    "description": "If the object has a URL, this attribute determines which window of the browser is used for the URL. For map, svg only."
+                },
+                "TBbalance": {
+                    "type": {},
+                    "description": "Which rank to move floating (loose) nodes to. For dot only."
+                },
+                "tooltip": {
+                    "type": {},
+                    "description": "Tooltip (mouse hover text) attached to the node, edge, cluster, or graph. For cmap, svg only."
+                },
+                "truecolor": {
+                    "type": {},
+                    "description": "Whether internal bitmap rendering relies on a truecolor color model or uses. For bitmap output only."
+                },
+                "URL": {
+                    "type": {},
+                    "description": "Hyperlinks incorporated into device-dependent output. For map, postscript, svg only."
+                },
+                "viewport": {
+                    "type": {},
+                    "description": "Clipping window on final drawing."
+                },
+                "voro_margin": {
+                    "type": {},
+                    "description": "Tuning margin of Voronoi technique. For neato, fdp, sfdp, twopi, circo only."
+                },
+                "xdotversion": {
+                    "type": {},
+                    "description": "Determines the version of xdot used in output. For xdot only."
+                }
+            },
+            "title": "Graph"
+        },
+        "Edge": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "arrowhead": {
+                    "type": {},
+                    "description": "Style of arrowhead on the head node of an edge."
+                },
+                "arrowsize": {
+                    "type": {},
+                    "description": "Multiplicative scale factor for arrowheads."
+                },
+                "arrowtail": {
+                    "type": {},
+                    "description": "Style of arrowhead on the tail node of an edge."
+                },
+                "class": {
+                    "type": {},
+                    "description": "Classnames to attach to the node, edge, graph, or cluster's SVG element. For svg only."
+                },
+                "color": {
+                    "type": {},
+                    "description": "Basic drawing color for graphics, not text."
+                },
+                "colorscheme":{
+                    "type": {},
+                    "description": "A color scheme namespace: the context for interpreting color names."
+                },
+                "comment": {
+                    "type": {},
+                    "description": "Comments are inserted into output."
+                },
+                "constraint": {
+                    "type": {},
+                    "description": "If false, the edge is not used in ranking the nodes. For dot only."
+                },
+                "decorate": {
+                    "type": {},
+                    "description": "Whether to connect the edge label to the edge with a line."
+                },
+                "dir": {
+                    "type": {},
+                    "description": "Edge type for drawing arrowheads."
+                },
+                "edgehref": {
+                    "type": {},
+                    "description": "Synonym for edgeURL. For map, svg only."
+                },
+                "edgetarget": {
+                    "type": {},
+                    "description": "Browser window to use for the edgeURL link. For map, svg only."
+                },
+                "edgetooltip": {
+                    "type": {},
+                    "description": "Tooltip annotation attached to the non-label part of an edge. For cmap, svg only."
+                },
+                "edgeURL": {
+                    "type": {},
+                    "description": "The link for the non-label parts of an edge. For map, svg only."
+                },
+                "fillcolor": {
+                    "type": {},
+                    "description": "Color used to fill the background of a node or cluster."
+                },
+                "fontcolor": {
+                    "type": {},
+                    "description": "Color used for text."
+                },
+                "fontname": {
+                    "type": {},
+                    "description": "Font used for text."
+                },
+                "fontsize": {
+                    "type": {},
+                    "description": "Font size, in points, used for text."
+                },
+                "head_lp": {
+                    "type": {},
+                    "description": "Center position of an edge's head label. For write only."
+                },
+                "headclip": {
+                    "type": {},
+                    "description": "If true, the head of an edge is clipped to the boundary of the head node."
+                },
+                "headhref": {
+                    "type": {},
+                    "description": "Synonym for headURL. For map, svg only."
+                },
+                "headlabel": {
+                    "type": {},
+                    "description": "Text label to be placed near head of edge."
+                },
+                "headport": {
+                    "type": {},
+                    "description": "Indicates where on the head node to attach the head of the edge."
+                },
+                "headtarget": {
+                    "type": {},
+                    "description": "Browser window to use for the headURL link. For map, svg only."
+                },
+                "headtooltip":{
+                    "type": {},
+                    "description": "Tooltip annotation attached to the head of an edge. For cmap, svg only."
+                },
+                "headURL": {
+                    "type": {},
+                    "description": "If defined, headURL is output as part of the head label of the edge. For map, svg only."
+                },
+                "href": {
+                    "type": {},
+                    "description": "Synonym for URL. For map, postscript, svg only."
+                },
+                "id": {
+                    "type": {},
+                    "description": "Identifier for graph objects. For map, postscript, svg only."
+                },
+                "label": {
+                    "type": {},
+                    "description": "Text label attached to objects."
+                },
+                "labelangle": {
+                    "type": {},
+                    "description": "The angle (in degrees) in polar coordinates of the head & tail edge labels."
+                },
+                "labeldistance": {
+                    "type": {},
+                    "description": "Scaling factor for the distance of headlabel / taillabel from the head / tail nodes."
+                },
+                "labelfloat": {
+                    "type": {},
+                    "description": "If true, allows edge labels to be less constrained in position."
+                },
+                "labelfontcolo": {
+                    "type": {},
+                    "description": "Color used for headlabel and taillabel."
+                },
+                "labelfontname": {
+                    "type": {},
+                    "description": "Font for headlabel and taillabel."
+                },
+                "labelfontsize": {
+                    "type": {},
+                    "description": "Font size of headlabel and taillabel."
+                },
+                "labelhref": {
+                    "type": {},
+                    "description": "Synonym for labelURL. For map, svg only."
+                },
+                "labeltarget": {
+                    "type": {},
+                    "description": "Browser window to open labelURL links in. For map, svg only."
+                },
+                "labeltooltip": {
+                    "type": {},
+                    "description": "Tooltip annotation attached to label of an edge. For cmap, svg only."
+                },
+                "labelURL": {
+                    "type": {},
+                    "description": "If defined, labelURL is the link used for the label of an edge. For map, svg only."
+                },
+                "layer": {
+                    "type": {},
+                    "description": "Specifies layers in which the node, edge or cluster is present."
+                },
+                "len": {
+                    "type": {},
+                    "description": "Preferred edge length, in inches. For neato, fdp only."
+                },
+                "lhead": {
+                    "type": {},
+                    "description": "Logical head of an edge. For dot only."
+                },
+                "lp": {
+                    "type": {},
+                    "description": "Label center position. For write only."
+                },
+                "ltail": {
+                    "type": {},
+                    "description": "Logical tail of an edge. For dot only."
+                },
+                "minlen": {
+                    "type": {},
+                    "description": "Minimum edge length (rank difference between head and tail). For dot only."
+                },
+                "nojustify": {
+                    "type": {},
+                    "description": "Whether to justify multiline text vs the previous text line (rather than the side of the container)."
+                },
+                "penwidth": {
+                    "type": {},
+                    "description": "Specifies the width of the pen, in points, used to draw lines and curves."
+                },
+                "pos": {
+                    "type": {},
+                    "description": "Position of node, or spline control points. For neato, fdp only."
+                },
+                "samehead": {
+                    "type": {},
+                    "description": "Edges with the same head and the same samehead value are aimed at the same point on the head. For dot only."
+                },
+                "sametail": {
+                    "type": {},
+                    "description": "Edges with the same tail and the same sametail value are aimed at the same point on the tail. For dot only."
+                },
+                "showboxes": {
+                    "type": {},
+                    "description": "Print guide boxes for debugging. For dot only."
+                },
+                "style": {
+                    "type": {},
+                    "description": "Set style information for components of the graph."
+                },
+                "tail_lp": {
+                    "type": {},
+                    "description": "Position of an edge's tail label, in points. For write only."
+                },
+                "tailclip": {
+                    "type": {},
+                    "description": "If true, the tail of an edge is clipped to the boundary of the tail node."
+                },
+                "tailhref": {
+                    "type": {},
+                    "description": "Synonym for tailURL. For map, svg only."
+                },
+                "taillabel": {
+                    "type": {},
+                    "description": "Text label to be placed near tail of edge."
+                },
+                "tailport": {
+                    "type": {},
+                    "description": "Indicates where on the tail node to attach the tail of the edge."
+                },
+                "tailtarget": {
+                    "type": {},
+                    "description": "Browser window to use for the tailURL link. For map, svg only."
+                },
+                "tailtooltip":{
+                    "type": {},
+                    "description": "Tooltip annotation attached to the tail of an edge. For cmap, svg only."
+                },
+                "tailURL": {
+                    "type": {},
+                    "description": "If defined, tailURL is output as part of the tail label of the edge. For map, svg only."
+                },
+                "target": {
+                    "type": {},
+                    "description": "If the object has a URL, this attribute determines which window of the browser is used for the URL. For map, svg only."
+                },
+                "tooltip": {
+                    "type": {},
+                    "description": "Tooltip (mouse hover text) attached to the node, edge, cluster, or graph. For cmap, svg only."
+                },
+                "URL": {
+                    "type": {},
+                    "description": "Hyperlinks incorporated into device-dependent output. For map, postscript, svg only."
+                },
+                "weight": {
+                    "type": {},
+                    "description": "Weight of edge."
+                },
+                "xlabel": {
+                    "type": {},
+                    "description": "External label for a node or edge."
+                },
+                "xlp": {
+                    "type": {},
+                    "description": "Position of an exterior label, in points. For write only."
+                }
+            },
+            "title": "Edge"
+        }
+    }
+}

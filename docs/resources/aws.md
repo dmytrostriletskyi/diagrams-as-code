@@ -32,36 +32,36 @@ Table of content:
 
 ## aws.analytics
 
-| Type                                         | Image                                                                                             |
-|----------------------------------------------|---------------------------------------------------------------------------------------------------|
-| `aws.analytics.Analytics`                    | <img width="90" src="../../docs/images/resources/aws/analytics/analytics.png" >                   |
-| `aws.analytics.Athena`                       | <img width="90" src="../../docs/images/resources/aws/analytics/athena.png">                       |
-| `aws.analytics.CloudsearchSearchDocuments`   | <img width="90" src="../../docs/images/resources/aws/analytics/cloudsearch-search-documents.png"> |
-| `aws.analytics.Cloudsearch`                  | <img width="90" src="../../docs/images/resources/aws/analytics/cloudsearch.png">                  |
-| `aws.analytics.DataLakeResource`             | <img width="90" src="../../docs/images/resources/aws/analytics/data-lake-resource.png">           |
-| `aws.analytics.DataPipeline`                 | <img width="90" src="../../docs/images/resources/aws/analytics/data-pipeline.png">                |
-| `aws.analytics.ElasticsearchS, ,  (alias)s)` | <img width="90" src="../../docs/images/resources/aws/analytics/elasticsearch-service.png">        |
-| `aws.analytics.EMRCluster`                   | <img width="90" src="../../docs/images/resources/aws/analytics/emr-cluster.png">                  |
-| `aws.analytics.EMREngineMaprM3`              | <img width="90" src="../../docs/images/resources/aws/analytics/emr-engine-mapr-m3.png">           |
-| `aws.analytics.EMREngineMaprM5`              | <img width="90" src="../../docs/images/resources/aws/analytics/emr-engine-mapr-m5.png">           |
-| `aws.analytics.EMREngineMaprM7`              | <img width="90" src="../../docs/images/resources/aws/analytics/emr-engine-mapr-m7.png">           |
-| `aws.analytics.EMREngine`                    | <img width="90" src="../../docs/images/resources/aws/analytics/emr-engine.png">                   |
-| `aws.analytics.EMRHdfsCluster`               | <img width="90" src="../../docs/images/resources/aws/analytics/emr-hdfs-cluster.png">             |
-| `aws.analytics.EMR`                          | <img width="90" src="../../docs/images/resources/aws/analytics/emr.png">                          |
-| `aws.analytics.GlueCrawlers`                 | <img width="90" src="../../docs/images/resources/aws/analytics/glue-crawlers.png">                |
-| `aws.analytics.GlueDataCatalog`              | <img width="90" src="../../docs/images/resources/aws/analytics/glue-data-catalog.png">            |
-| `aws.analytics.Glue`                         | <img width="90" src="../../docs/images/resources/aws/analytics/glue.png">                         |
-| `aws.analytics.KinesisDataAnalytics`         | <img width="90" src="../../docs/images/resources/aws/analytics/kinesis-data-analytics.png">       |
-| `aws.analytics.KinesisDataFirehose`          | <img width="90" src="../../docs/images/resources/aws/analytics/kinesis-data-firehose.png">        |
-| `aws.analytics.KinesisDataStreams`           | <img width="90" src="../../docs/images/resources/aws/analytics/kinesis-data-streams.png">         |
-| `aws.analytics.KinesisVideoStreams`          | <img width="90" src="../../docs/images/resources/aws/analytics/kinesis-video-streams.png">        |
-| `aws.analytics.Kinesis`                      | <img width="90" src="../../docs/images/resources/aws/analytics/kinesis.png">                      |
-| `aws.analytics.LakeFormation`                | <img width="90" src="../../docs/images/resources/aws/analytics/lake-formation.png">               |
-| `aws.analytics.ManagedStreamingForKafka`     | <img width="90" src="../../docs/images/resources/aws/analytics/managed-streaming-for-kafka.png">  |
-| `aws.analytics.Quicksight`                   | <img width="90" src="../../docs/images/resources/aws/analytics/quicksight.png">                   |
-| `aws.analytics.RedshiftDenseComputeNode`     | <img width="90" src="../../docs/images/resources/aws/analytics/redshift-dense-compute-node.png">  |
-| `aws.analytics.RedshiftDenseStorageNode`     | <img width="90" src="../../docs/images/resources/aws/analytics/redshift-dense-storage-node.png">  |
-| `aws.analytics.Redshift`                     | <img width="90" src="../../docs/images/resources/aws/analytics/redshift.png">                     |
+| Type                                                      | Image                                                                                             |
+|-----------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| `aws.analytics.Analytics`                                 | <img width="90" src="../../docs/images/resources/aws/analytics/analytics.png" >                   |
+| `aws.analytics.Athena`                                    | <img width="90" src="../../docs/images/resources/aws/analytics/athena.png">                       |
+| `aws.analytics.CloudsearchSearchDocuments`                | <img width="90" src="../../docs/images/resources/aws/analytics/cloudsearch-search-documents.png"> |
+| `aws.analytics.Cloudsearch`                               | <img width="90" src="../../docs/images/resources/aws/analytics/cloudsearch.png">                  |
+| `aws.analytics.DataLakeResource`                          | <img width="90" src="../../docs/images/resources/aws/analytics/data-lake-resource.png">           |
+| `aws.analytics.DataPipeline`                              | <img width="90" src="../../docs/images/resources/aws/analytics/data-pipeline.png">                |
+| `diagrams.aws.analytics.ElasticsearchService, ES (alias)` | <img width="90" src="../../docs/images/resources/aws/analytics/elasticsearch-service.png">        |
+| `aws.analytics.EMRCluster`                                | <img width="90" src="../../docs/images/resources/aws/analytics/emr-cluster.png">                  |
+| `aws.analytics.EMREngineMaprM3`                           | <img width="90" src="../../docs/images/resources/aws/analytics/emr-engine-mapr-m3.png">           |
+| `aws.analytics.EMREngineMaprM5`                           | <img width="90" src="../../docs/images/resources/aws/analytics/emr-engine-mapr-m5.png">           |
+| `aws.analytics.EMREngineMaprM7`                           | <img width="90" src="../../docs/images/resources/aws/analytics/emr-engine-mapr-m7.png">           |
+| `aws.analytics.EMREngine`                                 | <img width="90" src="../../docs/images/resources/aws/analytics/emr-engine.png">                   |
+| `aws.analytics.EMRHdfsCluster`                            | <img width="90" src="../../docs/images/resources/aws/analytics/emr-hdfs-cluster.png">             |
+| `aws.analytics.EMR`                                       | <img width="90" src="../../docs/images/resources/aws/analytics/emr.png">                          |
+| `aws.analytics.GlueCrawlers`                              | <img width="90" src="../../docs/images/resources/aws/analytics/glue-crawlers.png">                |
+| `aws.analytics.GlueDataCatalog`                           | <img width="90" src="../../docs/images/resources/aws/analytics/glue-data-catalog.png">            |
+| `aws.analytics.Glue`                                      | <img width="90" src="../../docs/images/resources/aws/analytics/glue.png">                         |
+| `aws.analytics.KinesisDataAnalytics`                      | <img width="90" src="../../docs/images/resources/aws/analytics/kinesis-data-analytics.png">       |
+| `aws.analytics.KinesisDataFirehose`                       | <img width="90" src="../../docs/images/resources/aws/analytics/kinesis-data-firehose.png">        |
+| `aws.analytics.KinesisDataStreams`                        | <img width="90" src="../../docs/images/resources/aws/analytics/kinesis-data-streams.png">         |
+| `aws.analytics.KinesisVideoStreams`                       | <img width="90" src="../../docs/images/resources/aws/analytics/kinesis-video-streams.png">        |
+| `aws.analytics.Kinesis`                                   | <img width="90" src="../../docs/images/resources/aws/analytics/kinesis.png">                      |
+| `aws.analytics.LakeFormation`                             | <img width="90" src="../../docs/images/resources/aws/analytics/lake-formation.png">               |
+| `aws.analytics.ManagedStreamingForKafka`                  | <img width="90" src="../../docs/images/resources/aws/analytics/managed-streaming-for-kafka.png">  |
+| `aws.analytics.Quicksight`                                | <img width="90" src="../../docs/images/resources/aws/analytics/quicksight.png">                   |
+| `aws.analytics.RedshiftDenseComputeNode`                  | <img width="90" src="../../docs/images/resources/aws/analytics/redshift-dense-compute-node.png">  |
+| `aws.analytics.RedshiftDenseStorageNode`                  | <img width="90" src="../../docs/images/resources/aws/analytics/redshift-dense-storage-node.png">  |
+| `aws.analytics.Redshift`                                  | <img width="90" src="../../docs/images/resources/aws/analytics/redshift.png">                     |
 
 
 ## aws.ar
@@ -74,68 +74,68 @@ Table of content:
 
 ## aws.blockchain
 
-| Type                                                 | Image                                                                                              |
-|------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| `aws.blockchain.BlockchainResource`                  | <img width="90" src="../../docs/images/resources/aws/blockchain/blockchain-resource.png">          |
-| `aws.blockchain.Blockchain`                          | <img width="90" src="../../docs/images/resources/aws/blockchain/blockchain.png">                   |
-| `aws.blockchain.ManagedBlockchain`                   | <img width="90" src="../../docs/images/resources/aws/blockchain/managed-blockchain.png">           |
-| `aws.blockchain.QuantumLedgerDatabase, QL (alias)s)` | <img width="90" src="../../docs/images/resources/aws/blockchain/quantum-ledger-database-qldb.png"> |
+| Type                                                     | Image                                                                                              |
+|----------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| `aws.blockchain.BlockchainResource`                      | <img width="90" src="../../docs/images/resources/aws/blockchain/blockchain-resource.png">          |
+| `aws.blockchain.Blockchain`                              | <img width="90" src="../../docs/images/resources/aws/blockchain/blockchain.png">                   |
+| `aws.blockchain.ManagedBlockchain`                       | <img width="90" src="../../docs/images/resources/aws/blockchain/managed-blockchain.png">           |
+| `aws.blockchain.QuantumLedgerDatabaseQldb, QLDB (alias)` | <img width="90" src="../../docs/images/resources/aws/blockchain/quantum-ledger-database-qldb.png"> |
 
 
 ## aws.business
 
-| Type                                     | Image                                                                                     |
-|------------------------------------------|-------------------------------------------------------------------------------------------|
-| `aws.business.AlexaForBusi, A (alias)s)` | <img width="90" src="../../docs/images/resources/aws/business/alexa-for-business.png">    |
-| `aws.business.BusinessApplications`      | <img width="90" src="../../docs/images/resources/aws/business/business-applications.png"> |
-| `aws.business.Chime`                     | <img width="90" src="../../docs/images/resources/aws/business/chime.png">                 |
-| `aws.business.Workmail`                  | <img width="90" src="../../docs/images/resources/aws/business/workmail.png">              |
+| Type                                         | Image                                                                                     |
+|----------------------------------------------|-------------------------------------------------------------------------------------------|
+| `aws.business.AlexaForBusiness, A4B (alias)` | <img width="90" src="../../docs/images/resources/aws/business/alexa-for-business.png">    |
+| `aws.business.BusinessApplications`          | <img width="90" src="../../docs/images/resources/aws/business/business-applications.png"> |
+| `aws.business.Chime`                         | <img width="90" src="../../docs/images/resources/aws/business/chime.png">                 |
+| `aws.business.Workmail`                      | <img width="90" src="../../docs/images/resources/aws/business/workmail.png">              |
 
 
 ## aws.compute
 
-| Type                                                   | Image                                                                                                  |
-|--------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| `aws.compute.AppRunner`                                | <img width="90" src="../../docs/images/resources/aws/compute/app-runner.png">                          |
-| `aws.compute.ApplicationAutoSca, AutoScali (alias)s)`  | <img width="90" src="../../docs/images/resources/aws/compute/application-auto-scaling.png">            |
-| `aws.compute.Batch`                                    | <img width="90" src="../../docs/images/resources/aws/compute/batch.png">                               |
-| `aws.compute.ComputeOptimizer`                         | <img width="90" src="../../docs/images/resources/aws/compute/compute-optimizer.png">                   |
-| `aws.compute.Compute`                                  | <img width="90" src="../../docs/images/resources/aws/compute/compute.png">                             |
-| `aws.compute.EC, A (alias)s)`                          | <img width="90" src="../../docs/images/resources/aws/compute/ec2-ami.png">                             |
-| `aws.compute.EC2AutoScaling`                           | <img width="90" src="../../docs/images/resources/aws/compute/ec2-auto-scaling.png">                    |
-| `aws.compute.EC2ContainerRegistryImage`                | <img width="90" src="../../docs/images/resources/aws/compute/ec2-container-registry-image.png">        |
-| `aws.compute.EC2ContainerRegistryRegistry`             | <img width="90" src="../../docs/images/resources/aws/compute/ec2-container-registry-registry.png">     |
-| `aws.compute.EC2ContainerRegi, E (alias)s)`            | <img width="90" src="../../docs/images/resources/aws/compute/ec2-container-registry.png">              |
-| `aws.compute.EC2ElasticIpAddress`                      | <img width="90" src="../../docs/images/resources/aws/compute/ec2-elastic-ip-address.png">              |
-| `aws.compute.EC2ImageBuilder`                          | <img width="90" src="../../docs/images/resources/aws/compute/ec2-image-builder.png">                   |
-| `aws.compute.EC2Instance`                              | <img width="90" src="../../docs/images/resources/aws/compute/ec2-instance.png">                        |
-| `aws.compute.EC2Instances`                             | <img width="90" src="../../docs/images/resources/aws/compute/ec2-instances.png">                       |
-| `aws.compute.EC2Rescue`                                | <img width="90" src="../../docs/images/resources/aws/compute/ec2-rescue.png">                          |
-| `aws.compute.EC2SpotInstance`                          | <img width="90" src="../../docs/images/resources/aws/compute/ec2-spot-instance.png">                   |
-| `aws.compute.EC2`                                      | <img width="90" src="../../docs/images/resources/aws/compute/ec2.png">                                 |
-| `aws.compute.ElasticBeanstalkApplication`              | <img width="90" src="../../docs/images/resources/aws/compute/elastic-beanstalk-application.png">       |
-| `aws.compute.ElasticBeanstalkDeployment`               | <img width="90" src="../../docs/images/resources/aws/compute/elastic-beanstalk-deployment.png">        |
-| `aws.compute.ElasticBea, ,  (alias)s)`                 | <img width="90" src="../../docs/images/resources/aws/compute/elastic-beanstalk.png">                   |
-| `aws.compute.ElasticContainerServiceContainer`         | <img width="90" src="../../docs/images/resources/aws/compute/elastic-container-service-container.png"> |
-| `aws.compute.ElasticContainerServiceService`           | <img width="90" src="../../docs/images/resources/aws/compute/elastic-container-service-service.png">   |
-| `aws.compute.ElasticContainerSer, E (alias)s)`         | <img width="90" src="../../docs/images/resources/aws/compute/elastic-container-service.png">           |
-| `aws.compute.ElasticKubernetesSer, E (alias)s)`        | <img width="90" src="../../docs/images/resources/aws/compute/elastic-kubernetes-service.png">          |
-| `aws.compute.Fargate`                                  | <img width="90" src="../../docs/images/resources/aws/compute/fargate.png">                             |
-| `aws.compute.LambdaFunction`                           | <img width="90" src="../../docs/images/resources/aws/compute/lambda-function.png">                     |
-| `aws.compute.Lambda`                                   | <img width="90" src="../../docs/images/resources/aws/compute/lambda.png">                              |
-| `aws.compute.Lightsail`                                | <img width="90" src="../../docs/images/resources/aws/compute/lightsail.png">                           |
-| `aws.compute.LocalZones`                               | <img width="90" src="../../docs/images/resources/aws/compute/local-zones.png">                         |
-| `aws.compute.Outposts`                                 | <img width="90" src="../../docs/images/resources/aws/compute/outposts.png">                            |
-| `aws.compute.ServerlessApplicationReposi, S (alias)s)` | <img width="90" src="../../docs/images/resources/aws/compute/serverless-application-repository.png">   |
-| `aws.compute.ThinkboxDeadline`                         | <img width="90" src="../../docs/images/resources/aws/compute/thinkbox-deadline.png">                   |
-| `aws.compute.ThinkboxDraft`                            | <img width="90" src="../../docs/images/resources/aws/compute/thinkbox-draft.png">                      |
-| `aws.compute.ThinkboxFrost`                            | <img width="90" src="../../docs/images/resources/aws/compute/thinkbox-frost.png">                      |
-| `aws.compute.ThinkboxKrakatoa`                         | <img width="90" src="../../docs/images/resources/aws/compute/thinkbox-krakatoa.png">                   |
-| `aws.compute.ThinkboxSequoia`                          | <img width="90" src="../../docs/images/resources/aws/compute/thinkbox-sequoia.png">                    |
-| `aws.compute.ThinkboxStoke`                            | <img width="90" src="../../docs/images/resources/aws/compute/thinkbox-stoke.png">                      |
-| `aws.compute.ThinkboxXmesh`                            | <img width="90" src="../../docs/images/resources/aws/compute/thinkbox-xmesh.png">                      |
-| `aws.compute.VmwareCloudOnAWS`                         | <img width="90" src="../../docs/images/resources/aws/compute/vmware-cloud-on-aws.png">                 |
-| `aws.compute.Wavelength`                               | <img width="90" src="../../docs/images/resources/aws/compute/wavelength.png">                          |
+| Type                                                        | Image                                                                                                  |
+|-------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| `aws.compute.AppRunner`                                     | <img width="90" src="../../docs/images/resources/aws/compute/app-runner.png">                          |
+| `aws.compute.ApplicationAutoScaling, AutoScaling (alias)`   | <img width="90" src="../../docs/images/resources/aws/compute/application-auto-scaling.png">            |
+| `aws.compute.Batch`                                         | <img width="90" src="../../docs/images/resources/aws/compute/batch.png">                               |
+| `aws.compute.ComputeOptimizer`                              | <img width="90" src="../../docs/images/resources/aws/compute/compute-optimizer.png">                   |
+| `aws.compute.Compute`                                       | <img width="90" src="../../docs/images/resources/aws/compute/compute.png">                             |
+| `aws.compute.EC2Ami, AMI (alias)`                           | <img width="90" src="../../docs/images/resources/aws/compute/ec2-ami.png">                             |
+| `aws.compute.EC2AutoScaling`                                | <img width="90" src="../../docs/images/resources/aws/compute/ec2-auto-scaling.png">                    |
+| `aws.compute.EC2ContainerRegistryImage`                     | <img width="90" src="../../docs/images/resources/aws/compute/ec2-container-registry-image.png">        |
+| `aws.compute.EC2ContainerRegistryRegistry`                  | <img width="90" src="../../docs/images/resources/aws/compute/ec2-container-registry-registry.png">     |
+| `aws.compute.EC2ContainerRegistry, ECR (alias)`             | <img width="90" src="../../docs/images/resources/aws/compute/ec2-container-registry.png">              |
+| `aws.compute.EC2ElasticIpAddress`                           | <img width="90" src="../../docs/images/resources/aws/compute/ec2-elastic-ip-address.png">              |
+| `aws.compute.EC2ImageBuilder`                               | <img width="90" src="../../docs/images/resources/aws/compute/ec2-image-builder.png">                   |
+| `aws.compute.EC2Instance`                                   | <img width="90" src="../../docs/images/resources/aws/compute/ec2-instance.png">                        |
+| `aws.compute.EC2Instances`                                  | <img width="90" src="../../docs/images/resources/aws/compute/ec2-instances.png">                       |
+| `aws.compute.EC2Rescue`                                     | <img width="90" src="../../docs/images/resources/aws/compute/ec2-rescue.png">                          |
+| `aws.compute.EC2SpotInstance`                               | <img width="90" src="../../docs/images/resources/aws/compute/ec2-spot-instance.png">                   |
+| `aws.compute.EC2`                                           | <img width="90" src="../../docs/images/resources/aws/compute/ec2.png">                                 |
+| `aws.compute.ElasticBeanstalkApplication`                   | <img width="90" src="../../docs/images/resources/aws/compute/elastic-beanstalk-application.png">       |
+| `aws.compute.ElasticBeanstalkDeployment`                    | <img width="90" src="../../docs/images/resources/aws/compute/elastic-beanstalk-deployment.png">        |
+| `aws.compute.ElasticBeanstalk, EB (alias)`                  | <img width="90" src="../../docs/images/resources/aws/compute/elastic-beanstalk.png">                   |
+| `aws.compute.ElasticContainerServiceContainer`              | <img width="90" src="../../docs/images/resources/aws/compute/elastic-container-service-container.png"> |
+| `aws.compute.ElasticContainerServiceService`                | <img width="90" src="../../docs/images/resources/aws/compute/elastic-container-service-service.png">   |
+| `aws.compute.ElasticContainerService, ECS`                  | <img width="90" src="../../docs/images/resources/aws/compute/elastic-container-service.png">           |
+| `aws.compute.ElasticKubernetesService, EKS`                 | <img width="90" src="../../docs/images/resources/aws/compute/elastic-kubernetes-service.png">          |
+| `aws.compute.Fargate`                                       | <img width="90" src="../../docs/images/resources/aws/compute/fargate.png">                             |
+| `aws.compute.LambdaFunction`                                | <img width="90" src="../../docs/images/resources/aws/compute/lambda-function.png">                     |
+| `aws.compute.Lambda`                                        | <img width="90" src="../../docs/images/resources/aws/compute/lambda.png">                              |
+| `aws.compute.Lightsail`                                     | <img width="90" src="../../docs/images/resources/aws/compute/lightsail.png">                           |
+| `aws.compute.LocalZones`                                    | <img width="90" src="../../docs/images/resources/aws/compute/local-zones.png">                         |
+| `aws.compute.Outposts`                                      | <img width="90" src="../../docs/images/resources/aws/compute/outposts.png">                            |
+| `aws.compute.ServerlessApplicationRepository, SAR (alias)`  | <img width="90" src="../../docs/images/resources/aws/compute/serverless-application-repository.png">   |
+| `aws.compute.ThinkboxDeadline`                              | <img width="90" src="../../docs/images/resources/aws/compute/thinkbox-deadline.png">                   |
+| `aws.compute.ThinkboxDraft`                                 | <img width="90" src="../../docs/images/resources/aws/compute/thinkbox-draft.png">                      |
+| `aws.compute.ThinkboxFrost`                                 | <img width="90" src="../../docs/images/resources/aws/compute/thinkbox-frost.png">                      |
+| `aws.compute.ThinkboxKrakatoa`                              | <img width="90" src="../../docs/images/resources/aws/compute/thinkbox-krakatoa.png">                   |
+| `aws.compute.ThinkboxSequoia`                               | <img width="90" src="../../docs/images/resources/aws/compute/thinkbox-sequoia.png">                    |
+| `aws.compute.ThinkboxStoke`                                 | <img width="90" src="../../docs/images/resources/aws/compute/thinkbox-stoke.png">                      |
+| `aws.compute.ThinkboxXmesh`                                 | <img width="90" src="../../docs/images/resources/aws/compute/thinkbox-xmesh.png">                      |
+| `aws.compute.VmwareCloudOnAWS`                              | <img width="90" src="../../docs/images/resources/aws/compute/vmware-cloud-on-aws.png">                 |
+| `aws.compute.Wavelength`                                    | <img width="90" src="../../docs/images/resources/aws/compute/wavelength.png">                          |
 
 
 ## aws.cost
