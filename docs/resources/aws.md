@@ -2,34 +2,34 @@
 
 Table of content:
 
-* [aws.analytics](#awsanalytics)
-* [aws.ar](#awsar)
-* [aws.blockchain](#awsblockchain)
-* [aws.business](#awsbusiness)
-* [aws.compute](#awscompute)
-* [aws.cost](#awscost)
-* [aws.database](#awsdatabase)
-* [aws.devtools](#awsdevtools)
-* [aws.enablement](#awsenablement)
-* [aws.enduser](#awsenduser)
-* [aws.engagement](#awsengagement)
-* [aws.game](#awsgame)
-* [aws.general](#awsgeneral)
-* [aws.integration](#awsintegration)
-* [aws.iot](#awsiot)
-* [aws.maagement](#awsmanagement)
-* [aws.media](#awsmedia)
-* [aws.migrtion](#awsmigration)
-* [aws.ml](#awsml)
-* [aws.mobile](#awsmobile)
-* [aws.network](#awsnetwork)
-* [aws.quantum](#awsquantum)
-* [aws.robotics](#awsrobotics)
-* [aws.satellite](#awssatellite)
-* [aws.security](#awssecurity)
-* [aws.storage](#awsstorage)
+* [Analytics](#analytics)
+* [Ar](#ar)
+* [Blockchain](#blockchain)
+* [Business](#business)
+* [Compute](#compute)
+* [Cost](#cost)
+* [Database](#database)
+* [Devtools](#devtools)
+* [Enablement](#enablement)
+* [End user](#end-user)
+* [Engagement](#engagement)
+* [Game](#game)
+* [General](#general)
+* [Integration](#integration)
+* [Iot](#iot)
+* [Management](#management)
+* [Media](#media)
+* [Migration](#migration)
+* [Ml](#ml)
+* [Mobile](#mobile)
+* [Network](#network)
+* [Quantum](#quantum)
+* [Robotics](#robotics)
+* [Satellite](#satellite)
+* [Security](#security)
+* [Storage](#storage)
 
-## aws.analytics
+### Analytics
 
 | Type                                          | Alias | Image                                                                                             |
 |-----------------------------------------------|-------|---------------------------------------------------------------------------------------------------|
@@ -62,14 +62,14 @@ Table of content:
 | `aws.analytics.RedshiftDenseStorageNode`      | `-`   | <img width="90" src="../../docs/images/resources/aws/analytics/redshift-dense-storage-node.png">  |
 | `aws.analytics.Redshift`                      | `-`   | <img width="90" src="../../docs/images/resources/aws/analytics/redshift.png">                     |
 
-## aws.ar
+### Ar
 
 | Type              | Alias | Image                                                                  |
 |-------------------|-------|------------------------------------------------------------------------|
 | `aws.ar.ArVr`     | `-`   | <img width="90" src="../../docs/images/resources/aws/ar/ar-vr.png">    |
 | `aws.ar.Sumerian` | `-`   | <img width="90" src="../../docs/images/resources/aws/ar/sumerian.png"> |
 
-## aws.blockchain
+### Blockchain
 
 | Type                                       | Alias  | Image                                                                                              |
 |--------------------------------------------|--------|----------------------------------------------------------------------------------------------------|
@@ -78,7 +78,7 @@ Table of content:
 | `aws.blockchain.ManagedBlockchain`         | `-`    | <img width="90" src="../../docs/images/resources/aws/blockchain/managed-blockchain.png">           |
 | `aws.blockchain.QuantumLedgerDatabaseQldb` | `QLDB` | <img width="90" src="../../docs/images/resources/aws/blockchain/quantum-ledger-database-qldb.png"> |
 
-## aws.business
+### Business
 
 | Type                                | Alias | Image                                                                                     |
 |-------------------------------------|-------|-------------------------------------------------------------------------------------------|
@@ -87,7 +87,7 @@ Table of content:
 | `aws.business.Chime`                | `-`   | <img width="90" src="../../docs/images/resources/aws/business/chime.png">                 |
 | `aws.business.Workmail`             | `-`   | <img width="90" src="../../docs/images/resources/aws/business/workmail.png">              |
 
-## aws.compute
+### Compute
 
 | Type                                           | Alias         | Image                                                                                                  |
 |------------------------------------------------|---------------|--------------------------------------------------------------------------------------------------------|
@@ -132,7 +132,7 @@ Table of content:
 | `aws.compute.VmwareCloudOnAWS`                 | `-`           | <img width="90" src="../../docs/images/resources/aws/compute/vmware-cloud-on-aws.png">                 |
 | `aws.compute.Wavelength`                       | `-`           | <img width="90" src="../../docs/images/resources/aws/compute/wavelength.png">                          |
 
-## aws.cost
+### Cost
 
 | Type                                 | Alias | Image                                                                                       |
 |--------------------------------------|-------|---------------------------------------------------------------------------------------------|
@@ -143,7 +143,7 @@ Table of content:
 | `aws.cost.ReservedInstanceReporting` | `-`   | <img width="90" src="../../docs/images/resources/aws/cost/reserved-instance-reporting.png"> |
 | `aws.cost.SavingsPlans`              | `-`   | <img width="90" src="../../docs/images/resources/aws/cost/savings-plans.png">               |
 
-## aws.database
+### Database
 
 | Type                                                             | Alias         | Image                                                                                                                      |
 |------------------------------------------------------------------|---------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -181,7 +181,7 @@ Table of content:
 | `aws.database.Redshift`                                          | `-`           | <img width="90" src="../../docs/images/resources/aws/database/redshift.png">                                               |
 | `aws.database.Timestream`                                        | `-`           | <img width="90" src="../../docs/images/resources/aws/database/timestream.png">                                             |
 
-## aws.devtools
+### Devtools
 
 | Type                                | Alias      | Image                                                                                      |
 |-------------------------------------|------------|--------------------------------------------------------------------------------------------|
@@ -198,7 +198,7 @@ Table of content:
 | `aws.devtools.ToolsAndSdks`         | `-`        | <img width="90" src="../../docs/images/resources/aws/devtools/tools-and-sdks.png">         |
 | `aws.devtools.XRay`                 | `-`        | <img width="90" src="../../docs/images/resources/aws/devtools/x-ray.png">                  |
 
-## aws.enablement
+### Enablement
 
 | Type                                  | Alias | Image                                                                                       |
 |---------------------------------------|-------|---------------------------------------------------------------------------------------------|
@@ -208,7 +208,7 @@ Table of content:
 | `aws.enablement.ProfessionalServices` | `-`   | <img width="90" src="../../docs/images/resources/aws/enablement/professional-services.png"> |
 | `aws.enablement.Support`              | `-`   | <img width="90" src="../../docs/images/resources/aws/enablement/support.png">               |
 
-## aws.enduser
+### End User
 
 | Type                                 | Alias  | Image                                                                                        |
 |--------------------------------------|--------|----------------------------------------------------------------------------------------------|
@@ -218,7 +218,7 @@ Table of content:
 | `aws.enduser.Worklink`               | `-`    | <img width="90" src="../../docs/images/resources/aws/enduser/worklink.png">                  |
 | `aws.enduser.Workspaces`             | `-`    | <img width="90" src="../../docs/images/resources/aws/enduser/workspaces.png">                |
 
-## aws.engagement
+### Engagement
 
 | Type                                        | Alias | Image                                                                                                |
 |---------------------------------------------|-------|------------------------------------------------------------------------------------------------------|
@@ -228,14 +228,14 @@ Table of content:
 | `aws.engagement.SimpleEmailServiceSesEmail` | `-`   | <img width="90" src="../../docs/images/resources/aws/engagement/simple-email-service-ses-email.png"> |
 | `aws.engagement.SimpleEmailServiceSes`      | `SES` | <img width="90" src="../../docs/images/resources/aws/engagement/simple-email-service-ses.png">       |
 
-## aws.game
+### Game
 
 | Type                 | Alias | Image                                                                       |
 |----------------------|-------|-----------------------------------------------------------------------------|
 | `aws.game.GameTech`  | `-`   | <img width="90" src="../../docs/images/resources/aws/game/game-tech.png">   |
 | `aws.game.Gamelift`  | `-`   | <img width="90" src="../../docs/images/resources/aws/game/gamelift.png">    |
 
-## aws.general
+### General
 
 | Type                                | Alias            | Image                                                                                      |
 |-------------------------------------|------------------|--------------------------------------------------------------------------------------------|
@@ -264,7 +264,7 @@ Table of content:
 | `aws.general.User`                  | `-`              | <img width="90" src="../../docs/images/resources/aws/general/user.png">                    |
 | `aws.general.Users`                 | `-`              | <img width="90" src="../../docs/images/resources/aws/general/users.png">                   |
 
-## aws.integration
+### Integration
 
 | Type                                                            | Alias   | Image                                                                                                                     |
 |-----------------------------------------------------------------|---------|---------------------------------------------------------------------------------------------------------------------------|
@@ -287,7 +287,7 @@ Table of content:
 | `aws.integration.SimpleQueueServiceSqs`                         | `SQS`   | <img width="90" src="../../docs/images/resources/aws/integration/simple-queue-service-sqs.png">                           |
 | `aws.integration.StepFunctions`                                 | `SF`    | <img width="90" src="../../docs/images/resources/aws/integration/step-functions.png">                                     |
 
-## aws.iot
+### Iot
 
 | Type                             | Alias      | Image                                                                                     |
 |----------------------------------|------------|-------------------------------------------------------------------------------------------|
@@ -353,7 +353,7 @@ Table of content:
 | `aws.iot.IotUtility`             | `-`        | <img width="90" src="../../docs/images/resources/aws/iot/iot-utility.png">                |
 | `aws.iot.IotWindfarm`            | `-`        | <img width="90" src="../../docs/images/resources/aws/iot/iot-windfarm.png">               |
 
-## aws.management
+### Management
 
 | Type                                                  | Alias            | Image                                                                                                          |
 |-------------------------------------------------------|------------------|----------------------------------------------------------------------------------------------------------------|
@@ -409,7 +409,7 @@ Table of content:
 | `aws.management.TrustedAdvisor`                       | `-`              | <img width="90" src="../../docs/images/resources/aws/management/trusted-advisor.png">                          |
 | `aws.management.WellArchitectedTool`                  | `-`              | <img width="90" src="../../docs/images/resources/aws/management/well-architected-tool.png">                    |
 
-## aws.media
+### Media
 
 | Type                              | Alias  | Image                                                                                    |
 |-----------------------------------|--------|------------------------------------------------------------------------------------------|
@@ -427,7 +427,7 @@ Table of content:
 | `aws.media.KinesisVideoStreams`   | `-`    | <img width="90" src="../../docs/images/resources/aws/media/kinesis-video-streams.png">   |
 | `aws.media.MediaServices`         | `-`    | <img width="90" src="../../docs/images/resources/aws/media/media-services.png">          |
 
-## aws.migration
+### Migration
 
 | Type                                        | Alias | Image                                                                                              |
 |---------------------------------------------|-------|----------------------------------------------------------------------------------------------------|
@@ -444,7 +444,7 @@ Table of content:
 | `aws.migration.Snowmobile`                  | `-`   | <img width="90" src="../../docs/images/resources/aws/migration/snowmobile.png">                    |
 | `aws.migration.TransferForSftp`             | `-`   | <img width="90" src="../../docs/images/resources/aws/migration/transfer-for-sftp.png">             |
 
-## aws.ml
+### Ml
 
 | Type                            | Alias | Image                                                                                  |
 |---------------------------------|-------|----------------------------------------------------------------------------------------|
@@ -477,7 +477,7 @@ Table of content:
 | `aws.ml.Transcribe`             | `-`   | <img width="90" src="../../docs/images/resources/aws/ml/transcribe.png">               |
 | `aws.ml.Translate`              | `-`   | <img width="90" src="../../docs/images/resources/aws/ml/translate.png">                |
 
-## aws.mobile
+### Mobile
 
 | Type                            | Alias | Image                                                                                  |
 |---------------------------------|-------|----------------------------------------------------------------------------------------|
@@ -489,7 +489,7 @@ Table of content:
 | `aws.mobile.Mobile`             | `-`   | <img width="90" src="../../docs/images/resources/aws/mobile/mobile.png">               |
 | `aws.mobile.Pinpoint`           | `-`   | <img width="90" src="../../docs/images/resources/aws/mobile/pinpoint.png">             |
 
-## aws.network
+### Network
 
 | Type                                          | Alias | Image                                                                                                |
 |-----------------------------------------------|-------|------------------------------------------------------------------------------------------------------|
@@ -532,14 +532,14 @@ Table of content:
 | `aws.network.VpnConnection`                   | `-`   | <img width="90" src="../../docs/images/resources/aws/network/vpn-connection.png">                    |
 | `aws.network.VpnGateway`                      | `-`   | <img width="90" src="../../docs/images/resources/aws/network/vpn-gateway.png">                       |
 
-## aws.quantum
+### Quantum
 
 | Type                              | Alias | Image                                                                                   |
 |-----------------------------------|-------|-----------------------------------------------------------------------------------------|
 | `aws.quantum.Braket`              | `-`   | <img width="90" src="../../docs/images/resources/aws/quantum/braket.png">               |
 | `aws.quantum.QuantumTechnologies` | `-`   | <img width="90" src="../../docs/images/resources/aws/quantum/quantum-technologies.png"> |
 
-## aws.robotics
+### Robotics
 
 | Type                                           | Alias | Image                                                                                                 |
 |------------------------------------------------|-------|-------------------------------------------------------------------------------------------------------|
@@ -551,14 +551,14 @@ Table of content:
 | `aws.robotics.Robotics`                        | `-`   | <img width="90" src="../../docs/images/resources/aws/robotics/robotics.png">                          |
 
 
-## aws.satellite
+### Satellite
 
 | Type                          | Alias | Image                                                                               |
 |-------------------------------|-------|-------------------------------------------------------------------------------------|
 | `aws.satellite.GroundStation` | `-`   | <img width="90" src="../../docs/images/resources/aws/satellite/ground-station.png"> |
 | `aws.satellite.Satellite`     | `-`   | <img width="90" src="../../docs/images/resources/aws/satellite/satellite.png">      |
 
-## aws.security
+### Security
 
 | Type                                                                     | Alias               | Image                                                                                                                                |
 |--------------------------------------------------------------------------|---------------------|--------------------------------------------------------------------------------------------------------------------------------------|
@@ -602,7 +602,7 @@ Table of content:
 | `aws.security.WAFFilteringRule`                                          | `-`                 | <img width="90" src="../../docs/images/resources/aws/security/waf-filtering-rule.png">                                               |
 | `aws.security.WAF`                                                       | `-`                 | <img width="90" src="../../docs/images/resources/aws/security/waf.png">                                                              |
 
-## aws.storage
+### Storage
 
 | Type                                                  | Alias  | Image                                                                                                            |
 |-------------------------------------------------------|--------|------------------------------------------------------------------------------------------------------------------|

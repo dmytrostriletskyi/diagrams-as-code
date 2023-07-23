@@ -2107,6 +2107,894 @@
                         },
                         {
                             "const": "aws.storage.Storage"
+                        },
+                        {
+                            "const": "azure.analytics.AnalysisServices"
+                        },
+                        {
+                            "const": "azure.analytics.DataExplorerClusters"
+                        },
+                        {
+                            "const": "azure.analytics.DataFactories"
+                        },
+                        {
+                            "const": "azure.analytics.DataLakeAnalytics"
+                        },
+                        {
+                            "const": "azure.analytics.DataLakeStoreGen1"
+                        },
+                        {
+                            "const": "azure.analytics.Databricks"
+                        },
+                        {
+                            "const": "azure.analytics.EventHubClusters"
+                        },
+                        {
+                            "const": "azure.analytics.EventHubs"
+                        },
+                        {
+                            "const": "azure.analytics.Hdinsightclusters"
+                        },
+                        {
+                            "const": "azure.analytics.LogAnalyticsWorkspaces"
+                        },
+                        {
+                            "const": "azure.analytics.StreamAnalyticsJobs"
+                        },
+                        {
+                            "const": "azure.analytics.SynapseAnalytics"
+                        },
+                        {
+                            "const": "azure.compute.AppServices"
+                        },
+                        {
+                            "const": "azure.compute.AutomanagedVM"
+                        },
+                        {
+                            "const": "azure.compute.AvailabilitySets"
+                        },
+                        {
+                            "const": "azure.compute.BatchAccounts"
+                        },
+                        {
+                            "const": "azure.compute.CitrixVirtualDesktopsEssentials"
+                        },
+                        {
+                            "const": "azure.compute.CloudServicesClassic"
+                        },
+                        {
+                            "const": "azure.compute.CloudServices"
+                        },
+                        {
+                            "const": "azure.compute.CloudsimpleVirtualMachines"
+                        },
+                        {
+                            "const": "azure.compute.ContainerInstances"
+                        },
+                        {
+                            "const": "azure.compute.ContainerRegistries**, **ACR"
+                        },
+                        {
+                            "const": "azure.compute.ACR"
+                        },
+                        {
+                            "const": "azure.compute.DiskEncryptionSets"
+                        },
+                        {
+                            "const": "azure.compute.DiskSnapshots"
+                        },
+                        {
+                            "const": "azure.compute.Disks"
+                        },
+                        {
+                            "const": "azure.compute.FunctionApps"
+                        },
+                        {
+                            "const": "azure.compute.ImageDefinitions"
+                        },
+                        {
+                            "const": "azure.compute.ImageVersions"
+                        },
+                        {
+                            "const": "azure.compute.KubernetesServices"
+                        },
+                        {
+                            "const": "azure.compute.AKS"
+                        },
+                        {
+                            "const": "azure.compute.MeshApplications"
+                        },
+                        {
+                            "const": "azure.compute.OsImages"
+                        },
+                        {
+                            "const": "azure.compute.SAPHANAOnAzure"
+                        },
+                        {
+                            "const": "azure.compute.ServiceFabricClusters"
+                        },
+                        {
+                            "const": "azure.compute.SharedImageGalleries"
+                        },
+                        {
+                            "const": "azure.compute.SpringCloud"
+                        },
+                        {
+                            "const": "azure.compute.VMClassic"
+                        },
+                        {
+                            "const": "azure.compute.VMImages"
+                        },
+                        {
+                            "const": "azure.compute.VMLinux"
+                        },
+                        {
+                            "const": "azure.compute.VMScaleSet"
+                        },
+                        {
+                            "const": "azure.compute.VMSS"
+                        },
+                        {
+                            "const": "azure.compute.VMWindows"
+                        },
+                        {
+                            "const": "azure.compute.VM"
+                        },
+                        {
+                            "const": "azure.compute.Workspaces"
+                        },
+                        {
+                            "const": "azure.database.BlobStorage"
+                        },
+                        {
+                            "const": "azure.database.CacheForRedis"
+                        },
+                        {
+                            "const": "azure.database.CosmosDb"
+                        },
+                        {
+                            "const": "azure.database.DataExplorerClusters"
+                        },
+                        {
+                            "const": "azure.database.DataFactory"
+                        },
+                        {
+                            "const": "azure.database.DataLake"
+                        },
+                        {
+                            "const": "azure.database.DatabaseForMariadbServers"
+                        },
+                        {
+                            "const": "azure.database.DatabaseForMysqlServers"
+                        },
+                        {
+                            "const": "azure.database.DatabaseForPostgresqlServers"
+                        },
+                        {
+                            "const": "azure.database.ElasticDatabasePools"
+                        },
+                        {
+                            "const": "azure.database.ElasticJobAgents"
+                        },
+                        {
+                            "const": "azure.database.InstancePools"
+                        },
+                        {
+                            "const": "azure.database.ManagedDatabases"
+                        },
+                        {
+                            "const": "azure.database.SQLDatabases"
+                        },
+                        {
+                            "const": "azure.database.SQLDatawarehouse"
+                        },
+                        {
+                            "const": "azure.database.SQLManagedInstances"
+                        },
+                        {
+                            "const": "azure.database.SQLServerStretchDatabases"
+                        },
+                        {
+                            "const": "azure.database.SQLServers"
+                        },
+                        {
+                            "const": "azure.database.SQLVM"
+                        },
+                        {
+                            "const": "azure.database.SQL"
+                        },
+                        {
+                            "const": "azure.database.SsisLiftAndShiftIr"
+                        },
+                        {
+                            "const": "azure.database.SynapseAnalytics"
+                        },
+                        {
+                            "const": "azure.database.VirtualClusters"
+                        },
+                        {
+                            "const": "azure.database.VirtualDatacenter"
+                        },
+                        {
+                            "const": "azure.devops.ApplicationInsights"
+                        },
+                        {
+                            "const": "azure.devops.Artifacts"
+                        },
+                        {
+                            "const": "azure.devops.Boards"
+                        },
+                        {
+                            "const": "azure.devops.Devops"
+                        },
+                        {
+                            "const": "azure.devops.DevtestLabs"
+                        },
+                        {
+                            "const": "azure.devops.LabServices"
+                        },
+                        {
+                            "const": "azure.devops.Pipelines"
+                        },
+                        {
+                            "const": "azure.devops.Repos"
+                        },
+                        {
+                            "const": "azure.devops.TestPlans"
+                        },
+                        {
+                            "const": "azure.general.Allresources"
+                        },
+                        {
+                            "const": "azure.general.Azurehome"
+                        },
+                        {
+                            "const": "azure.general.Developertools"
+                        },
+                        {
+                            "const": "azure.general.Helpsupport"
+                        },
+                        {
+                            "const": "azure.general.Information"
+                        },
+                        {
+                            "const": "azure.general.Managementgroups"
+                        },
+                        {
+                            "const": "azure.general.Marketplace"
+                        },
+                        {
+                            "const": "azure.general.Quickstartcenter"
+                        },
+                        {
+                            "const": "azure.general.Recent"
+                        },
+                        {
+                            "const": "azure.general.Reservations"
+                        },
+                        {
+                            "const": "azure.general.Resource"
+                        },
+                        {
+                            "const": "azure.general.Resourcegroups"
+                        },
+                        {
+                            "const": "azure.general.Servicehealth"
+                        },
+                        {
+                            "const": "azure.general.Shareddashboard"
+                        },
+                        {
+                            "const": "azure.general.Subscriptions"
+                        },
+                        {
+                            "const": "azure.general.Support"
+                        },
+                        {
+                            "const": "azure.general.Supportrequests"
+                        },
+                        {
+                            "const": "azure.general.Tag"
+                        },
+                        {
+                            "const": "azure.general.Tags"
+                        },
+                        {
+                            "const": "azure.general.Templates"
+                        },
+                        {
+                            "const": "azure.general.Twousericon"
+                        },
+                        {
+                            "const": "azure.general.Userhealthicon"
+                        },
+                        {
+                            "const": "azure.general.Usericon"
+                        },
+                        {
+                            "const": "azure.general.Userprivacy"
+                        },
+                        {
+                            "const": "azure.general.Userresource"
+                        },
+                        {
+                            "const": "azure.general.Whatsnew"
+                        },
+                        {
+                            "const": "azure.identity.AccessReview"
+                        },
+                        {
+                            "const": "azure.identity.ActiveDirectoryConnectHealth"
+                        },
+                        {
+                            "const": "azure.identity.ActiveDirectory"
+                        },
+                        {
+                            "const": "azure.identity.ADB2C"
+                        },
+                        {
+                            "const": "azure.identity.ADDomainServices"
+                        },
+                        {
+                            "const": "azure.identity.ADIdentityProtection"
+                        },
+                        {
+                            "const": "azure.identity.ADPrivilegedIdentityManagement"
+                        },
+                        {
+                            "const": "azure.identity.AppRegistrations"
+                        },
+                        {
+                            "const": "azure.identity.ConditionalAccess"
+                        },
+                        {
+                            "const": "azure.identity.EnterpriseApplications"
+                        },
+                        {
+                            "const": "azure.identity.Groups"
+                        },
+                        {
+                            "const": "azure.identity.IdentityGovernance"
+                        },
+                        {
+                            "const": "azure.identity.InformationProtection"
+                        },
+                        {
+                            "const": "azure.identity.ManagedIdentities"
+                        },
+                        {
+                            "const": "azure.identity.Users"
+                        },
+                        {
+                            "const": "azure.integration.APIForFhir"
+                        },
+                        {
+                            "const": "azure.integration.APIManagement"
+                        },
+                        {
+                            "const": "azure.integration.AppConfiguration"
+                        },
+                        {
+                            "const": "azure.integration.DataCatalog"
+                        },
+                        {
+                            "const": "azure.integration.EventGridDomains"
+                        },
+                        {
+                            "const": "azure.integration.EventGridSubscriptions"
+                        },
+                        {
+                            "const": "azure.integration.EventGridTopics"
+                        },
+                        {
+                            "const": "azure.integration.IntegrationAccounts"
+                        },
+                        {
+                            "const": "azure.integration.IntegrationServiceEnvironments"
+                        },
+                        {
+                            "const": "azure.integration.LogicAppsCustomConnector"
+                        },
+                        {
+                            "const": "azure.integration.LogicApps"
+                        },
+                        {
+                            "const": "azure.integration.PartnerTopic"
+                        },
+                        {
+                            "const": "azure.integration.SendgridAccounts"
+                        },
+                        {
+                            "const": "azure.integration.ServiceBusRelays"
+                        },
+                        {
+                            "const": "azure.integration.ServiceBus"
+                        },
+                        {
+                            "const": "azure.integration.ServiceCatalogManagedApplicationDefinitions"
+                        },
+                        {
+                            "const": "azure.integration.SoftwareAsAService"
+                        },
+                        {
+                            "const": "azure.integration.StorsimpleDeviceManagers"
+                        },
+                        {
+                            "const": "azure.integration.SystemTopic"
+                        },
+                        {
+                            "const": "azure.iot.DeviceProvisioningServices"
+                        },
+                        {
+                            "const": "azure.iot.DigitalTwins"
+                        },
+                        {
+                            "const": "azure.iot.IotCentralApplications"
+                        },
+                        {
+                            "const": "azure.iot.IotHubSecurity"
+                        },
+                        {
+                            "const": "azure.iot.IotHub"
+                        },
+                        {
+                            "const": "azure.iot.Maps"
+                        },
+                        {
+                            "const": "azure.iot.Sphere"
+                        },
+                        {
+                            "const": "azure.iot.TimeSeriesInsightsEnvironments"
+                        },
+                        {
+                            "const": "azure.iot.TimeSeriesInsightsEventsSources"
+                        },
+                        {
+                            "const": "azure.iot.Windows10IotCoreServices"
+                        },
+                        {
+                            "const": "azure.migration.DataBoxEdge"
+                        },
+                        {
+                            "const": "azure.migration.DataBox"
+                        },
+                        {
+                            "const": "azure.migration.DatabaseMigrationServices"
+                        },
+                        {
+                            "const": "azure.migration.MigrationProjects"
+                        },
+                        {
+                            "const": "azure.migration.RecoveryServicesVaults"
+                        },
+                        {
+                            "const": "azure.ml.BatchAI"
+                        },
+                        {
+                            "const": "azure.ml.BotServices"
+                        },
+                        {
+                            "const": "azure.ml.CognitiveServices"
+                        },
+                        {
+                            "const": "azure.ml.GenomicsAccounts"
+                        },
+                        {
+                            "const": "azure.ml.MachineLearningServiceWorkspaces"
+                        },
+                        {
+                            "const": "azure.ml.MachineLearningStudioWebServicePlans"
+                        },
+                        {
+                            "const": "azure.ml.MachineLearningStudioWebServices"
+                        },
+                        {
+                            "const": "azure.ml.MachineLearningStudioWorkspaces"
+                        },
+                        {
+                            "const": "azure.mobile.AppServiceMobile"
+                        },
+                        {
+                            "const": "azure.mobile.MobileEngagement"
+                        },
+                        {
+                            "const": "azure.mobile.NotificationHubs"
+                        },
+                        {
+                            "const": "azure.network.ApplicationGateway"
+                        },
+                        {
+                            "const": "azure.network.ApplicationSecurityGroups"
+                        },
+                        {
+                            "const": "azure.network.CDNProfiles"
+                        },
+                        {
+                            "const": "azure.network.Connections"
+                        },
+                        {
+                            "const": "azure.network.DDOSProtectionPlans"
+                        },
+                        {
+                            "const": "azure.network.DNSPrivateZones"
+                        },
+                        {
+                            "const": "azure.network.DNSZones"
+                        },
+                        {
+                            "const": "azure.network.ExpressrouteCircuits"
+                        },
+                        {
+                            "const": "azure.network.Firewall"
+                        },
+                        {
+                            "const": "azure.network.FrontDoors"
+                        },
+                        {
+                            "const": "azure.network.LoadBalancers"
+                        },
+                        {
+                            "const": "azure.network.LocalNetworkGateways"
+                        },
+                        {
+                            "const": "azure.network.NetworkInterfaces"
+                        },
+                        {
+                            "const": "azure.network.NetworkSecurityGroupsClassic"
+                        },
+                        {
+                            "const": "azure.network.NetworkWatcher"
+                        },
+                        {
+                            "const": "azure.network.OnPremisesDataGateways"
+                        },
+                        {
+                            "const": "azure.network.PublicIpAddresses"
+                        },
+                        {
+                            "const": "azure.network.ReservedIpAddressesClassic"
+                        },
+                        {
+                            "const": "azure.network.RouteFilters"
+                        },
+                        {
+                            "const": "azure.network.RouteTables"
+                        },
+                        {
+                            "const": "azure.network.ServiceEndpointPolicies"
+                        },
+                        {
+                            "const": "azure.network.Subnets"
+                        },
+                        {
+                            "const": "azure.network.TrafficManagerProfiles"
+                        },
+                        {
+                            "const": "azure.network.VirtualNetworkClassic"
+                        },
+                        {
+                            "const": "azure.network.VirtualNetworkGateways"
+                        },
+                        {
+                            "const": "azure.network.VirtualNetworks"
+                        },
+                        {
+                            "const": "azure.network.VirtualWans"
+                        },
+                        {
+                            "const": "azure.security.ApplicationSecurityGroups"
+                        },
+                        {
+                            "const": "azure.security.ConditionalAccess"
+                        },
+                        {
+                            "const": "azure.security.Defender"
+                        },
+                        {
+                            "const": "azure.security.ExtendedSecurityUpdates"
+                        },
+                        {
+                            "const": "azure.security.KeyVaults"
+                        },
+                        {
+                            "const": "azure.security.SecurityCenter"
+                        },
+                        {
+                            "const": "azure.security.Sentinel"
+                        },
+                        {
+                            "const": "azure.storage.ArchiveStorage"
+                        },
+                        {
+                            "const": "azure.storage.Azurefxtedgefiler"
+                        },
+                        {
+                            "const": "azure.storage.BlobStorage"
+                        },
+                        {
+                            "const": "azure.storage.DataBoxEdgeDataBoxGateway"
+                        },
+                        {
+                            "const": "azure.storage.DataBox"
+                        },
+                        {
+                            "const": "azure.storage.DataLakeStorage"
+                        },
+                        {
+                            "const": "azure.storage.GeneralStorage"
+                        },
+                        {
+                            "const": "azure.storage.NetappFiles"
+                        },
+                        {
+                            "const": "azure.storage.QueuesStorage"
+                        },
+                        {
+                            "const": "azure.storage.StorageAccountsClassic"
+                        },
+                        {
+                            "const": "azure.storage.StorageAccounts"
+                        },
+                        {
+                            "const": "azure.storage.StorageExplorer"
+                        },
+                        {
+                            "const": "azure.storage.StorageSyncServices"
+                        },
+                        {
+                            "const": "azure.storage.StorsimpleDataManagers"
+                        },
+                        {
+                            "const": "azure.storage.StorsimpleDeviceManagers"
+                        },
+                        {
+                            "const": "azure.storage.TableStorage"
+                        },
+                        {
+                            "const": "azure.web.APIConnections"
+                        },
+                        {
+                            "const": "azure.web.AppServiceCertificates"
+                        },
+                        {
+                            "const": "azure.web.AppServiceDomains"
+                        },
+                        {
+                            "const": "azure.web.AppServiceEnvironments"
+                        },
+                        {
+                            "const": "azure.web.AppServicePlans"
+                        },
+                        {
+                            "const": "azure.web.AppServices"
+                        },
+                        {
+                            "const": "azure.web.MediaServices"
+                        },
+                        {
+                            "const": "azure.web.NotificationHubNamespaces"
+                        },
+                        {
+                            "const": "azure.web.Search"
+                        },
+                        {
+                            "const": "azure.web.Signalr"
+                        },
+                        {
+                            "const": "digitalocean.compute.Containers"
+                        },
+                        {
+                            "const": "digitalocean.compute.Docker"
+                        },
+                        {
+                            "const": "digitalocean.compute.DropletConnect"
+                        },
+                        {
+                            "const": "digitalocean.compute.DropletSnapshot"
+                        },
+                        {
+                            "const": "digitalocean.compute.Droplet"
+                        },
+                        {
+                            "const": "digitalocean.compute.K8SCluster"
+                        },
+                        {
+                            "const": "digitalocean.compute.K8SNodePool"
+                        },
+                        {
+                            "const": "digitalocean.compute.K8SNode"
+                        },
+                        {
+                            "const": "digitalocean.database.DbaasPrimaryStandbyMore"
+                        },
+                        {
+                            "const": "digitalocean.database.DbaasPrimary"
+                        },
+                        {
+                            "const": "digitalocean.database.DbaasReadOnly"
+                        },
+                        {
+                            "const": "digitalocean.database.DbaasStandby"
+                        },
+                        {
+                            "const": "digitalocean.network.Certificate"
+                        },
+                        {
+                            "const": "digitalocean.network.DomainRegistration"
+                        },
+                        {
+                            "const": "digitalocean.network.Domain"
+                        },
+                        {
+                            "const": "digitalocean.network.Firewall"
+                        },
+                        {
+                            "const": "digitalocean.network.FloatingIp"
+                        },
+                        {
+                            "const": "digitalocean.network.InternetGateway"
+                        },
+                        {
+                            "const": "digitalocean.network.LoadBalancer"
+                        },
+                        {
+                            "const": "digitalocean.network.ManagedVpn"
+                        },
+                        {
+                            "const": "digitalocean.network.Vpc"
+                        },
+                        {
+                            "const": "digitalocean.storage.Folder"
+                        },
+                        {
+                            "const": "digitalocean.storage.Space"
+                        },
+                        {
+                            "const": "digitalocean.storage.VolumeSnapshot"
+                        },
+                        {
+                            "const": "digitalocean.storage.Volume"
+                        },
+                        {
+                            "const": "elastic.agent.Agent"
+                        },
+                        {
+                            "const": "elastic.agent.Endpoint"
+                        },
+                        {
+                            "const": "elastic.agent.Fleet"
+                        },
+                        {
+                            "const": "elastic.agent.Integrations"
+                        },
+                        {
+                            "const": "elastic.beats.APM"
+                        },
+                        {
+                            "const": "elastic.beats.Auditbeat"
+                        },
+                        {
+                            "const": "elastic.beats.Filebeat"
+                        },
+                        {
+                            "const": "elastic.beats.Functionbeat"
+                        },
+                        {
+                            "const": "elastic.beats.Heartbeat"
+                        },
+                        {
+                            "const": "elastic.beats.Metricbeat"
+                        },
+                        {
+                            "const": "elastic.beats.Packetbeat"
+                        },
+                        {
+                            "const": "elastic.beats.Winlogbeat"
+                        },
+                        {
+                            "const": "elastic.elasticsearch.Alerting"
+                        },
+                        {
+                            "const": "elastic.elasticsearch.Beats"
+                        },
+                        {
+                            "const": "elastic.elasticsearch.Elasticsearch"
+                        },
+                        {
+                            "const": "elastic.elasticsearch.ElasticSearch"
+                        },
+                        {
+                            "const": "elastic.elasticsearch.Kibana"
+                        },
+                        {
+                            "const": "elastic.elasticsearch.LogstashPipeline"
+                        },
+                        {
+                            "const": "elastic.elasticsearch.Logstash"
+                        },
+                        {
+                            "const": "elastic.elasticsearch.LogStash"
+                        },
+                        {
+                            "const": "elastic.elasticsearch.MachineLearning"
+                        },
+                        {
+                            "const": "elastic.elasticsearch.ML"
+                        },
+                        {
+                            "const": "elastic.elasticsearch.MapServices"
+                        },
+                        {
+                            "const": "elastic.elasticsearch.Maps"
+                        },
+                        {
+                            "const": "elastic.elasticsearch.Monitoring"
+                        },
+                        {
+                            "const": "elastic.elasticsearch.SearchableSnapshots"
+                        },
+                        {
+                            "const": "elastic.elasticsearch.SecuritySettings"
+                        },
+                        {
+                            "const": "elastic.elasticsearch.SQL"
+                        },
+                        {
+                            "const": "elastic.elasticsearch.Stack"
+                        },
+                        {
+                            "const": "elastic.enterprisesearch.AppSearch"
+                        },
+                        {
+                            "const": "elastic.enterprisesearch.Crawler"
+                        },
+                        {
+                            "const": "elastic.enterprisesearch.EnterpriseSearch"
+                        },
+                        {
+                            "const": "elastic.enterprisesearch.SiteSearch"
+                        },
+                        {
+                            "const": "elastic.enterprisesearch.WorkplaceSearch"
+                        },
+                        {
+                            "const": "elastic.observability.APM"
+                        },
+                        {
+                            "const": "elastic.observability.Logs"
+                        },
+                        {
+                            "const": "elastic.observability.Metrics"
+                        },
+                        {
+                            "const": "elastic.observability.Observability"
+                        },
+                        {
+                            "const": "elastic.observability.Uptime"
+                        },
+                        {
+                            "const": "elastic.orchestration.ECE"
+                        },
+                        {
+                            "const": "elastic.orchestration.ECK"
+                        },
+                        {
+                            "const": "elastic.saas.Cloud"
+                        },
+                        {
+                            "const": "elastic.saas.Elastic"
+                        },
+                        {
+                            "const": "elastic.security.Endpoint"
+                        },
+                        {
+                            "const": "elastic.security.Security"
+                        },
+                        {
+                            "const": "elastic.security.SIEM"
+                        },
+                        {
+                            "const": "elastic.security.Xdr"
                         }
                     ]
                 },
