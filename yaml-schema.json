@@ -2995,6 +2995,471 @@
                         },
                         {
                             "const": "elastic.security.Xdr"
+                        },
+                        {
+                            "const": "firebase.base.Firebase"
+                        },
+                        {
+                            "const": "firebase.develop.Authentication"
+                        },
+                        {
+                            "const": "firebase.develop.Firestore"
+                        },
+                        {
+                            "const": "firebase.develop.Functions"
+                        },
+                        {
+                            "const": "firebase.develop.Hosting"
+                        },
+                        {
+                            "const": "firebase.develop.MLKit"
+                        },
+                        {
+                            "const": "firebase.develop.RealtimeDatabase"
+                        },
+                        {
+                            "const": "firebase.develop.Storage"
+                        },
+                        {
+                            "const": "firebase.extentions.Extensions"
+                        },
+                        {
+                            "const": "firebase.grow.ABTesting"
+                        },
+                        {
+                            "const": "firebase.grow.AppIndexing"
+                        },
+                        {
+                            "const": "firebase.grow.DynamicLinks"
+                        },
+                        {
+                            "const": "firebase.grow.InAppMessaging"
+                        },
+                        {
+                            "const": "firebase.grow.Invites"
+                        },
+                        {
+                            "const": "firebase.grow.Messaging"
+                        },
+                        {
+                            "const": "firebase.grow.FCM"
+                        },
+                        {
+                            "const": "firebase.grow.Predictions"
+                        },
+                        {
+                            "const": "firebase.grow.RemoteConfig"
+                        },
+                        {
+                            "const": "firebase.quality.AppDistribution"
+                        },
+                        {
+                            "const": "firebase.quality.CrashReporting"
+                        },
+                        {
+                            "const": "firebase.quality.Crashlytics"
+                        },
+                        {
+                            "const": "firebase.quality.PerformanceMonitoring"
+                        },
+                        {
+                            "const": "firebase.quality.TestLab"
+                        },
+                        {
+                            "const": "gcp.analytics.Bigquery"
+                        },
+                        {
+                            "const": "gcp.analytics.BigQuery"
+                        },
+                        {
+                            "const": "gcp.analytics.Composer"
+                        },
+                        {
+                            "const": "gcp.analytics.DataCatalog"
+                        },
+                        {
+                            "const": "gcp.analytics.DataFusion"
+                        },
+                        {
+                            "const": "gcp.analytics.Dataflow"
+                        },
+                        {
+                            "const": "gcp.analytics.Datalab"
+                        },
+                        {
+                            "const": "gcp.analytics.Dataprep"
+                        },
+                        {
+                            "const": "gcp.analytics.Dataproc"
+                        },
+                        {
+                            "const": "gcp.analytics.Genomics"
+                        },
+                        {
+                            "const": "gcp.analytics.Pubsub"
+                        },
+                        {
+                            "const": "gcp.analytics.PubSub"
+                        },
+                        {
+                            "const": "gcp.api.APIGateway"
+                        },
+                        {
+                            "const": "gcp.api.Endpoints"
+                        },
+                        {
+                            "const": "gcp.compute.AppEngine"
+                        },
+                        {
+                            "const": "gcp.compute.GAE"
+                        },
+                        {
+                            "const": "gcp.compute.ComputeEngine"
+                        },
+                        {
+                            "const": "gcp.compute.GCE"
+                        },
+                        {
+                            "const": "gcp.compute.ContainerOptimizedOS"
+                        },
+                        {
+                            "const": "gcp.compute.Functions"
+                        },
+                        {
+                            "const": "gcp.compute.GCF"
+                        },
+                        {
+                            "const": "gcp.compute.GKEOnPrem"
+                        },
+                        {
+                            "const": "gcp.compute.GPU"
+                        },
+                        {
+                            "const": "gcp.compute.KubernetesEngine"
+                        },
+                        {
+                            "const": "gcp.compute.GKE"
+                        },
+                        {
+                            "const": "gcp.compute.Run"
+                        },
+                        {
+                            "const": "gcp.database.Bigtable"
+                        },
+                        {
+                            "const": "gcp.database.BigTable"
+                        },
+                        {
+                            "const": "gcp.database.Datastore"
+                        },
+                        {
+                            "const": "gcp.database.Firestore"
+                        },
+                        {
+                            "const": "gcp.database.Memorystore"
+                        },
+                        {
+                            "const": "gcp.database.Spanner"
+                        },
+                        {
+                            "const": "gcp.database.SQL"
+                        },
+                        {
+                            "const": "gcp.devtools.Build"
+                        },
+                        {
+                            "const": "gcp.devtools.CodeForIntellij"
+                        },
+                        {
+                            "const": "gcp.devtools.Code"
+                        },
+                        {
+                            "const": "gcp.devtools.ContainerRegistry"
+                        },
+                        {
+                            "const": "gcp.devtools.GCR"
+                        },
+                        {
+                            "const": "gcp.devtools.GradleAppEnginePlugin"
+                        },
+                        {
+                            "const": "gcp.devtools.IdePlugins"
+                        },
+                        {
+                            "const": "gcp.devtools.MavenAppEnginePlugin"
+                        },
+                        {
+                            "const": "gcp.devtools.Scheduler"
+                        },
+                        {
+                            "const": "gcp.devtools.SDK"
+                        },
+                        {
+                            "const": "gcp.devtools.SourceRepositories"
+                        },
+                        {
+                            "const": "gcp.devtools.Tasks"
+                        },
+                        {
+                            "const": "gcp.devtools.TestLab"
+                        },
+                        {
+                            "const": "gcp.devtools.ToolsForEclipse"
+                        },
+                        {
+                            "const": "gcp.devtools.ToolsForPowershell"
+                        },
+                        {
+                            "const": "gcp.devtools.ToolsForVisualStudio"
+                        },
+                        {
+                            "const": "gcp.iot.IotCore"
+                        },
+                        {
+                            "const": "gcp.migration.TransferAppliance"
+                        },
+                        {
+                            "const": "gcp.ml.AdvancedSolutionsLab"
+                        },
+                        {
+                            "const": "gcp.ml.AIHub"
+                        },
+                        {
+                            "const": "gcp.ml.AIPlatformDataLabelingService"
+                        },
+                        {
+                            "const": "gcp.ml.AIPlatform"
+                        },
+                        {
+                            "const": "gcp.ml.AutomlNaturalLanguage"
+                        },
+                        {
+                            "const": "gcp.ml.AutomlTables"
+                        },
+                        {
+                            "const": "gcp.ml.AutomlTranslation"
+                        },
+                        {
+                            "const": "gcp.ml.AutomlVideoIntelligence"
+                        },
+                        {
+                            "const": "gcp.ml.AutomlVision"
+                        },
+                        {
+                            "const": "gcp.ml.Automl"
+                        },
+                        {
+                            "const": "gcp.ml.AutoML"
+                        },
+                        {
+                            "const": "gcp.ml.DialogFlowEnterpriseEdition"
+                        },
+                        {
+                            "const": "gcp.ml.InferenceAPI"
+                        },
+                        {
+                            "const": "gcp.ml.JobsAPI"
+                        },
+                        {
+                            "const": "gcp.ml.NaturalLanguageAPI"
+                        },
+                        {
+                            "const": "gcp.ml.NLAPI"
+                        },
+                        {
+                            "const": "gcp.ml.RecommendationsAI"
+                        },
+                        {
+                            "const": "gcp.ml.SpeechToText"
+                        },
+                        {
+                            "const": "gcp.ml.STT"
+                        },
+                        {
+                            "const": "gcp.ml.TextToSpeech"
+                        },
+                        {
+                            "const": "gcp.ml.TTS"
+                        },
+                        {
+                            "const": "gcp.ml.TPU"
+                        },
+                        {
+                            "const": "gcp.ml.TranslationAPI"
+                        },
+                        {
+                            "const": "gcp.ml.VideoIntelligenceAPI"
+                        },
+                        {
+                            "const": "gcp.ml.VisionAPI"
+                        },
+                        {
+                            "const": "gcp.network.Armor"
+                        },
+                        {
+                            "const": "gcp.network.CDN"
+                        },
+                        {
+                            "const": "gcp.network.DedicatedInterconnect"
+                        },
+                        {
+                            "const": "gcp.network.DNS"
+                        },
+                        {
+                            "const": "gcp.network.ExternalIpAddresses"
+                        },
+                        {
+                            "const": "gcp.network.FirewallRules"
+                        },
+                        {
+                            "const": "gcp.network.LoadBalancing"
+                        },
+                        {
+                            "const": "gcp.network.NAT"
+                        },
+                        {
+                            "const": "gcp.network.Network"
+                        },
+                        {
+                            "const": "gcp.network.PartnerInterconnect"
+                        },
+                        {
+                            "const": "gcp.network.PremiumNetworkTier"
+                        },
+                        {
+                            "const": "gcp.network.Router"
+                        },
+                        {
+                            "const": "gcp.network.Routes"
+                        },
+                        {
+                            "const": "gcp.network.StandardNetworkTier"
+                        },
+                        {
+                            "const": "gcp.network.TrafficDirector"
+                        },
+                        {
+                            "const": "gcp.network.VirtualPrivateCloud"
+                        },
+                        {
+                            "const": "gcp.network.VPC"
+                        },
+                        {
+                            "const": "gcp.network.VPN"
+                        },
+                        {
+                            "const": "gcp.operations.Monitoring"
+                        },
+                        {
+                            "const": "gcp.security.Iam"
+                        },
+                        {
+                            "const": "gcp.security.IAP"
+                        },
+                        {
+                            "const": "gcp.security.KeyManagementService"
+                        },
+                        {
+                            "const": "gcp.security.KMS"
+                        },
+                        {
+                            "const": "gcp.security.ResourceManager"
+                        },
+                        {
+                            "const": "gcp.security.SecurityCommandCenter"
+                        },
+                        {
+                            "const": "gcp.security.SCC"
+                        },
+                        {
+                            "const": "gcp.security.SecurityScanner"
+                        },
+                        {
+                            "const": "gcp.storage.Filestore"
+                        },
+                        {
+                            "const": "gcp.storage.PersistentDisk"
+                        },
+                        {
+                            "const": "gcp.storage.Storage"
+                        },
+                        {
+                            "const": "gcp.storage.GCS"
+                        },
+                        {
+                            "const": "generic.blank.Blank"
+                        },
+                        {
+                            "const": "generic.compute.Rack"
+                        },
+                        {
+                            "const": "generic.database.SQL"
+                        },
+                        {
+                            "const": "generic.device.Mobile"
+                        },
+                        {
+                            "const": "generic.device.Tablet"
+                        },
+                        {
+                            "const": "generic.network.Firewall"
+                        },
+                        {
+                            "const": "generic.network.Router"
+                        },
+                        {
+                            "const": "generic.network.Subnet"
+                        },
+                        {
+                            "const": "generic.network.Switch"
+                        },
+                        {
+                            "const": "generic.network.VPN"
+                        },
+                        {
+                            "const": "generic.os.Android"
+                        },
+                        {
+                            "const": "generic.os.Centos"
+                        },
+                        {
+                            "const": "generic.os.Debian"
+                        },
+                        {
+                            "const": "generic.os.IOS"
+                        },
+                        {
+                            "const": "generic.os.LinuxGeneral"
+                        },
+                        {
+                            "const": "generic.os.Raspbian"
+                        },
+                        {
+                            "const": "generic.os.RedHat"
+                        },
+                        {
+                            "const": "generic.os.Suse"
+                        },
+                        {
+                            "const": "generic.os.Ubuntu"
+                        },
+                        {
+                            "const": "generic.os.Windows"
+                        },
+                        {
+                            "const": "generic.place.Datacenter"
+                        },
+                        {
+                            "const": "generic.storage.Storage"
+                        },
+                        {
+                            "const": "generic.virtualization.Virtualbox"
+                        },
+                        {
+                            "const": "generic.virtualization.Vmware"
+                        },
+                        {
+                            "const": "generic.virtualization.XEN"
                         }
                     ]
                 },
