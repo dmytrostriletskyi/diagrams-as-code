@@ -169,6 +169,13 @@ def entrypoint() -> None:
             resource_from_instance = resources.get(relationship.from_)
             resource_to_instance = resources.get(relationship.to)
 
+            if resource_to_instance is None:
+                resource_to_identifier_from_configs = relationship.to.replace('diagram.', '')
+
+                raise ValueError(
+                    f"There is no such a resource's identifier to relate to: {resource_to_identifier_from_configs}",
+                )
+
             is_resource_from_node = not isinstance(resource_from_instance, DiagramGroup)
             is_resource_from_group = isinstance(resource_from_instance, DiagramGroup)
 

@@ -1,7 +1,10 @@
 """
 Setup the package.
 """
-from setuptools import find_packages, setup
+from setuptools import (
+    find_packages,
+    setup,
+)
 
 with open('README.md', 'r', encoding='utf-8') as read_me:
     long_description = read_me.read()
@@ -15,7 +18,7 @@ with open('.project-version', 'r') as project_version_file:
 setup(
     version=project_version,
     name='diagrams-yaml',
-    description='Diagram as Code in a declarative way using YAML for drawing cloud system architectures.',
+    description='Diagrams as a code: declarative configurations using YAML for drawing cloud system architectures.',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/dmytrostriletskyi/diagrams-yaml',
@@ -33,6 +36,7 @@ setup(
         'Operating System :: OS Independent',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
     ],
     entry_points={

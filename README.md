@@ -1,4 +1,4 @@
-`Diagram as Code` in a declarative way using `YAML` for drawing cloud system architectures.
+`Diagrams as a code`: declarative configurations using `YAML` for drawing cloud system architectures.
 
 [![](https://github.com/dmytrostriletskyi/diagrams-yaml/actions/workflows/main.yaml/badge.svg?branch=main)](https://github.com/dmytrostriletskyi/diagrams-yaml/actions/workflows/main.yaml)
 [![](https://img.shields.io/github/release/dmytrostriletskyi/diagrams-yaml.svg)](https://github.com/dmytrostriletskyi/diagrams-yaml/releases)
@@ -11,10 +11,12 @@
 Table of content:
 
 * [Introduction](#introduction)
+* [Roadmap](#roadmap)
 * [Getting Started](#getting-started)
   * [How to Install](#how-to-install)
   * [Examples](#examples)
-  * [Usage](#usage)
+* [Usage](#usage)
+  * [Command Line Interface](#command-line-interface)
 * [Disclaimer](#disclaimer)
 
 ## Introduction
@@ -29,7 +31,6 @@ Currently, the following components are provided:
 * Major cloud providers: AWS, Azure, GCP, IBM, Alibaba, Oracle, OpenStack, DigitalOcean and so on.
 * On-Premise, Kubernetes, Firebase, Elastic, SaaS.
 * Programming languages and frameworks.
-* And other generic things such as C4.
 
 Basically, with the project, you just define set of resources, compose them into groups and/or clusters and set 
 relationships, anything else is done under the hood.
@@ -38,6 +39,9 @@ relationships, anything else is done under the hood.
 
 * Add support of [C4](https://diagrams.mingrammer.com/docs/nodes/c4).
 * Add support of [Custom](https://diagrams.mingrammer.com/docs/nodes/custom).
+* Add IDEs plugins and/or web user interface for live editing.
+* Research Confluence integration to update images from the CI-builds directly.
+* Research ChatGRT integration.
 
 ## Getting Started
 
@@ -68,21 +72,15 @@ folder. Below are placed are few of them (click on the name to redirect to the c
 | --------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](./assets/message-collecting-architecture-on-gcp.png)                                                                          | ![](./assets/events-processing-on-aws.png)                                                                                                   | ![](./assets/workers-architecture-on-aws.png)                                                                                                   |
 
-### Usage
+## Usage
+
+### Command Line Interface
 
 To draw an architecture, call `diagrams-yaml` command line interface, providing a path to a `YAML` file with 
-configurations:
+configurations. The drawing will be saved in the folder the command line interface was executed from.
 
 ```bash
 $ diagrams-yaml examples/web-services-aws.yaml
-```
-
-The drawing will be saved in the folder the command line interface was executed from:
-
-```bash
-$ ls
-├── ...
-└── web-services-aws.png
 ```
 
 ## Disclaimer
