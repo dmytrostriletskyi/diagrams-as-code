@@ -15,11 +15,10 @@ from diagrams import (
 
 from diagrams_yaml.enums import (
     ServiceResourceType,
-    RelationType,
+    RelationDirection,
 )
 from diagrams_yaml.resources import DiagramGroup
 from diagrams_yaml.schema import (
-    DiagramDirection,
     Relationship,
     YamlDiagram,
     YamlDiagramResource,
@@ -94,7 +93,7 @@ def process_resource(resource: YamlDiagramResource, parent_id: str, group: Diagr
             relationship = Relationship(
                 from_=f'{parent_id}.{resource.id}',
                 to=f'diagram.{relation.to}',
-                type=relation.type,
+                direction=relation.direction,
                 label=relation.label,
                 color=relation.color,
                 style=relation.style,
@@ -119,7 +118,7 @@ def process_resource(resource: YamlDiagramResource, parent_id: str, group: Diagr
             relationship = Relationship(
                 from_=f'{parent_id}.{resource.id}',
                 to=f'diagram.{relation.to}',
-                type=relation.type,
+                direction=relation.direction,
                 label=relation.label,
                 color=relation.color,
                 style=relation.style,
@@ -183,59 +182,59 @@ def entrypoint() -> None:
             is_resource_to_group = isinstance(resource_to_instance, DiagramGroup)
 
             if is_resource_from_node and is_resource_to_node:
-                if relationship.type == RelationType.LEFT:
+                if relationship.direction == RelationDirection.INCOMING:
                     resource_from_instance.__lshift__(other=edge)
                     edge.__lshift__(other=resource_to_instance)
 
-                if relationship.type == RelationType.RIGHT:
+                if relationship.direction == RelationDirection.OUTGOING:
                     resource_from_instance.__rshift__(other=edge)
                     edge.__rshift__(other=resource_to_instance)
 
-                if relationship.type == RelationType.UNIDIRECTIONAL:
-                    resource_from_instance.__sub__(other=edge)
-                    edge.__sub__(other=resource_to_instance)
-
-                if relationship.type == RelationType.BOTH:
+                if relationship.direction == RelationDirection.BIDIRECTIONAL:
                     resource_from_instance.__rshift__(other=edge)
                     edge.__lshift__(other=resource_to_instance)
+
+                if relationship.direction == RelationDirection.UNDIRECTED:
+                    resource_from_instance.__sub__(other=edge)
+                    edge.__sub__(other=resource_to_instance)
 
             if is_resource_from_group and is_resource_to_node:
                 group_nodes = resource_from_instance.get_nodes()
 
-                if relationship.type == RelationType.LEFT:
+                if relationship.direction == RelationDirection.INCOMING:
                     group_nodes_edges = edge.__rlshift__(other=group_nodes)
                     resource_to_instance.__rlshift__(other=group_nodes_edges)
 
-                if relationship.type == RelationType.RIGHT:
+                if relationship.direction == RelationDirection.OUTGOING:
                     group_nodes_edges = edge.__rrshift__(other=group_nodes)
                     resource_to_instance.__rrshift__(other=group_nodes_edges)
 
-                if relationship.type == RelationType.UNIDIRECTIONAL:
-                    group_nodes_edges = edge.__rsub__(other=group_nodes)
-                    resource_to_instance.__rsub__(other=group_nodes_edges)
-
-                if relationship.type == RelationType.BOTH:
+                if relationship.direction == RelationDirection.BIDIRECTIONAL:
                     group_nodes_edges = edge.__rrshift__(other=group_nodes)
                     resource_to_instance.__rlshift__(other=group_nodes_edges)
+
+                if relationship.direction == RelationDirection.UNDIRECTED:
+                    group_nodes_edges = edge.__rsub__(other=group_nodes)
+                    resource_to_instance.__rsub__(other=group_nodes_edges)
 
             if is_resource_from_node and is_resource_to_group:
                 group_nodes = resource_to_instance.get_nodes()
 
-                if relationship.type == RelationType.LEFT:
+                if relationship.direction == RelationDirection.INCOMING:
                     resource_from_instance.__lshift__(other=edge)
                     edge.__lshift__(other=group_nodes)
 
-                if relationship.type == RelationType.RIGHT:
+                if relationship.direction == RelationDirection.OUTGOING:
                     resource_from_instance.__rshift__(other=edge)
                     edge.__rshift__(other=group_nodes)
 
-                if relationship.type == RelationType.UNIDIRECTIONAL:
-                    resource_from_instance.__sub__(other=edge)
-                    edge.__sub__(other=group_nodes)
-
-                if relationship.type == RelationType.BOTH:
+                if relationship.direction == RelationDirection.BIDIRECTIONAL:
                     resource_from_instance.__rshift__(other=edge)
                     edge.__lshift__(other=group_nodes)
+
+                if relationship.direction == RelationDirection.UNDIRECTED:
+                    resource_from_instance.__sub__(other=edge)
+                    edge.__sub__(other=group_nodes)
 
 
 if __name__ == '__main__':

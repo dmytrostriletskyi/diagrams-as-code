@@ -18,13 +18,13 @@ diagram:
       type: aws.network.Route53
       relates:
         - to: elb
-          type: right
+          direction: outgoing
     - id: elb
       name: ELB
       type: aws.network.ELB
       relates:
         - to: web-services.graphql-api
-          type: right
+          direction: outgoing
     - id: web-services
       name: Web Services
       type: cluster
@@ -41,7 +41,7 @@ diagram:
               type: aws.compute.ECS
           relates:
             - to: databases.leader
-              type: right
+              direction: outgoing
     - id: databases
       name: Databases
       type: cluster
@@ -51,7 +51,7 @@ diagram:
           type: aws.database.RDS
           relates:
             - to: databases.follower
-              type: unidirectional
+              direction: undirected
         - id: follower
           name: R/O Follower
           type: aws.database.RDS

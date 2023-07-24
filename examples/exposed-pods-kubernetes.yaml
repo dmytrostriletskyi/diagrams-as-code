@@ -7,13 +7,13 @@ diagram:
       type: k8s.network.Ingress
       relates:
         - to: service
-          type: right
+          direction: outgoing
     - id: service
       name: Service
       type: k8s.network.Service
       relates:
         - to: pods
-          type: right
+          direction: outgoing
     - id: pods
       name: Pods
       type: group
@@ -29,19 +29,19 @@ diagram:
           type: k8s.compute.Pod
       relates:
         - to: replica-set
-          type: left
+          direction: incoming
     - id: replica-set
       name: Replica Set
       type: k8s.compute.ReplicaSet
       relates:
         - to: deployment
-          type: left
+          direction: incoming
     - id: deployment
       name: Deployment
       type: k8s.compute.Deployment
       relates:
         - to: hpa
-          type: left
+          direction: incoming
     - id: hpa
       name: HPA
       type: k8s.clusterconfig.HPA

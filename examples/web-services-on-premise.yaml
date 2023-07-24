@@ -7,14 +7,14 @@ diagram:
       type: onprem.network.Nginx
       relates:
         - to: web-services.graphql
-          type: both
+          direction: bidirectional
           color: darkgreen
     - id: metrics
       name: Metrics
       type: onprem.monitoring.Prometheus
       relates:
         - to: monitoring
-          type: left
+          direction: incoming
           color: firebrick
           style: dashed
     - id: monitoring
@@ -39,13 +39,13 @@ diagram:
               type: onprem.compute.Server
           relates:
             - to: cache.leader
-              type: right
+              direction: outgoing
               color: brown
             - to: databases.leader
-              type: right
+              direction: outgoing
               color: black
             - to: logs-aggregator
-              type: right
+              direction: outgoing
               color: black
     - id: cache
       name: Cache
@@ -56,7 +56,7 @@ diagram:
           type: onprem.inmemory.Redis
           relates:
             - to: cache.follower
-              type: unidirectional
+              direction: undirected
               color: brown
               style: dashed
         - id: follower
@@ -64,7 +64,7 @@ diagram:
           type: onprem.inmemory.Redis
           relates:
             - to: metrics
-              type: left
+              direction: incoming
               label: collect
     - id: databases
       name: Databases
@@ -75,7 +75,7 @@ diagram:
           type: onprem.database.PostgreSQL
           relates:
             - to: databases.follower
-              type: unidirectional
+              direction: undirected
               color: brown
               style: dotted
         - id: follower
@@ -83,21 +83,21 @@ diagram:
           type: onprem.database.PostgreSQL
           relates:
             - to: metrics
-              type: left
+              direction: incoming
               label: collect
     - id: logs-aggregator
       name: Logs Aggregator
       type: onprem.aggregator.Fluentd
       relates:
         - to: message-queue
-          type: right
+          direction: outgoing
           label: parse
     - id: message-queue
       name: Message Queue
       type: onprem.queue.Kafka
       relates:
         - to: analytics
-          type: right
+          direction: outgoing
           color: black
           style: bold
     - id: analytics

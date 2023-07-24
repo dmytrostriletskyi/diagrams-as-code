@@ -1,5 +1,6 @@
 diagram:
   name: Workers Architecture on AWS
+  direction: top-to-bottom
   open: true
   resources:
     - id: elb
@@ -7,7 +8,7 @@ diagram:
       type: aws.network.ELB
       relates:
         - to: workers
-          type: right
+          direction: outgoing
     - id: workers
       name: Workers
       type: group
@@ -32,7 +33,7 @@ diagram:
           type: aws.compute.EC2
       relates:
         - to: database
-          type: right
+          direction: outgoing
     - id: database
       name: Events
       type: aws.database.RDS

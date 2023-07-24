@@ -13,15 +13,15 @@ class ServiceResourceType(Enum):
     GROUP = 'group'
 
 
-class RelationType(str, Enum):
+class RelationDirection(str, Enum):
     """
-    Relation type enum implementation.
+    Relation direction enum implementation.
     """
 
-    LEFT = 'left'
-    RIGHT = 'right'
-    UNIDIRECTIONAL = 'unidirectional'
-    BOTH = 'both'
+    INCOMING = 'incoming'
+    OUTGOING = 'outgoing'
+    BIDIRECTIONAL = 'bidirectional'
+    UNDIRECTED = 'undirected'
 
 
 class DiagramDirection(str, Enum):

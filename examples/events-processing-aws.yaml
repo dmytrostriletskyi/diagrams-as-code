@@ -7,7 +7,7 @@ diagram:
       type: aws.compute.EKS
       relates:
         - to: events-flow.workers.workers
-          type: right
+          direction: outgoing
     - id: storage
       name: Events Storage
       type: aws.storage.S3
@@ -23,7 +23,7 @@ diagram:
           type: aws.integration.SQS
           relates:
             - to: events-flow.processing.lambdas
-              type: right
+              direction: outgoing
         - id: workers
           name: Workers
           type: cluster
@@ -43,7 +43,7 @@ diagram:
                   type: aws.compute.ECS
               relates:
                 - to: events-flow.queue
-                  type: right
+                  direction: outgoing
         - id: processing
           name: Processing
           type: cluster
@@ -63,6 +63,6 @@ diagram:
                   type: aws.compute.Lambda
               relates:
                 - to: storage
-                  type: right
+                  direction: outgoing
                 - to: analytics
-                  type: right
+                  direction: outgoing

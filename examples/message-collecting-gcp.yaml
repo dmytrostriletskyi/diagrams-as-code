@@ -7,7 +7,7 @@ diagram:
       type: gcp.analytics.PubSub
       relates:
         - to: targets.data-flows.data-flow
-          type: right
+          direction: outgoing
     - id: source-of-data
       name: Source of Data
       type: cluster
@@ -27,7 +27,7 @@ diagram:
               type: gcp.iot.IotCore
           relates:
             - to: pubsub
-              type: right
+              direction: outgoing
     - id: targets
       name: Targets
       type: cluster
@@ -41,11 +41,11 @@ diagram:
               type: gcp.analytics.Dataflow
               relates:
                 - to: targets.data-lake.data-lake-group
-                  type: right
+                  direction: outgoing
                 - to: targets.event-driven.processing.engine
-                  type: right
+                  direction: outgoing
                 - to: targets.event-driven.serverless.function
-                  type: right
+                  direction: outgoing
         - id: data-lake
           name: Data Lake
           type: cluster
@@ -73,7 +73,7 @@ diagram:
                   type: gcp.compute.AppEngine
                   relates:
                     - to: targets.event-driven.processing.bigtable
-                      type: right
+                      direction: outgoing
                 - id: bigtable
                   name: Bigtable
                   type: gcp.database.BigTable
@@ -86,8 +86,7 @@ diagram:
                   type: gcp.compute.Functions
                   relates:
                     - to: targets.event-driven.serverless.application-engine
-                      type: right
+                      direction: outgoing
                 - id: application-engine
                   name: Application Engine
                   type: gcp.compute.AppEngine
-

@@ -5804,30 +5804,42 @@
             "properties": {
                 "to": {
                     "type": "string",
-                    "description": "An chain of identifiers to a resource via a dot from root."
+                    "description": "A chain of identifiers to a resource via a dot from root."
                 },
-                "type": {
+                "direction": {
                     "type": "string",
                     "description": "A type of a relationship.",
                     "oneOf": [
                           {
-                            "const": "left"
+                            "const": "incoming"
                           },
                           {
-                            "const": "right"
+                            "const": "outgoing"
                           },
                           {
-                            "const": "unidirectional"
+                            "const": "bidirectional"
                           },
                           {
-                            "const": "both"
+                            "const": "undirected"
                           }
                     ]
+                },
+                "label": {
+                    "type": "string",
+                    "description": "A label of a relationship."
+                },
+                "color": {
+                    "type": "string",
+                    "description": "A color of a relationship."
+                },
+                "style": {
+                    "type": "string",
+                    "description": "A style of a relationship."
                 }
             },
             "required": [
                 "to",
-                "type"
+                "direction"
             ],
             "title": "Relate"
         },

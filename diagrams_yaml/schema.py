@@ -6,7 +6,7 @@ from __future__ import annotations
 from pydantic import BaseModel
 
 from diagrams_yaml.enums import (
-    RelationType,
+    RelationDirection,
     DiagramDirection,
     DiagramFormat,
 )
@@ -58,7 +58,7 @@ class YamlDiagramResourceRelationship(BaseModel):
     """
 
     to: str
-    type: RelationType
+    direction: RelationDirection
     label: str | None = None
     color: str | None = None
     style: str | None = None
@@ -73,7 +73,7 @@ class Relationship(BaseModel):
 
     from_: str
     to: str
-    type: str
+    direction: RelationDirection
     label: str | None = None
     color: str | None = None
     style: str | None = None
