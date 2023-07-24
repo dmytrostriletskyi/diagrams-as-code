@@ -1,4 +1,4 @@
-`Diagrams as a code`: declarative configurations using `YAML` for drawing cloud system architectures.
+`Diagrams as code`: declarative configurations using `YAML` for drawing cloud system architectures.
 
 [![](https://github.com/dmytrostriletskyi/diagrams-yaml/actions/workflows/main.yaml/badge.svg?branch=main)](https://github.com/dmytrostriletskyi/diagrams-yaml/actions/workflows/main.yaml)
 [![](https://img.shields.io/github/release/dmytrostriletskyi/diagrams-yaml.svg)](https://github.com/dmytrostriletskyi/diagrams-yaml/releases)
@@ -21,19 +21,33 @@ Table of content:
 
 ## Introduction
 
-This project lets you draw the cloud system architecture in a declarative way with widely used `YAML` syntax which is de 
-facto a standard for infrastructure and configurations so here habitual approaches are met and industry best practices
-are aligned as well. It allows you to track an architecture's diagram changes with a version control system such as 
-`Git`.
+`Diagrams as code` is essentially the process of managing diagrams through code rather than interactively drawing them
+on specific web services such as [draw.io](https://app.diagrams.net). It lets you generate the cloud system architecture
+in a **declarative** way with widely used `YAML` syntax (which is de facto a standard for infrastructure and 
+configurations).
+
+Declarative method of describing things means that a user simply describes the solution they need, how it should look, 
+and everything that would be in the state of the final solution, leaving the process for the software to decide.
+
+`Diagrams as code` brings you the following benefits comparing to drawing architecture on your own, it:
+
+* Does not require any knowledge about how to properly draw an architecture diagram. Basically, you just define a set of 
+  resources, compose them into groups and set relationships, the rest is done for you.
+* Allows you to track an architecture diagram changes with a version control systems such as `Git`.
+* Moves collaboration to the next level: updating an architecture diagram through a pull request with a code review 
+  instead of a video session and/or screen sharing.
+* Reduces costs on further updating of an initial architecture diagram. Basically, when you create an image on a web 
+  service you have to eventually store two files: `PNG`-like to put into your documentation and `XML` to be able to 
+  adjust your image in the future. So, there is no need to care about `XML` anymore.
+* Backups you in case of losing `XML` files as `YAML` files are always stored in a repository.
+* Improves consistency as now a diagram is stored along the code in a repository, the place you visit and work on
+  frequently, and it is easier to keep it up-to-date.
 
 Currently, the following components are provided:
 
 * Major cloud providers: AWS, Azure, GCP, IBM, Alibaba, Oracle, OpenStack, DigitalOcean and so on.
 * On-Premise, Kubernetes, Firebase, Elastic, SaaS.
 * Programming languages and frameworks.
-
-Basically, with the project, you just define set of resources, compose them into groups and/or clusters and set 
-relationships, anything else is done under the hood.
 
 ## Roadmap
 
