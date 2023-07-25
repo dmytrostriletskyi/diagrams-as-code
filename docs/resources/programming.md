@@ -2,39 +2,9 @@
 
 Table of Content:
 
-* [Flowchart](#flowchart)
 * [Framework](#framework)
 * [Language](#language)
 * [Runtime](#runtime)
-
-### Flowchart
-
-| Type                                          | Alias | Image                                                                                                 |
-|-----------------------------------------------|-------|-------------------------------------------------------------------------------------------------------|
-| `programming.flowchart.Action`                | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/action.png">                   |
-| `programming.flowchart.Collate`               | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/collate.png">                  |
-| `programming.flowchart.Database`              | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/database.png">                 |
-| `programming.flowchart.Decision`              | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/decision.png">                 |
-| `programming.flowchart.Delay`                 | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/delay.png">                    |
-| `programming.flowchart.Display`               | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/display.png">                  |
-| `programming.flowchart.Document`              | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/document.png">                 |
-| `programming.flowchart.InputOutput`           | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/input-output.png">             |
-| `programming.flowchart.Inspection`            | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/inspection.png">               |
-| `programming.flowchart.InternalStorage`       | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/internal-storage.png">         |
-| `programming.flowchart.LoopLimit`             | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/loop-limit.png">               |
-| `programming.flowchart.ManualInput`           | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/manual-input.png">             |
-| `programming.flowchart.ManualLoop`            | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/manual-loop.png">              |
-| `programming.flowchart.Merge`                 | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/merge.png">                    |
-| `programming.flowchart.MultipleDocuments`     | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/multiple-documents.png">       |
-| `programming.flowchart.OffPageConnectorLeft`  | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/off-page-connector-left.png">  |
-| `programming.flowchart.OffPageConnectorRight` | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/off-page-connector-right.png"> |
-| `programming.flowchart.Or`                    | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/or.png">                       |
-| `programming.flowchart.PredefinedProcess`     | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/predefined-process.png">       |
-| `programming.flowchart.Preparation`           | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/preparation.png">              |
-| `programming.flowchart.Sort`                  | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/sort.png">                     |
-| `programming.flowchart.StartEnd`              | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/start-end.png">                |
-| `programming.flowchart.StoredData`            | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/stored-data.png">              |
-| `programming.flowchart.SummingJunction`       | `-`   | <img width="90" src="../../docs/images/resources/programming/flowchart/summing-junction.png">         |
 
 ### Framework
 
