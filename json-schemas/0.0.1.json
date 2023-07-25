@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Diagrams YAML",
-    "description": "Diagrams YAML's JSON schema",
+    "title": "Diagrams as code",
+    "description": "Diagrams as code's YAML JSON schema",
     "$ref": "#/definitions/Welcome5",
     "definitions": {
         "Welcome5": {
@@ -23,15 +23,15 @@
             "properties": {
                 "name": {
                     "type": "string",
-                    "description": "A name of the diagram which is shown in the image."
+                    "description": "A name of the diagram which is shown in the image"
                 },
                 "file_name": {
                     "type": "string",
-                    "description": "A file name of the image that would be created."
+                    "description": "A file name of the image that would be created"
                 },
                 "format": {
                     "type": "string",
-                    "description": "A format of the image that would be created.",
+                    "description": "A format of the image that would be created",
                     "oneOf": [
                         {
                           "const": "png"
@@ -52,7 +52,7 @@
                 },
                 "direction": {
                     "type": "string",
-                    "description": "A direction of the diagram's resource.",
+                    "description": "A direction of the diagram's resource",
                     "oneOf": [
                         {
                           "const": "left-to-right"
@@ -70,19 +70,19 @@
                 },
                 "style": {
                     "$ref": "#/definitions/Style",
-                    "description": "Style of the diagram."
+                    "description": "Style of the diagram"
                 },
                 "label_resources": {
                     "type": "boolean",
-                    "description": "Whether to label the diagram's resources."
+                    "description": "Whether to label the diagram's resources"
                 },
                 "open": {
                     "type": "boolean",
-                    "description": "Whether to open the diagram's image after creating it."
+                    "description": "Whether to open the diagram's image after creating it"
                 },
                 "resources": {
                     "type": "array",
-                    "description": "Resources of the diagram.",
+                    "description": "Resources of the diagram",
                     "items": {
                         "$ref": "#/definitions/Resource"
                     }
@@ -100,15 +100,15 @@
             "properties": {
                 "id": {
                     "type": "string",
-                    "description": "An unique identifier of the resource."
+                    "description": "An unique identifier of the resource"
                 },
                 "name": {
                     "type": "string",
-                    "description": "A name of the resource."
+                    "description": "A name of the resource"
                 },
                 "type": {
                     "type": "string",
-                    "description": "A type of the resource.",
+                    "description": "A type of the resource",
                     "oneOf": [
                         {
                             "const": "cluster"
@@ -5778,14 +5778,14 @@
                 },
                 "relates": {
                     "type": "array",
-                    "description": "Relations of the resource.",
+                    "description": "Relations of the resource",
                     "items": {
                         "$ref": "#/definitions/Relates"
                     }
                 },
                 "of": {
                     "type": "array",
-                    "description": "Clusters and groups can have a list of resources inside them.",
+                    "description": "Clusters and groups can have a list of resources inside them",
                     "items": {
                         "$ref": "#/definitions/Resource"
                     }
@@ -5804,11 +5804,11 @@
             "properties": {
                 "to": {
                     "type": "string",
-                    "description": "A chain of identifiers to a resource via a dot from root."
+                    "description": "A chain of identifiers to a resource via a dot from root"
                 },
                 "direction": {
                     "type": "string",
-                    "description": "A type of a relationship.",
+                    "description": "A type of a relationship",
                     "oneOf": [
                           {
                             "const": "incoming"
@@ -5826,15 +5826,15 @@
                 },
                 "label": {
                     "type": "string",
-                    "description": "A label of a relationship."
+                    "description": "A label of a relationship"
                 },
                 "color": {
                     "type": "string",
-                    "description": "A color of a relationship."
+                    "description": "A color of a relationship"
                 },
                 "style": {
                     "type": "string",
-                    "description": "A style of a relationship."
+                    "description": "A style of a relationship"
                 }
             },
             "required": [
@@ -5864,200 +5864,200 @@
             "additionalProperties": false,
             "properties": {
                 "area": {
-                    "type": {},
-                    "description": "Indicates the preferred area for a node or empty cluster. For patchwork only."
+                    "type": "number",
+                    "description": "Indicates the preferred area for a node or empty cluster. For patchwork only"
                 },
                 "class": {
-                    "type": {},
-                    "description": "Classnames to attach to the node, edge, graph, or cluster's SVG element. For svg only."
+                    "type": "string",
+                    "description": "Classnames to attach to the node, edge, graph, or cluster's SVG element. For svg only"
                 },
                 "color": {
-                    "type": {},
-                    "description": "Basic drawing color for graphics, not text."
+                    "type": "string",
+                    "description": "Basic drawing color for graphics, not text"
                 },
                 "colorscheme": {
-                    "type": {},
-                    "description": "A color scheme namespace: the context for interpreting color names."
+                    "type": "string",
+                    "description": "A color scheme namespace: the context for interpreting color names"
                 },
                 "comment": {
-                    "type": {},
-                    "description": "Comments are inserted into output."
+                    "type": "string",
+                    "description": "Comments are inserted into output"
                 },
                 "distortion": {
-                    "type": {},
-                    "description": "Distortion factor for shape=polygon."
+                    "type": "number",
+                    "description": "Distortion factor for shape=polygon"
                 },
                 "fillcolor": {
-                    "type": {},
-                    "description": "Color used to fill the background of a node or cluster."
+                    "type": "string",
+                    "description": "Color used to fill the background of a node or cluster"
                 },
                 "fixedsize": {
-                    "type": {},
-                    "description": "Whether to use the specified width and height attributes to choose node size (rather than sizing to fit the node contents)."
+                    "type": "boolean",
+                    "description": "Whether to use the specified width and height attributes to choose node size (rather than sizing to fit the node contents)"
                 },
                 "fontcolor": {
-                    "type": {},
-                    "description": "Color used for text."
+                    "type": "string",
+                    "description": "Color used for text"
                 },
                 "fontname": {
-                    "type": {},
-                    "description": "Font used for text."
+                    "type": "string",
+                    "description": "Font used for text"
                 },
                 "fontsize": {
-                    "type": {},
-                    "description": "Font size, in points, used for text."
+                    "type": "number",
+                    "description": "Font size, in points, used for text"
                 },
                 "gradientangle": {
-                    "type": {},
-                    "description": "If a gradient fill is being used, this determines the angle of the fill."
+                    "type": "number",
+                    "description": "If a gradient fill is being used, this determines the angle of the fill"
                 },
                 "group": {
-                    "type": {},
-                    "description": "Name for a group of nodes, for bundling edges avoiding crossings. For dot only."
+                    "type": "string",
+                    "description": "Name for a group of nodes, for bundling edges avoiding crossings. For dot only"
                 },
                 "height": {
-                    "type": {},
-                    "description": "Height of node, in inches."
+                    "type": "string",
+                    "description": "Height of node, in inches"
                 },
                 "href": {
-                    "type": {},
-                    "description": "Synonym for URL. For map, postscript, svg only."
+                    "type": "string",
+                    "description": "Synonym for URL. For map, postscript, svg only"
                 },
                 "id": {
-                    "type": {},
-                    "description": "Identifier for graph objects. For map, postscript, svg only."
+                    "type": "string",
+                    "description": "Identifier for graph objects. For map, postscript, svg only"
                 },
                 "image": {
-                    "type": {},
-                    "description": "Gives the name of a file containing an image to be displayed inside a node."
+                    "type": "string",
+                    "description": "Gives the name of a file containing an image to be displayed inside a node"
                 },
                 "imagepos": {
-                    "type": {},
-                    "description": "Controls how an image is positioned within its containing node."
+                    "type": "string",
+                    "description": "Controls how an image is positioned within its containing node"
                 },
                 "imagescale": {
-                    "type": {},
-                    "description": "Controls how an image fills its containing node."
+                    "type": "boolean",
+                    "description": "Controls how an image fills its containing node"
                 },
                 "label": {
-                    "type": {},
-                    "description": "Text label attached to objects."
+                    "type": "string",
+                    "description": "Text label attached to objects"
                 },
                 "labelloc": {
-                    "type": {},
-                    "description": "Vertical placement of labels for nodes, root graphs and clusters."
+                    "type": "string",
+                    "description": "Vertical placement of labels for nodes, root graphs and clusters"
                 },
                 "layer": {
-                    "type": {},
-                    "description": "Specifies layers in which the node, edge or cluster is present."
+                    "type": "string",
+                    "description": "Specifies layers in which the node, edge or cluster is present"
                 },
                 "margin": {
-                    "type": {},
-                    "description": "For graphs, this sets x and y margins of canvas, in inches."
+                    "type": "number",
+                    "description": "For graphs, this sets x and y margins of canvas, in inches"
                 },
                 "nojustify": {
-                    "type": {},
-                    "description": "Whether to justify multiline text vs the previous text line (rather than the side of the container)."
+                    "type": "boolean",
+                    "description": "Whether to justify multiline text vs the previous text line (rather than the side of the container)"
                 },
                 "ordering": {
-                    "type": {},
-                    "description": "Constrains the left-to-right ordering of node edges. For dot only."
+                    "type": "string",
+                    "description": "Constrains the left-to-right ordering of node edges. For dot only"
                 },
                 "orientation": {
-                    "type": {},
-                    "description": "node shape rotation angle, or graph orientation."
+                    "type": "number",
+                    "description": "node shape rotation angle, or graph orientation"
                 },
                 "penwidth": {
-                    "type": {},
-                    "description": "Specifies the width of the pen, in points, used to draw lines and curves."
+                    "type": "number",
+                    "description": "Specifies the width of the pen, in points, used to draw lines and curves"
                 },
                 "peripheries": {
-                    "type": {},
-                    "description": "Set number of peripheries used in polygonal shapes and cluster boundaries."
+                    "type": "number",
+                    "description": "Set number of peripheries used in polygonal shapes and cluster boundaries"
                 },
                 "pin": {
-                    "type": {},
-                    "description": "Keeps the node at the node's given input position. For neato, fdp only."
+                    "type": "boolean",
+                    "description": "Keeps the node at the node's given input position. For neato, fdp only"
                 },
                 "pos": {
-                    "type": {},
-                    "description": "Position of node, or spline control points. For neato, fdp only."
+                    "type": "string",
+                    "description": "Position of node, or spline control points. For neato, fdp only"
                 },
                 "rects": {
-                    "type": {},
-                    "description": "Rectangles for fields of records, in points. For write only."
+                    "type": "string",
+                    "description": "Rectangles for fields of records, in points. For write only"
                 },
                 "regular": {
-                    "type": {},
-                    "description": "If true, force polygon to be regular."
+                    "type": "boolean",
+                    "description": "If true, force polygon to be regular"
                 },
                 "root": {
-                    "type": {},
-                    "description": "Specifies nodes to be used as the center of the layout. For twopi, circo only."
+                    "type": "string",
+                    "description": "Specifies nodes to be used as the center of the layout. For twopi, circo only"
                 },
                 "samplepoints": {
-                    "type": {},
-                    "description": "Gives the number of points used for a circle/ellipse node."
+                    "type": "number",
+                    "description": "Gives the number of points used for a circle/ellipse node"
                 },
                 "shape": {
-                    "type": {},
-                    "description": "Sets the shape of a node."
+                    "type": "string",
+                    "description": "Sets the shape of a node"
                 },
                 "shapefile": {
-                    "type": {},
-                    "description": "A file containing user-supplied node content."
+                    "type": "string",
+                    "description": "A file containing user-supplied node content"
                 },
                 "showboxes": {
-                    "type": {},
-                    "description": "Print guide boxes for debugging. For dot only."
+                    "type": "number",
+                    "description": "Print guide boxes for debugging. For dot only"
                 },
                 "sides": {
-                    "type": {},
-                    "description": "Number of sides when shape=polygon."
+                    "type": "number",
+                    "description": "Number of sides when shape=polygon"
                 },
                 "skew": {
-                    "type": {},
-                    "description": "Skew factor for shape=polygon."
+                    "type": "number",
+                    "description": "Skew factor for shape=polygon"
                 },
                 "sortv": {
-                    "type": {},
-                    "description": "Sort order of graph components for ordering packmode packing."
+                    "type": "number",
+                    "description": "Sort order of graph components for ordering packmode packing"
                 },
                 "style": {
-                    "type": {},
-                    "description": "Set style information for components of the graph."
+                    "type": "string",
+                    "description": "Set style information for components of the graph"
                 },
                 "target": {
-                    "type": {},
-                    "description": "If the object has a URL, this attribute determines which window of the browser is used for the URL. For map, svg only."
+                    "type": "string",
+                    "description": "If the object has a URL, this attribute determines which window of the browser is used for the URL. For map, svg only"
                 },
                 "tooltip": {
-                    "type": {},
-                    "description": "Tooltip (mouse hover text) attached to the node, edge, cluster, or graph. For cmap, svg only."
+                    "type": "string",
+                    "description": "Tooltip (mouse hover text) attached to the node, edge, cluster, or graph. For cmap, svg only"
                 },
                 "URL": {
-                    "type": {},
-                    "description": "Hyperlinks incorporated into device-dependent output. For map, postscript, svg only."
+                    "type": "string",
+                    "description": "Hyperlinks incorporated into device-dependent output. For map, postscript, svg only"
                 },
                 "vertices": {
-                    "type": {},
-                    "description": "Sets the coordinates of the vertices of the node's polygon, in inches. For write only."
+                    "type": "array",
+                    "description": "Sets the coordinates of the vertices of the node's polygon, in inches. For write only"
                 },
                 "width": {
-                    "type": {},
-                    "description": "Width of node, in inches."
+                    "type": "number",
+                    "description": "Width of node, in inches"
                 },
                 "xlabel": {
-                    "type": {},
-                    "description": "External label for a node or edge."
+                    "type": "string",
+                    "description": "External label for a node or edge"
                 },
                 "xlp": {
-                    "type": {},
-                    "description": "Position of an exterior label, in points. For write only."
+                    "type": "string",
+                    "description": "Position of an exterior label, in points. For write only"
                 },
                 "z": {
-                    "type": {},
-                    "description": "Z-coordinate value for 3D layouts and displays."
+                    "type": "number",
+                    "description": "Z-coordinate value for 3D layouts and displays"
                 }
             },
             "title": "Node"
@@ -6067,416 +6067,416 @@
             "additionalProperties": false,
             "properties": {
                 "_background": {
-                    "type": {},
-                    "description": "A string in the xdot format specifying an arbitrary background."
+                    "type": "string",
+                    "description": "A string in the xdot format specifying an arbitrary background"
                 },
                 "bb": {
-                    "type": {},
-                    "description": "Bounding box of drawing in points. For write only."
+                    "type": "string",
+                    "description": "Bounding box of drawing in points. For write only"
                 },
                 "beautify": {
-                    "type": {},
-                    "description": "Whether to draw leaf nodes uniformly in a circle around the root node in sfdp. For sfdp only."
+                    "type": "boolean",
+                    "description": "Whether to draw leaf nodes uniformly in a circle around the root node in sfdp. For sfdp only"
                 },
                 "bgcolor": {
-                    "type": {},
-                    "description": "Canvas background color."
+                    "type": "string",
+                    "description": "Canvas background color"
                 },
                 "center": {
-                    "type": {},
-                    "description": "Whether to center the drawing in the output canvas."
+                    "type": "boolean",
+                    "description": "Whether to center the drawing in the output canvas"
                 },
                 "charset": {
-                    "type": {},
-                    "description": "Character encoding used when interpreting string input as a text label."
+                    "type": "string",
+                    "description": "Character encoding used when interpreting string input as a text label"
                 },
                 "class": {
-                    "type": {},
-                    "description": "Classnames to attach to the node, edge, graph, or cluster's SVG element. For svg only."
+                    "type": "string",
+                    "description": "Classnames to attach to the node, edge, graph, or cluster's SVG element. For svg only"
                 },
                 "clusterrank": {
-                    "type": {},
-                    "description": "Mode used for handling clusters. For dot only."
+                    "type": "string",
+                    "description": "Mode used for handling clusters. For dot only"
                 },
                 "colorscheme": {
-                    "type": {},
-                    "description": "A color scheme namespace: the context for interpreting color names."
+                    "type": "string",
+                    "description": "A color scheme namespace: the context for interpreting color names"
                 },
                 "comment": {
-                    "type": {},
-                    "description": "Comments are inserted into output."
+                    "type": "string",
+                    "description": "Comments are inserted into output"
                 },
                 "compound": {
-                    "type": {},
-                    "description": "If true, allow edges between clusters. For dot only."
+                    "type": "boolean",
+                    "description": "If true, allow edges between clusters. For dot only"
                 },
                 "concentrate": {
-                    "type": {},
-                    "description": "If true, use edge concentrators."
+                    "type": "boolean",
+                    "description": "If true, use edge concentrators"
                 },
                 "Damping": {
-                    "type": {},
-                    "description": "Factor damping force motions. For neato only."
+                    "type": "number",
+                    "description": "Factor damping force motions. For neato only"
                 },
                 "defaultdist": {
-                    "type": {},
-                    "description": "The distance between nodes in separate connected components. For neato only."
+                    "type": "number",
+                    "description": "The distance between nodes in separate connected components. For neato only"
                 },
                 "dim": {
-                    "type": {},
-                    "description": "Set the number of dimensions used for the layout. For neato, fdp, sfdp only."
+                    "type": "number",
+                    "description": "Set the number of dimensions used for the layout. For neato, fdp, sfdp only"
                 },
                 "dimen": {
-                    "type": {},
-                    "description": "Set the number of dimensions used for rendering. For neato, fdp, sfdp only."
+                    "type": "number",
+                    "description": "Set the number of dimensions used for rendering. For neato, fdp, sfdp only"
                 },
                 "diredgeconstraints": {
-                    "type": {},
-                    "description": "Whether to constrain most edges to point downwards. For neato only."
+                    "type": "string",
+                    "description": "Whether to constrain most edges to point downwards. For neato only"
                 },
                 "dpi": {
-                    "type": {},
-                    "description": "Specifies the expected number of pixels per inch on a display device. For bitmap output, svg only."
+                    "type": "number",
+                    "description": "Specifies the expected number of pixels per inch on a display device. For bitmap output, svg only"
                 },
                 "epsilon": {
-                    "type": {},
-                    "description": "Terminating condition. For neato only."
+                    "type": "number",
+                    "description": "Terminating condition. For neato only"
                 },
                 "esep": {
-                    "type": {},
-                    "description": "Margin used around polygons for purposes of spline edge routing. For neato only."
+                    "type": "number",
+                    "description": "Margin used around polygons for purposes of spline edge routing. For neato only"
                 },
                 "fontcolor": {
-                    "type": {},
-                    "description": "Color used for text."
+                    "type": "string",
+                    "description": "Color used for text"
                 },
                 "fontname": {
-                    "type": {},
-                    "description": "Font used for text."
+                    "type": "string",
+                    "description": "Font used for text"
                 },
                 "fontnames": {
-                    "type": {},
-                    "description": "Allows user control of how basic fontnames are represented in SVG output. For svg only."
+                    "type": "string",
+                    "description": "Allows user control of how basic fontnames are represented in SVG output. For svg only"
                 },
                 "fontpath": {
-                    "type": {},
-                    "description": "Directory list used by libgd to search for bitmap fonts."
+                    "type": "string",
+                    "description": "Directory list used by libgd to search for bitmap fonts"
                 },
                 "fontsize": {
-                    "type": {},
-                    "description": "Font size, in points, used for text."
+                    "type": "number",
+                    "description": "Font size, in points, used for text"
                 },
                 "forcelabels": {
-                    "type": {},
-                    "description": "Whether to force placement of all xlabels, even if overlapping."
+                    "type": "boolean",
+                    "description": "Whether to force placement of all xlabels, even if overlapping"
                 },
                 "gradientangle": {
-                    "type": {},
-                    "description": "If a gradient fill is being used, this determines the angle of the fill."
+                    "type": "number",
+                    "description": "If a gradient fill is being used, this determines the angle of the fill"
                 },
                 "href": {
-                    "type": {},
-                    "description": "Synonym for URL. For map, postscript, svg only."
+                    "type": "string",
+                    "description": "Synonym for URL. For map, postscript, svg only"
                 },
                 "id": {
-                    "type": {},
-                    "description": "Identifier for graph objects. For map, postscript, svg only."
+                    "type": "string",
+                    "description": "Identifier for graph objects. For map, postscript, svg only"
                 },
                 "imagepath": {
-                    "type": {},
-                    "description": "A list of directories in which to look for image files."
+                    "type": "string",
+                    "description": "A list of directories in which to look for image files"
                 },
                 "inputscale": {
-                    "type": {},
-                    "description": "Scales the input positions to convert between length units. For neato, fdp only."
+                    "type": "number",
+                    "description": "Scales the input positions to convert between length units. For neato, fdp only"
                 },
                 "K": {
-                    "type": {},
-                    "description": "Spring constant used in virtual physical model. For fdp, sfdp only."
+                    "type": "number",
+                    "description": "Spring constant used in virtual physical model. For fdp, sfdp only"
                 },
                 "label": {
-                    "type": {},
-                    "description": "Text label attached to objects."
+                    "type": "string",
+                    "description": "Text label attached to objects"
                 },
                 "label_scheme": {
-                    "type": {},
-                    "description": "Whether to treat a node whose name has the form |edgelabel|* as a special node representing an edge label. For sfdp only."
+                    "type": "number",
+                    "description": "Whether to treat a node whose name has the form |edgelabel|* as a special node representing an edge label. For sfdp only"
                 },
                 "labeljust": {
-                    "type": {},
-                    "description": "Justification for graph & cluster labels."
+                    "type": "string",
+                    "description": "Justification for graph & cluster labels"
                 },
                 "labelloc": {
-                    "type": {},
-                    "description": "Vertical placement of labels for nodes, root graphs and clusters."
+                    "type": "string",
+                    "description": "Vertical placement of labels for nodes, root graphs and clusters"
                 },
                 "landscape": {
-                    "type": {},
-                    "description": "If true, the graph is rendered in landscape mode."
+                    "type": "boolean",
+                    "description": "If true, the graph is rendered in landscape mode"
                 },
                 "layerlistsep": {
-                    "type": {},
-                    "description": "The separator characters used to split attributes of type layerRange into a list of ranges."
+                    "type": "string",
+                    "description": "The separator characters used to split attributes of type layerRange into a list of ranges"
                 },
                 "layers": {
-                    "type": {},
-                    "description": "A linearly ordered list of layer names attached to the graph."
+                    "type": "array",
+                    "description": "A linearly ordered list of layer names attached to the graph"
                 },
                 "layerselect": {
-                    "type": {},
-                    "description": "Selects a list of layers to be emitted."
+                    "type": "string",
+                    "description": "Selects a list of layers to be emitted"
                 },
                 "layersep": {
-                    "type": {},
-                    "description": "The separator characters for splitting the layers attribute into a list of layer names."
+                    "type": "string",
+                    "description": "The separator characters for splitting the layers attribute into a list of layer names"
                 },
                 "layout": {
-                    "type": {},
-                    "description": "Which layout engine to use."
+                    "type": "string",
+                    "description": "Which layout engine to use"
                 },
                 "levels": {
-                    "type": {},
-                    "description": "Number of levels allowed in the multilevel scheme. For sfdp only."
+                    "type": "number",
+                    "description": "Number of levels allowed in the multilevel scheme. For sfdp only"
                 },
                 "levelsgap": {
-                    "type": {},
-                    "description": "strictness of neato level constraints. For neato only."
+                    "type": "number",
+                    "description": "strictness of neato level constraints. For neato only"
                 },
                 "lheight": {
-                    "type": {},
-                    "description": "Height of graph or cluster label, in inches. For write only."
+                    "type": "number",
+                    "description": "Height of graph or cluster label, in inches. For write only"
                 },
                 "linelength": {
-                    "type": {},
-                    "description": "How long strings should get before overflowing to next line, for text output."
+                    "type": "number",
+                    "description": "How long strings should get before overflowing to next line, for text output"
                 },
                 "lp": {
-                    "type": {},
-                    "description": "Label center position. For write only."
+                    "type": "string",
+                    "description": "Label center position. For write only"
                 },
                 "lwidth": {
-                    "type": {},
-                    "description": "Width of graph or cluster label, in inches. For write only."
+                    "type": "number",
+                    "description": "Width of graph or cluster label, in inches. For write only"
                 },
                 "margin": {
-                    "type": {},
-                    "description": "For graphs, this sets x and y margins of canvas, in inches."
+                    "type": "number",
+                    "description": "For graphs, this sets x and y margins of canvas, in inches"
                 },
                 "maxiter": {
-                    "type": {},
-                    "description": "Sets the number of iterations used. For neato, fdp only."
+                    "type": "number",
+                    "description": "Sets the number of iterations used. For neato, fdp only"
                 },
                 "mclimit": {
-                    "type": {},
-                    "description": "Scale factor for mincross (mc) edge crossing minimiser parameters. For dot only."
+                    "type": "number",
+                    "description": "Scale factor for mincross (mc) edge crossing minimiser parameters. For dot only"
                 },
                 "mindist": {
-                    "type": {},
-                    "description": "Specifies the minimum separation between all nodes. For circo only."
+                    "type": "number",
+                    "description": "Specifies the minimum separation between all nodes. For circo only"
                 },
                 "mode": {
-                    "type": {},
-                    "description": "Technique for optimizing the layout. For neato only."
+                    "type": "string",
+                    "description": "Technique for optimizing the layout. For neato only"
                 },
                 "model": {
-                    "type": {},
-                    "description": "Specifies how the distance matrix is computed for the input graph. For neato only."
+                    "type": "string",
+                    "description": "Specifies how the distance matrix is computed for the input graph. For neato only"
                 },
                 "newrank": {
-                    "type": {},
-                    "description": "Whether to use a single global ranking, ignoring clusters. For dot only."
+                    "type": "boolean",
+                    "description": "Whether to use a single global ranking, ignoring clusters. For dot only"
                 },
                 "nodesep": {
-                    "type": {},
-                    "description": "In dot, nodesep specifies the minimum space between two adjacent nodes in the same rank, in inches."
+                    "type": "number",
+                    "description": "In dot, nodesep specifies the minimum space between two adjacent nodes in the same rank, in inches"
                 },
                 "nojustify": {
-                    "type": {},
-                    "description": "Whether to justify multiline text vs the previous text line (rather than the side of the container)."
+                    "type": "boolean",
+                    "description": "Whether to justify multiline text vs the previous text line (rather than the side of the container)"
                 },
                 "normalize": {
-                    "type": {},
-                    "description": "normalizes coordinates of final layout. For neato, fdp, sfdp, twopi, circo only."
+                    "type": "number",
+                    "description": "normalizes coordinates of final layout. For neato, fdp, sfdp, twopi, circo only"
                 },
                 "notranslate": {
-                    "type": {},
-                    "description": "Whether to avoid translating layout to the origin point. For neato only."
+                    "type": "boolean",
+                    "description": "Whether to avoid translating layout to the origin point. For neato only"
                 },
                 "nslimit": {
-                    "type": {},
-                    "description": "Sets number of iterations in network simplex applications. For dot only."
+                    "type": "number",
+                    "description": "Sets number of iterations in network simplex applications. For dot only"
                 },
                 "nslimit1": {
-                    "type": {},
-                    "description": "Sets number of iterations in network simplex applications. For dot only."
+                    "type": "number",
+                    "description": "Sets number of iterations in network simplex applications. For dot only"
                 },
                 "oneblock": {
-                    "type": {},
-                    "description": "Whether to draw circo graphs around one circle. For circo only."
+                    "type": "boolean",
+                    "description": "Whether to draw circo graphs around one circle. For circo only"
                 },
                 "ordering": {
-                    "type": {},
-                    "description": "Constrains the left-to-right ordering of node edges. For dot only."
+                    "type": "string",
+                    "description": "Constrains the left-to-right ordering of node edges. For dot only"
                 },
                 "orientation": {
-                    "type": {},
-                    "description": "node shape rotation angle, or graph orientation."
+                    "type": "number",
+                    "description": "node shape rotation angle, or graph orientation"
                 },
                 "outputorder": {
-                    "type": {},
-                    "description": "Specify order in which nodes and edges are drawn."
+                    "type": "string",
+                    "description": "Specify order in which nodes and edges are drawn"
                 },
                 "overlap": {
-                    "type": {},
-                    "description": "Determines if and how node overlaps should be removed. For fdp, neato only."
+                    "type": "string",
+                    "description": "Determines if and how node overlaps should be removed. For fdp, neato only"
                 },
                 "overlap_scaling": {
-                    "type": {},
-                    "description": "Scale layout by factor, to reduce node overlap. For prism, neato, sfdp, fdp, circo, twopi only."
+                    "type": "number",
+                    "description": "Scale layout by factor, to reduce node overlap. For prism, neato, sfdp, fdp, circo, twopi only"
                 },
                 "overlap_shrink": {
-                    "type": {},
-                    "description": "Whether the overlap removal algorithm should perform a compression pass to reduce the size of the layout. For prism only."
+                    "type": "boolean",
+                    "description": "Whether the overlap removal algorithm should perform a compression pass to reduce the size of the layout. For prism only"
                 },
                 "pack": {
-                    "type": {},
-                    "description": "Whether each connected component of the graph should be laid out separately, and then the graphs packed together."
+                    "type": "boolean",
+                    "description": "Whether each connected component of the graph should be laid out separately, and then the graphs packed together"
                 },
                 "packmode": {
-                    "type": {},
-                    "description": "How connected components should be packed."
+                    "type": "string",
+                    "description": "How connected components should be packed"
                 },
                 "pad": {
-                    "type": {},
-                    "description": "Inches to extend the drawing area around the minimal area needed to draw the graph."
+                    "type": "number",
+                    "description": "Inches to extend the drawing area around the minimal area needed to draw the graph"
                 },
                 "page": {
-                    "type": {},
-                    "description": "Width and height of output pages, in inches."
+                    "type": "number",
+                    "description": "Width and height of output pages, in inches"
                 },
                 "pagedir": {
-                    "type": {},
-                    "description": "The order in which pages are emitted."
+                    "type": "string",
+                    "description": "The order in which pages are emitted"
                 },
                 "quadtree": {
-                    "type": {},
-                    "description": "Quadtree scheme to use. For sfdp only."
+                    "type": "string",
+                    "description": "Quadtree scheme to use. For sfdp only"
                 },
                 "quantum": {
-                    "type": {},
-                    "description": "If quantum > 0.0, node label dimensions will be rounded to integral multiples of the quantum."
+                    "type": "number",
+                    "description": "If quantum > 0.0, node label dimensions will be rounded to integral multiples of the quantum"
                 },
                 "rankdir": {
-                    "type": {},
-                    "description": "Sets direction of graph layout. For dot only."
+                    "type": "string",
+                    "description": "Sets direction of graph layout. For dot only"
                 },
                 "ranksep": {
-                    "type": {},
-                    "description": "Specifies separation between ranks. For dot, twopi only."
+                    "type": "number",
+                    "description": "Specifies separation between ranks. For dot, twopi only"
                 },
                 "ratio": {
-                    "type": {},
-                    "description": "Sets the aspect ratio (drawing height/drawing width) for the drawing."
+                    "type": "number",
+                    "description": "Sets the aspect ratio (drawing height/drawing width) for the drawing"
                 },
                 "remincross": {
-                    "type": {},
-                    "description": "If there are multiple clusters, whether to run edge crossing minimization a second time. For dot only."
+                    "type": "boolean",
+                    "description": "If there are multiple clusters, whether to run edge crossing minimization a second time. For dot only"
                 },
                 "repulsiveforce": {
-                    "type": {},
-                    "description": "The power of the repulsive force used in an extended Fruchterman-Reingold. For sfdp only."
+                    "type": "number",
+                    "description": "The power of the repulsive force used in an extended Fruchterman-Reingold. For sfdp only"
                 },
                 "resolution": {
-                    "type": {},
-                    "description": "Synonym for dpi. For bitmap output, svg only."
+                    "type": "number",
+                    "description": "Synonym for dpi. For bitmap output, svg only"
                 },
                 "root": {
-                    "type": {},
-                    "description": "Specifies nodes to be used as the center of the layout. For twopi, circo only."
+                    "type": "string",
+                    "description": "Specifies nodes to be used as the center of the layout. For twopi, circo only"
                 },
                 "rotate": {
-                    "type": {},
-                    "description": "If rotate=90, sets drawing orientation to landscape."
+                    "type": "number",
+                    "description": "If rotate=90, sets drawing orientation to landscape"
                 },
                 "rotation": {
-                    "type": {},
-                    "description": "Rotates the final layout counter-clockwise by the specified number of degrees. For sfdp only."
+                    "type": "number",
+                    "description": "Rotates the final layout counter-clockwise by the specified number of degrees. For sfdp only"
                 },
                 "scale": {
-                    "type": {},
-                    "description": "Scales layout by the given factor after the initial layout. For neato, twopi only."
+                    "type": "number",
+                    "description": "Scales layout by the given factor after the initial layout. For neato, twopi only"
                 },
                 "searchsize": {
-                    "type": {},
-                    "description": "During network simplex, the maximum number of edges with negative cut values to search when looking for an edge with minimum cut value. For dot only."
+                    "type": "number",
+                    "description": "During network simplex, the maximum number of edges with negative cut values to search when looking for an edge with minimum cut value. For dot only"
                 },
                 "sep": {
-                    "type": {},
-                    "description": "Margin to leave around nodes when removing node overlap. For fdp, neato only."
+                    "type": "string",
+                    "description": "Margin to leave around nodes when removing node overlap. For fdp, neato only"
                 },
                 "showboxes": {
-                    "type": {},
-                    "description": "Print guide boxes for debugging. For dot only."
+                    "type": "number",
+                    "description": "Print guide boxes for debugging. For dot only"
                 },
                 "size": {
-                    "type": {},
-                    "description": "Maximum width and height of drawing, in inches."
+                    "type": "number",
+                    "description": "Maximum width and height of drawing, in inches"
                 },
                 "smoothing": {
-                    "type": {},
-                    "description": "Specifies a post-processing step used to smooth out an uneven distribution of nodes. For sfdp only."
+                    "type": "string",
+                    "description": "Specifies a post-processing step used to smooth out an uneven distribution of nodes. For sfdp only"
                 },
                 "sortv": {
-                    "type": {},
-                    "description": "Sort order of graph components for ordering packmode packing."
+                    "type": "number",
+                    "description": "Sort order of graph components for ordering packmode packing"
                 },
                 "splines": {
-                    "type": {},
-                    "description": "Controls how, and if, edges are represented."
+                    "type": ["boolean", "string"],
+                    "description": "Controls how, and if, edges are represented"
                 },
                 "start": {
-                    "type": {},
-                    "description": "Parameter used to determine the initial layout of nodes. For neato, fdp, sfdp only."
+                    "type": "string",
+                    "description": "Parameter used to determine the initial layout of nodes. For neato, fdp, sfdp only"
                 },
                 "style": {
-                    "type": {},
-                    "description": "Set style information for components of the graph."
+                    "type": "string",
+                    "description": "Set style information for components of the graph"
                 },
                 "stylesheet": {
-                    "type": {},
-                    "description": "A URL or pathname specifying an XML style sheet, used in SVG output. For svg only."
+                    "type": "string",
+                    "description": "A URL or pathname specifying an XML style sheet, used in SVG output. For svg only"
                 },
                 "target": {
-                    "type": {},
-                    "description": "If the object has a URL, this attribute determines which window of the browser is used for the URL. For map, svg only."
+                    "type": "string",
+                    "description": "If the object has a URL, this attribute determines which window of the browser is used for the URL. For map, svg only"
                 },
                 "TBbalance": {
-                    "type": {},
-                    "description": "Which rank to move floating (loose) nodes to. For dot only."
+                    "type": "string",
+                    "description": "Which rank to move floating (loose) nodes to. For dot only"
                 },
                 "tooltip": {
-                    "type": {},
-                    "description": "Tooltip (mouse hover text) attached to the node, edge, cluster, or graph. For cmap, svg only."
+                    "type": "string",
+                    "description": "Tooltip (mouse hover text) attached to the node, edge, cluster, or graph. For cmap, svg only"
                 },
                 "truecolor": {
-                    "type": {},
-                    "description": "Whether internal bitmap rendering relies on a truecolor color model or uses. For bitmap output only."
+                    "type": "boolean",
+                    "description": "Whether internal bitmap rendering relies on a truecolor color model or uses. For bitmap output only"
                 },
                 "URL": {
-                    "type": {},
-                    "description": "Hyperlinks incorporated into device-dependent output. For map, postscript, svg only."
+                    "type": "string",
+                    "description": "Hyperlinks incorporated into device-dependent output. For map, postscript, svg only"
                 },
                 "viewport": {
-                    "type": {},
-                    "description": "Clipping window on final drawing."
+                    "type": "string",
+                    "description": "Clipping window on final drawing"
                 },
                 "voro_margin": {
-                    "type": {},
-                    "description": "Tuning margin of Voronoi technique. For neato, fdp, sfdp, twopi, circo only."
+                    "type": "number",
+                    "description": "Tuning margin of Voronoi technique. For neato, fdp, sfdp, twopi, circo only"
                 },
                 "xdotversion": {
-                    "type": {},
-                    "description": "Determines the version of xdot used in output. For xdot only."
+                    "type": "string",
+                    "description": "Determines the version of xdot used in output. For xdot only"
                 }
             },
             "title": "Graph"
@@ -6486,268 +6486,268 @@
             "additionalProperties": false,
             "properties": {
                 "arrowhead": {
-                    "type": {},
-                    "description": "Style of arrowhead on the head node of an edge."
+                    "type": "string",
+                    "description": "Style of arrowhead on the head node of an edge"
                 },
                 "arrowsize": {
-                    "type": {},
-                    "description": "Multiplicative scale factor for arrowheads."
+                    "type": "number",
+                    "description": "Multiplicative scale factor for arrowheads"
                 },
                 "arrowtail": {
-                    "type": {},
-                    "description": "Style of arrowhead on the tail node of an edge."
+                    "type": "string",
+                    "description": "Style of arrowhead on the tail node of an edge"
                 },
                 "class": {
-                    "type": {},
-                    "description": "Classnames to attach to the node, edge, graph, or cluster's SVG element. For svg only."
+                    "type": "string",
+                    "description": "Classnames to attach to the node, edge, graph, or cluster's SVG element. For svg only"
                 },
                 "color": {
-                    "type": {},
-                    "description": "Basic drawing color for graphics, not text."
+                    "type": "string",
+                    "description": "Basic drawing color for graphics, not text"
                 },
                 "colorscheme":{
-                    "type": {},
-                    "description": "A color scheme namespace: the context for interpreting color names."
+                    "type": "string",
+                    "description": "A color scheme namespace: the context for interpreting color names"
                 },
                 "comment": {
-                    "type": {},
-                    "description": "Comments are inserted into output."
+                    "type": "string",
+                    "description": "Comments are inserted into output"
                 },
                 "constraint": {
-                    "type": {},
-                    "description": "If false, the edge is not used in ranking the nodes. For dot only."
+                    "type": "boolean",
+                    "description": "If false, the edge is not used in ranking the nodes. For dot only"
                 },
                 "decorate": {
-                    "type": {},
-                    "description": "Whether to connect the edge label to the edge with a line."
+                    "type": "boolean",
+                    "description": "Whether to connect the edge label to the edge with a line"
                 },
                 "dir": {
-                    "type": {},
-                    "description": "Edge type for drawing arrowheads."
+                    "type": "string",
+                    "description": "Edge type for drawing arrowheads"
                 },
                 "edgehref": {
-                    "type": {},
-                    "description": "Synonym for edgeURL. For map, svg only."
+                    "type": "string",
+                    "description": "Synonym for edgeURL. For map, svg only"
                 },
                 "edgetarget": {
-                    "type": {},
-                    "description": "Browser window to use for the edgeURL link. For map, svg only."
+                    "type": "string",
+                    "description": "Browser window to use for the edgeURL link. For map, svg only"
                 },
                 "edgetooltip": {
-                    "type": {},
-                    "description": "Tooltip annotation attached to the non-label part of an edge. For cmap, svg only."
+                    "type": "string",
+                    "description": "Tooltip annotation attached to the non-label part of an edge. For cmap, svg only"
                 },
                 "edgeURL": {
-                    "type": {},
-                    "description": "The link for the non-label parts of an edge. For map, svg only."
+                    "type": "string",
+                    "description": "The link for the non-label parts of an edge. For map, svg only"
                 },
                 "fillcolor": {
-                    "type": {},
-                    "description": "Color used to fill the background of a node or cluster."
+                    "type": "string",
+                    "description": "Color used to fill the background of a node or cluster"
                 },
                 "fontcolor": {
-                    "type": {},
-                    "description": "Color used for text."
+                    "type": "string",
+                    "description": "Color used for text"
                 },
                 "fontname": {
-                    "type": {},
-                    "description": "Font used for text."
+                    "type": "string",
+                    "description": "Font used for text"
                 },
                 "fontsize": {
-                    "type": {},
-                    "description": "Font size, in points, used for text."
+                    "type": "number",
+                    "description": "Font size, in points, used for text"
                 },
                 "head_lp": {
-                    "type": {},
-                    "description": "Center position of an edge's head label. For write only."
+                    "type": "string",
+                    "description": "Center position of an edge's head label. For write only"
                 },
                 "headclip": {
-                    "type": {},
-                    "description": "If true, the head of an edge is clipped to the boundary of the head node."
+                    "type": "boolean",
+                    "description": "If true, the head of an edge is clipped to the boundary of the head node"
                 },
                 "headhref": {
-                    "type": {},
-                    "description": "Synonym for headURL. For map, svg only."
+                    "type": "string",
+                    "description": "Synonym for headURL. For map, svg only"
                 },
                 "headlabel": {
-                    "type": {},
-                    "description": "Text label to be placed near head of edge."
+                    "type": "string",
+                    "description": "Text label to be placed near head of edge"
                 },
                 "headport": {
-                    "type": {},
-                    "description": "Indicates where on the head node to attach the head of the edge."
+                    "type": "string",
+                    "description": "Indicates where on the head node to attach the head of the edge"
                 },
                 "headtarget": {
-                    "type": {},
-                    "description": "Browser window to use for the headURL link. For map, svg only."
+                    "type": "string",
+                    "description": "Browser window to use for the headURL link. For map, svg only"
                 },
-                "headtooltip":{
-                    "type": {},
-                    "description": "Tooltip annotation attached to the head of an edge. For cmap, svg only."
+                "headtooltip": {
+                    "type": "string",
+                    "description": "Tooltip annotation attached to the head of an edge. For cmap, svg only"
                 },
                 "headURL": {
-                    "type": {},
-                    "description": "If defined, headURL is output as part of the head label of the edge. For map, svg only."
+                    "type": "string",
+                    "description": "If defined, headURL is output as part of the head label of the edge. For map, svg only"
                 },
                 "href": {
-                    "type": {},
-                    "description": "Synonym for URL. For map, postscript, svg only."
+                    "type": "string",
+                    "description": "Synonym for URL. For map, postscript, svg only"
                 },
                 "id": {
-                    "type": {},
-                    "description": "Identifier for graph objects. For map, postscript, svg only."
+                    "type": "string",
+                    "description": "Identifier for graph objects. For map, postscript, svg only"
                 },
                 "label": {
-                    "type": {},
-                    "description": "Text label attached to objects."
+                    "type": "string",
+                    "description": "Text label attached to objects"
                 },
                 "labelangle": {
-                    "type": {},
-                    "description": "The angle (in degrees) in polar coordinates of the head & tail edge labels."
+                    "type": "number",
+                    "description": "The angle (in degrees) in polar coordinates of the head & tail edge labels"
                 },
                 "labeldistance": {
-                    "type": {},
-                    "description": "Scaling factor for the distance of headlabel / taillabel from the head / tail nodes."
+                    "type": "number",
+                    "description": "Scaling factor for the distance of headlabel / taillabel from the head / tail nodes"
                 },
                 "labelfloat": {
-                    "type": {},
-                    "description": "If true, allows edge labels to be less constrained in position."
+                    "type": "boolean",
+                    "description": "If true, allows edge labels to be less constrained in position"
                 },
-                "labelfontcolo": {
-                    "type": {},
-                    "description": "Color used for headlabel and taillabel."
+                "labelfontcolor": {
+                    "type": "string",
+                    "description": "Color used for headlabel and taillabel"
                 },
                 "labelfontname": {
-                    "type": {},
-                    "description": "Font for headlabel and taillabel."
+                    "type": "string",
+                    "description": "Font for headlabel and taillabel"
                 },
                 "labelfontsize": {
-                    "type": {},
-                    "description": "Font size of headlabel and taillabel."
+                    "type": "number",
+                    "description": "Font size of headlabel and taillabel"
                 },
                 "labelhref": {
-                    "type": {},
-                    "description": "Synonym for labelURL. For map, svg only."
+                    "type": "string",
+                    "description": "Synonym for labelURL. For map, svg only"
                 },
                 "labeltarget": {
-                    "type": {},
-                    "description": "Browser window to open labelURL links in. For map, svg only."
+                    "type": "string",
+                    "description": "Browser window to open labelURL links in. For map, svg only"
                 },
                 "labeltooltip": {
-                    "type": {},
-                    "description": "Tooltip annotation attached to label of an edge. For cmap, svg only."
+                    "type": "string",
+                    "description": "Tooltip annotation attached to label of an edge. For cmap, svg only"
                 },
                 "labelURL": {
-                    "type": {},
-                    "description": "If defined, labelURL is the link used for the label of an edge. For map, svg only."
+                    "type": "string",
+                    "description": "If defined, labelURL is the link used for the label of an edge. For map, svg only"
                 },
                 "layer": {
-                    "type": {},
-                    "description": "Specifies layers in which the node, edge or cluster is present."
+                    "type": "string",
+                    "description": "Specifies layers in which the node, edge or cluster is present"
                 },
                 "len": {
-                    "type": {},
-                    "description": "Preferred edge length, in inches. For neato, fdp only."
+                    "type": "number",
+                    "description": "Preferred edge length, in inches. For neato, fdp only"
                 },
                 "lhead": {
-                    "type": {},
-                    "description": "Logical head of an edge. For dot only."
+                    "type": "string",
+                    "description": "Logical head of an edge. For dot only"
                 },
                 "lp": {
-                    "type": {},
-                    "description": "Label center position. For write only."
+                    "type": "string",
+                    "description": "Label center position. For write only"
                 },
                 "ltail": {
-                    "type": {},
-                    "description": "Logical tail of an edge. For dot only."
+                    "type": "string",
+                    "description": "Logical tail of an edge. For dot only"
                 },
                 "minlen": {
-                    "type": {},
-                    "description": "Minimum edge length (rank difference between head and tail). For dot only."
+                    "type": "number",
+                    "description": "Minimum edge length (rank difference between head and tail). For dot only"
                 },
                 "nojustify": {
-                    "type": {},
-                    "description": "Whether to justify multiline text vs the previous text line (rather than the side of the container)."
+                    "type": "boolean",
+                    "description": "Whether to justify multiline text vs the previous text line (rather than the side of the container)"
                 },
                 "penwidth": {
-                    "type": {},
-                    "description": "Specifies the width of the pen, in points, used to draw lines and curves."
+                    "type": "number",
+                    "description": "Specifies the width of the pen, in points, used to draw lines and curves"
                 },
                 "pos": {
-                    "type": {},
-                    "description": "Position of node, or spline control points. For neato, fdp only."
+                    "type": "string",
+                    "description": "Position of node, or spline control points. For neato, fdp only"
                 },
                 "samehead": {
-                    "type": {},
-                    "description": "Edges with the same head and the same samehead value are aimed at the same point on the head. For dot only."
+                    "type": "string",
+                    "description": "Edges with the same head and the same samehead value are aimed at the same point on the head. For dot only"
                 },
                 "sametail": {
-                    "type": {},
-                    "description": "Edges with the same tail and the same sametail value are aimed at the same point on the tail. For dot only."
+                    "type": "string",
+                    "description": "Edges with the same tail and the same sametail value are aimed at the same point on the tail. For dot only"
                 },
                 "showboxes": {
-                    "type": {},
-                    "description": "Print guide boxes for debugging. For dot only."
+                    "type": "number",
+                    "description": "Print guide boxes for debugging. For dot only"
                 },
                 "style": {
-                    "type": {},
-                    "description": "Set style information for components of the graph."
+                    "type": "string",
+                    "description": "Set style information for components of the graph"
                 },
                 "tail_lp": {
-                    "type": {},
-                    "description": "Position of an edge's tail label, in points. For write only."
+                    "type": "string",
+                    "description": "Position of an edge's tail label, in points. For write only"
                 },
                 "tailclip": {
-                    "type": {},
-                    "description": "If true, the tail of an edge is clipped to the boundary of the tail node."
+                    "type": "boolean",
+                    "description": "If true, the tail of an edge is clipped to the boundary of the tail node"
                 },
                 "tailhref": {
-                    "type": {},
-                    "description": "Synonym for tailURL. For map, svg only."
+                    "type": "string",
+                    "description": "Synonym for tailURL. For map, svg only"
                 },
                 "taillabel": {
-                    "type": {},
-                    "description": "Text label to be placed near tail of edge."
+                    "type": "string",
+                    "description": "Text label to be placed near tail of edge"
                 },
                 "tailport": {
-                    "type": {},
-                    "description": "Indicates where on the tail node to attach the tail of the edge."
+                    "type": "string",
+                    "description": "Indicates where on the tail node to attach the tail of the edge"
                 },
                 "tailtarget": {
-                    "type": {},
-                    "description": "Browser window to use for the tailURL link. For map, svg only."
+                    "type": "string",
+                    "description": "Browser window to use for the tailURL link. For map, svg only"
                 },
                 "tailtooltip":{
-                    "type": {},
-                    "description": "Tooltip annotation attached to the tail of an edge. For cmap, svg only."
+                    "type": "string",
+                    "description": "Tooltip annotation attached to the tail of an edge. For cmap, svg only"
                 },
                 "tailURL": {
-                    "type": {},
-                    "description": "If defined, tailURL is output as part of the tail label of the edge. For map, svg only."
+                    "type": "string",
+                    "description": "If defined, tailURL is output as part of the tail label of the edge. For map, svg only"
                 },
                 "target": {
-                    "type": {},
-                    "description": "If the object has a URL, this attribute determines which window of the browser is used for the URL. For map, svg only."
+                    "type": "string",
+                    "description": "If the object has a URL, this attribute determines which window of the browser is used for the URL. For map, svg only"
                 },
                 "tooltip": {
-                    "type": {},
-                    "description": "Tooltip (mouse hover text) attached to the node, edge, cluster, or graph. For cmap, svg only."
+                    "type": "string",
+                    "description": "Tooltip (mouse hover text) attached to the node, edge, cluster, or graph. For cmap, svg only"
                 },
                 "URL": {
-                    "type": {},
-                    "description": "Hyperlinks incorporated into device-dependent output. For map, postscript, svg only."
+                    "type": "string",
+                    "description": "Hyperlinks incorporated into device-dependent output. For map, postscript, svg only"
                 },
                 "weight": {
-                    "type": {},
-                    "description": "Weight of edge."
+                    "type": "number",
+                    "description": "Weight of edge"
                 },
                 "xlabel": {
-                    "type": {},
-                    "description": "External label for a node or edge."
+                    "type": "string",
+                    "description": "External label for a node or edge"
                 },
                 "xlp": {
-                    "type": {},
-                    "description": "Position of an exterior label, in points. For write only."
+                    "type": "string",
+                    "description": "Position of an exterior label, in points. For write only"
                 }
             },
             "title": "Edge"
