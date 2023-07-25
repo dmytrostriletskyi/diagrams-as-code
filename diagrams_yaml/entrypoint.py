@@ -149,7 +149,7 @@ def entrypoint() -> None:
     edge_style = Diagram._default_edge_attrs | diagram.style.edge if diagram.style else {}
 
     with Diagram(
-        name=diagram.name,
+        name='',
         filename=diagram.file_name,
         direction=diagram.direction.mapped,
         outformat=diagram.format,

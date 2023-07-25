@@ -100,7 +100,7 @@
             "properties": {
                 "id": {
                     "type": "string",
-                    "description": "An unique identifier of the resource"
+                    "description": "A unique identifier of the resource"
                 },
                 "name": {
                     "type": "string",
@@ -5808,7 +5808,7 @@
                 },
                 "direction": {
                     "type": "string",
-                    "description": "A type of a relationship",
+                    "description": "A direction of a relationship",
                     "oneOf": [
                           {
                             "const": "incoming"

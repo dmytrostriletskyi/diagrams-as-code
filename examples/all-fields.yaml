@@ -2,7 +2,7 @@ diagram:
   name: Web Services Architecture on AWS
   file_name: web-services-architecture-aws
   format: jpg
-  direction: top-to-bottom
+  direction: left-to-right
   style:
     graph:
       splines: ortho
@@ -19,12 +19,18 @@ diagram:
       relates:
         - to: elb
           direction: outgoing
+          label: Makes Request
+          color: brown
+          style: dotted
     - id: elb
       name: ELB
       type: aws.network.ELB
       relates:
         - to: web-services.graphql-api
           direction: outgoing
+          label: Proxy Request
+          color: firebrick
+          style: dashed
     - id: web-services
       name: Web Services
       type: cluster

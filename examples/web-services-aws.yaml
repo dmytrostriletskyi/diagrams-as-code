@@ -12,23 +12,23 @@ diagram:
       name: ELB
       type: aws.network.ELB
       relates:
-        - to: web-services.rest-api
+        - to: web-services.graphql-api
           direction: outgoing
     - id: web-services
       name: Web Services
       type: cluster
       of:
-        - id: rest-api
+        - id: graphql-api
           name: GraphQL API
           type: group
           of:
-            - id: first-ecs
+            - id: first-api
               name: GraphQL API №1
               type: aws.compute.ECS
-            - id: second-ecs
+            - id: second-api
               name: GraphQL API №2
               type: aws.compute.ECS
-            - id: third-ecs
+            - id: third-api
               name: GraphQL API №3
               type: aws.compute.ECS
           relates:

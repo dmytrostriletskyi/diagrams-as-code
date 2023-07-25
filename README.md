@@ -19,6 +19,7 @@ Table of content:
     * [PyCharm](#pycharm)
 * [Usage](#usage)
   * [Command Line Interface](#command-line-interface)
+  * [Guide](#guide)
 * [Disclaimer](#disclaimer)
 
 ## Introduction
@@ -56,6 +57,7 @@ Currently, the following components are provided:
 * Add support of [C4](https://diagrams.mingrammer.com/docs/nodes/c4).
 * Add support of [Custom](https://diagrams.mingrammer.com/docs/nodes/custom).
 * Add IDEs plugins and/or web user interface for live editing.
+* Add the `JSON Schema` to [Json Schema Store](https://github.com/fox-forks/schemastore).
 * Research Confluence integration to update images from the CI-builds directly.
 * Research ChatGRT integration.
 
@@ -141,6 +143,248 @@ configurations. The drawing will be saved in the folder the command line interfa
 ```bash
 $ diagrams-yaml examples/web-services-aws.yaml
 ```
+
+### Guide
+
+Please, check [all-fields.yaml](./examples/all-fields.yaml) as the example to see all possible configurations
+before diving into detailed explanation about them (and [this](./assets/all-fields.jpg) is the result image).
+
+A `YAML` file conceptually contains two configurations: generic information such as name of a diagram, format of an 
+image to be generated, style and resources themselves such as `AWS` and `Kubernetes` resources, `Nginx`, `ElasticSearch`
+and all other things you actually want to draw, and relationships among them.
+
+```yaml
+diagram:
+  name: Web Services Architecture on AWS
+  file_name: web-services-architecture-aws
+  format: jpg
+  direction: left-to-right
+  style:
+    graph:
+      splines: ortho
+    node:
+      shape: circle
+    edge:
+      color: '#000000'
+  label_resources: false
+  open: true
+  resource:
+    ...
+```
+
+Generic information schema looks like:
+
+| Field             | Type    | Required | Restrictions                                                        | Default         | Description                                                            |
+|-------------------|---------|----------|---------------------------------------------------------------------|-----------------|------------------------------------------------------------------------|
+| `name`            | String  | Yes      | -                                                                   | `PNG`           | A name of the diagram which is shown in the image.                     |
+| `file_name`       | String  | No       | -                                                                   | -               | A file name of the image that would be created.                        |
+| `format`          | String  | No       | `png`, `jpg`, `svg`, `pdf`, `dot`                                   | `png`           | A format of the image that would be created.                           |
+| `direction`       | String  | No       | `left-to-right`, `right-to-left`, `top-to-bottom`, `bottom-to-top`  | `left-to-right` | A direction of the diagram's resource.                                 |
+| `style`           | Object  | No       | -                                                                   | -               | Style of the diagram.                                                  |
+| `label_resources` | Boolean | No       | -                                                                   | `false`         | Whether to label the diagram's resources such as `EC2` or `PodConfig`. |
+| `open`            | Boolean | No       | -                                                                   | `false`         | Whether to open the diagram's image after creating it.                 |
+| `resources`       | List    | Yes      | -                                                                   | -               | Resources of the diagram.                                              |
+
+`style` is responsible for styling overall diagram such as a background color or choosing between curvy or straight 
+arrows. It should go as a nested object of parameters as key/value of [Graphviz's attributes](https://graphviz.org/doc/info/attrs.html). 
+
+Its schema looks like:
+
+| Field   | Type   | Required | Restrictions                                                      | Default | Description      |
+|---------|--------|----------|-------------------------------------------------------------------|---------|------------------|
+| `graph` | Object | No       | [This](https://graphviz.org/docs/graph/) parameters as key/value. | -       | A graph styling. |
+| `node`  | Object | No       | [This](https://graphviz.org/docs/nodes/) parameters as key/value. | -       | A node styling   |
+| `edge`  | Object | No       | [This](https://graphviz.org/docs/edges/) parameters as key/value. | -       | An edge styling. |
+
+`resources` is responsible for specifying a list of resources on a diagram and relationships among them. Each resource
+has a unique identifier, name and type. Name will be shown on a diagram under the specific resource:
+
+```yaml
+diagram:
+  resources:
+    - id: elb
+      name: ELB
+      type: aws.network.ELB
+```
+
+<details>
+  <summary>Open Illustration</summary>
+
+  ![](./assets/guide-resource.png)
+</details>
+
+Identifier will be used by other resources to set a relationship direction's type among them:
+
+```yaml
+diagram:
+  resources:
+    - id: dns
+      name: DNS
+      type: aws.network.Route53
+      relates:
+        - to: elb
+          direction: outgoing
+    - id: elb
+      name: ELB
+      type: aws.network.ELB
+```
+
+<details>
+  <summary>Open Illustration</summary>
+
+  ![](./assets/guide-resource-relationship.png)
+</details>
+
+There is also a type named `group`. It is not a specific resource, it is rather a group **of** resources. It is needed
+for other resource to be able to have a relationship to all group's resources at once. Each group's resource can can
+separate relationships as well:
+
+```yaml
+diagram:
+  resources:
+    - id: elb
+      name: ELB
+      type: aws.network.ELB
+      relates:
+        - to: graphql-api
+          direction: outgoing
+    - id: graphql-api
+      name: GraphQL API
+      type: group
+      of:
+        - id: first-api
+          name: GraphQL API №1
+          type: aws.compute.ECS
+        - id: second-api
+          name: GraphQL API №2
+          type: aws.compute.ECS
+        - id: third-api
+          name: GraphQL API №3
+          type: aws.compute.ECS
+```
+
+<details>
+  <summary>Open Illustration</summary>
+
+  ![](./assets/guide-group.png)
+</details>
+
+There is also a type named `cluster`. It is needed to separate multiple resources or groups logically: for instance,
+there might be a cluster of different APIs composed as groups, a cluster of databases and a cluster of caches.
+
+> Pay attention that to refer a cluster resource, there are the following identifiers `web-services.graphql-api` and 
+> `web-services.rest-api` what means that you need to chain identifiers of nested resources through a dot to identify a 
+> resource you build a relationship to.
+
+```yaml
+diagram:
+  resources:
+    - id: elb
+      name: ELB
+      type: aws.network.ELB
+      relates:
+        - to: web-services.graphql-api
+          direction: outgoing
+        - to: web-services.rest-api
+          direction: outgoing
+    - id: web-services
+      name: Web Services
+      type: cluster
+      of:
+        - id: graphql-api
+          name: GraphQL API
+          type: group
+          of:
+            - id: first-api
+              name: GraphQL API №1
+              type: aws.compute.ECS
+            - id: second-api
+              name: GraphQL API №2
+              type: aws.compute.ECS
+            - id: third-api
+              name: GraphQL API №3
+              type: aws.compute.ECS
+        - id: rest-api
+          name: REST API
+          type: group
+          of:
+            - id: first-api
+              name: REST API №1
+              type: aws.compute.EC2
+            - id: second-api
+              name: REST API №2
+              type: aws.compute.EC2
+            - id: third-api
+              name: REST API №3
+              type: aws.compute.EC2
+    - id: databases
+      name: Databases
+      type: cluster
+      of:
+        - id: leader
+          name: Leader
+          type: aws.database.RDS
+          relates:
+            - to: databases.follower
+              direction: undirected
+        - id: follower
+          name: Follower
+          type: aws.database.RDS
+```
+
+<details>
+  <summary>Open Illustration</summary>
+
+  ![](./assets/guide-cluster.png)
+</details>
+
+Basically, to recap and also clarify:
+
+* There are resources, groups (of resources or other groups) and clusters (of resources, groups or other clusters).
+* You can build a relationship between resource to resource and resource to group (and vice versa), it is impossible to
+  relate to a cluster.
+* You should chain identifiers of nested resources through a dot to identify a resource you build a relationship to.
+
+`rsources` schema looks like:
+
+| Field     | Type   | Required | Restrictions                                                                                     | Default | Description                              |
+|-----------|--------|----------|--------------------------------------------------------------------------------------------------|---------|------------------------------------------|
+| `id`      | String | Yes      | -                                                                                                | -       | A unique identifier of the resource.     |
+| `name`    | String | Yes      | -                                                                                                | -       | A name of the resource.                  |
+| `type`    | String | Yes      | One of the [those](https://github.com/dmytrostriletskyi/diagrams-yaml/tree/main/docs/resources). | -       | A type of the resource.                  |
+| `relates` | Object | No       | -                                                                                                | -       | A relationship to a resource or a group. |
+
+This is the table of all available types by a category:
+
+| Name          | Docs                                                  |
+|---------------|-------------------------------------------------------|
+| Alibaba Cloud | [alibaba_cloud.md](./docs/resources/alibaba_cloud.md) |
+| AWS           | [aws.md](./docs/resources/aws.md)                     |
+| Azure         | [azure.md](./docs/resources/azure.md)                 |
+| DigitalOcean  | [digital_ocean.md](./docs/resources/digital_ocean.md) |
+| Elastic       | [elastic.md](./docs/resources/elastic.md)             |
+| Firebase      | [firebase.md](./docs/resources/firebase.md)           |
+| Flowchart     | [flowchart.md](./docs/resources/flowchart.md)         |
+| GCP           | [gcp.md](./docs/resources/gcp.md)                     |
+| Generic       | [generic.md](./docs/resources/generic.md)             |
+| IBM           | [ibm.md](./docs/resources/ibm.md)                     |
+| Kubernetes    | [kubernetes.md](./docs/resources/kubernetes.md)       |
+| OCI           | [oci.md](./docs/resources/oci.md)                     |
+| On-Premise    | [on_premise.md](./docs/resources/on_premise.md)       |
+| OpenStack     | [open_stack.md](./docs/resources/open_stack.md)       |
+| Outscale      | [outscale.md](./docs/resources/outscale.md)           |
+| Programming   | [programming.md](./docs/resources/programming.md)     |
+| SaaS          | [saas.md](./docs/resources/saas.md)                   |
+
+`relates` schema looks like:
+
+| Field       | Type   | Required | Restrictions                                          | Default   | Description                                               |
+|-------------|--------|----------|-------------------------------------------------------|-----------|-----------------------------------------------------------|
+| `to`        | String | Yes      | -                                                     | -         | A chain of identifiers to a resource via a dot from root. |
+| `direction` | String | Yes      | `incoming`, `outgoing`, `bidirectional`, `undirected` | -         | A direction of a relationship.                            |
+| `label`     | String | No       | -                                                     | -         | A label of a relationship.                                |
+| `color`     | String | No       | `Hexadecimal color` with the `#` symbol.              | `#2D3436` | A color of a relationship.                                |
+| `style`     | String | No       | -                                                     | -         | A style of a relationship.                                |
 
 ## Disclaimer
 
