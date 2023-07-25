@@ -15,6 +15,8 @@ Table of content:
 * [Getting Started](#getting-started)
   * [How to Install](#how-to-install)
   * [Examples](#examples)
+  * [Syntax Highlighting](#syntax-highlighting)
+    * [PyCharm](#pycharm)
 * [Usage](#usage)
   * [Command Line Interface](#command-line-interface)
 * [Disclaimer](#disclaimer)
@@ -85,6 +87,49 @@ folder. Below are placed are few of them (click on the name to redirect to the c
 | [Message Collecting on GCP](https://github.com/dmytrostriletskyi/diagrams-yaml/blob/main/examples/message-collecting-gcp.yaml)    | [Events Processing on AWS](https://github.com/dmytrostriletskyi/diagrams-yaml/blob/main/examples/events-processing-aws.yaml)                 | [Workers on AWS](https://github.com/dmytrostriletskyi/diagrams-yaml/blob/main/examples/workers-aws.yaml)                                        |
 | --------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](./assets/message-collecting-architecture-on-gcp.png)                                                                          | ![](./assets/events-processing-on-aws.png)                                                                                                   | ![](./assets/workers-architecture-on-aws.png)                                                                                                   |
+
+### Syntax Highlighting
+
+When you will be writing your own `YAML` files, you likely need a syntax highlighting. Currently, there is no mapping
+of the `YAML` files to a specific schema to enable the syntax highlighting automatically. So, there is a need for
+manual operation here.
+
+#### PyCharm
+
+For `PyCharm`, open the settings and proceed to `Languages & Framworks`, then to `Scheams and DTDs`, then to
+`JSON Schema Mappings`. After, create a new schema, name it `Diagrams as code`, choose
+`JSON Schema version 7`, paste `https://raw.githubusercontent.com/dmytrostriletskyi/diagrams-yaml/main/json-schemas/0.0.1.json`
+to the `Schema file or URL` field and click `Apply`:
+
+<details>
+  <summary>Open Illustration</summary>
+
+  ![](./assets/json-schema-settings.png)
+</details>
+
+Right after then, open a `YAML` file and click on `No JSON schema` at to bottom-right corner:
+
+<details>
+  <summary>Open Illustration</summary>
+
+  ![](./assets/down-panel-json-schema.png)
+</details>
+
+It will open a panel where you can choose the newly created schema with name `Diagrams as code`:
+
+<details>
+  <summary>Open Illustration</summary>
+
+  ![](./assets/panel-json-schema.png)
+</details>
+
+As the result, you will experience the syntax highlighting when typing:
+
+<details>
+  <summary>Open Illustration</summary>
+
+  ![](./assets/syntax-highlight.png)
+</details>
 
 ## Usage
 
