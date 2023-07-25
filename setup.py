@@ -17,15 +17,15 @@ with open('.project-version', 'r') as project_version_file:
 
 setup(
     version=project_version,
-    name='diagrams-yaml',
+    name='diagrams-as-code',
     description='Diagrams as code: declarative configurations using YAML for drawing cloud system architectures.',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/dmytrostriletskyi/diagrams-yaml',
+    url='https://github.com/dmytrostriletskyi/diagrams-as-code',
     project_urls={
-        'Issue Tracker': 'https://github.com/dmytrostriletskyi/diagrams-yaml/issues',
-        'Source Code': 'https://github.com/dmytrostriletskyi/diagrams-yaml',
-        'Download': 'https://github.com/dmytrostriletskyi/diagrams-yaml/tags',
+        'Issue Tracker': 'https://github.com/dmytrostriletskyi/diagrams-as-code/issues',
+        'Source Code': 'https://github.com/dmytrostriletskyi/diagrams-as-code',
+        'Download': 'https://github.com/dmytrostriletskyi/diagrams-as-code/tags',
     },
     license='MIT',
     author='Dmytro Striletskyi',
@@ -41,7 +41,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'diagrams-yaml = diagrams_yaml.entrypoint:entrypoint',
+            'diagrams-as-code = diagrams_as_code.entrypoint:entrypoint',
         ],
     },
 )

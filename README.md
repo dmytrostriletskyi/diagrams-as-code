@@ -1,10 +1,10 @@
 `Diagrams as code`: declarative configurations using `YAML` for drawing cloud system architectures.
 
-[![](https://github.com/dmytrostriletskyi/diagrams-yaml/actions/workflows/main.yaml/badge.svg?branch=main)](https://github.com/dmytrostriletskyi/diagrams-yaml/actions/workflows/main.yaml)
-[![](https://img.shields.io/github/release/dmytrostriletskyi/diagrams-yaml.svg)](https://github.com/dmytrostriletskyi/diagrams-yaml/releases)
-[![](https://img.shields.io/pypi/v/diagrams-yaml.svg)](https://pypi.python.org/pypi/diagrams-yaml)
-[![](https://img.shields.io/pypi/l/diagrams-yaml.svg)](https://pypi.python.org/pypi/diagrams-yaml/)
-[![](https://img.shields.io/pypi/pyversions/diagrams-yaml.svg)](https://pypi.python.org/pypi/diagrams-yaml/)
+[![](https://github.com/dmytrostriletskyi/diagrams-as-code/actions/workflows/main.yaml/badge.svg?branch=main)](https://github.com/dmytrostriletskyi/diagrams-as-code/actions/workflows/main.yaml)
+[![](https://img.shields.io/github/release/dmytrostriletskyi/diagrams-as-code.svg)](https://github.com/dmytrostriletskyi/diagrams-as-code/releases)
+[![](https://img.shields.io/pypi/v/diagrams-as-code.svg)](https://pypi.python.org/pypi/diagrams-as-code)
+[![](https://img.shields.io/pypi/l/diagrams-as-code.svg)](https://pypi.python.org/pypi/diagrams-as-code/)
+[![](https://img.shields.io/pypi/pyversions/diagrams-as-code.svg)](https://pypi.python.org/pypi/diagrams-as-code/)
 
 ![](./assets/configurations-architecture-aligned.png)
 
@@ -74,21 +74,21 @@ As the project uses [Graphviz](https://www.graphviz.org) to render the diagram, 
 After, you can install the project itself with the following command using `pip3`:
 
 ```bash
-$ pip3 install diagrams-yaml
+$ pip3 install diagrams-as-code
 ```
 
 ### Examples
 
-You can find examples of `YAML` configurations in the [examples](https://github.com/dmytrostriletskyi/diagrams-yaml/tree/main/examples) 
+You can find examples of `YAML` configurations in the [examples](https://github.com/dmytrostriletskyi/diagrams-as-code/tree/main/examples) 
 folder. Below are placed are few of them (click on the name to redirect to the configurations file).
 
-| [Web Services on AWS](https://github.com/dmytrostriletskyi/diagrams-yaml/blob/main/examples/web-services-aws.yaml)                | [Web Services On-Premise](https://github.com/dmytrostriletskyi/diagrams-yaml/blob/main/examples/web-services-on-premise.yaml)                | [Exposed Pods on Kubernetes](https://github.com/dmytrostriletskyi/diagrams-yaml/blob/main/examples/exposed-pods-kubernetes.yaml)                |
-|-----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![](./assets/web-services-architecture-on-aws.png)                                                                                | ![](./assets/web-services-architecture-on-premise.png)                                                                                       | ![](./assets/exposed-pods-architecture-on-kubernetes.png)                                                                                       |
+| [Web Services on AWS](https://github.com/dmytrostriletskyi/diagrams-as-code/blob/main/examples/web-services-aws.yaml) | [Web Services On-Premise](https://github.com/dmytrostriletskyi/diagrams-as-code/blob/main/examples/web-services-on-premise.yaml) | [Exposed Pods on Kubernetes](https://github.com/dmytrostriletskyi/diagrams-as-code/blob/main/examples/exposed-pods-kubernetes.yaml) |
+|-----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| ![](./assets/web-services-architecture-on-aws.png)                                                                    | ![](./assets/web-services-architecture-on-premise.png)                                                                           | ![](./assets/exposed-pods-architecture-on-kubernetes.png)                                                                           |
 
-| [Message Collecting on GCP](https://github.com/dmytrostriletskyi/diagrams-yaml/blob/main/examples/message-collecting-gcp.yaml)    | [Events Processing on AWS](https://github.com/dmytrostriletskyi/diagrams-yaml/blob/main/examples/events-processing-aws.yaml)                 | [Workers on AWS](https://github.com/dmytrostriletskyi/diagrams-yaml/blob/main/examples/workers-aws.yaml)                                        |
-| --------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](./assets/message-collecting-architecture-on-gcp.png)                                                                          | ![](./assets/events-processing-on-aws.png)                                                                                                   | ![](./assets/workers-architecture-on-aws.png)                                                                                                   |
+| [Message Collecting on GCP](https://github.com/dmytrostriletskyi/diagrams-as-code/blob/main/examples/message-collecting-gcp.yaml) | [Events Processing on AWS](https://github.com/dmytrostriletskyi/diagrams-as-code/blob/main/examples/events-processing-aws.yaml) | [Workers on AWS](https://github.com/dmytrostriletskyi/diagrams-as-code/blob/main/examples/workers-aws.yaml) |
+|-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| ![](./assets/message-collecting-architecture-on-gcp.png)                                                                          | ![](./assets/events-processing-on-aws.png)                                                                                      | ![](./assets/workers-architecture-on-aws.png)                                                               |
 
 ### Syntax Highlighting
 
@@ -100,7 +100,7 @@ manual operation here.
 
 For `PyCharm`, open the settings and proceed to `Languages & Framworks`, then to `Scheams and DTDs`, then to
 `JSON Schema Mappings`. After, create a new schema, name it `Diagrams as code`, choose
-`JSON Schema version 7`, paste `https://raw.githubusercontent.com/dmytrostriletskyi/diagrams-yaml/main/json-schemas/0.0.1.json`
+`JSON Schema version 7`, paste `https://raw.githubusercontent.com/dmytrostriletskyi/diagrams-as-code/main/json-schemas/0.0.1.json`
 to the `Schema file or URL` field and click `Apply`:
 
 <details>
@@ -137,11 +137,11 @@ As the result, you will experience the syntax highlighting when typing:
 
 ### Command Line Interface
 
-To draw an architecture, call `diagrams-yaml` command line interface, providing a path to a `YAML` file with 
+To draw an architecture, call `diagrams-as-code` command line interface, providing a path to a `YAML` file with 
 configurations. The drawing will be saved in the folder the command line interface was executed from.
 
 ```bash
-$ diagrams-yaml examples/web-services-aws.yaml
+$ diagrams-as-code examples/web-services-aws.yaml
 ```
 
 ### Guide
@@ -190,11 +190,11 @@ arrows. It should go as a nested object of parameters as key/value of [Graphviz'
 
 Its schema looks like:
 
-| Field   | Type   | Required | Restrictions                                                      | Default | Description      |
-|---------|--------|----------|-------------------------------------------------------------------|---------|------------------|
-| `graph` | Object | No       | [This](https://graphviz.org/docs/graph/) parameters as key/value. | -       | A graph styling. |
-| `node`  | Object | No       | [This](https://graphviz.org/docs/nodes/) parameters as key/value. | -       | A node styling   |
-| `edge`  | Object | No       | [This](https://graphviz.org/docs/edges/) parameters as key/value. | -       | An edge styling. |
+| Field   | Type   | Required | Restrictions                                                       | Default | Description      |
+|---------|--------|----------|--------------------------------------------------------------------|---------|------------------|
+| `graph` | Object | No       | [Those](https://graphviz.org/docs/graph/) parameters as key/value. | -       | A graph styling. |
+| `node`  | Object | No       | [Those](https://graphviz.org/docs/nodes/) parameters as key/value. | -       | A node styling   |
+| `edge`  | Object | No       | [Those](https://graphviz.org/docs/edges/) parameters as key/value. | -       | An edge styling. |
 
 `resources` is responsible for specifying a list of resources on a diagram and relationships among them. Each resource
 has a unique identifier, name and type. Name will be shown on a diagram under the specific resource:
@@ -345,14 +345,14 @@ Basically, to recap and also clarify:
   relate to a cluster.
 * You should chain identifiers of nested resources through a dot to identify a resource you build a relationship to.
 
-`rsources` schema looks like:
+`resources` schema looks like:
 
-| Field     | Type   | Required | Restrictions                                                                                     | Default | Description                              |
-|-----------|--------|----------|--------------------------------------------------------------------------------------------------|---------|------------------------------------------|
-| `id`      | String | Yes      | -                                                                                                | -       | A unique identifier of the resource.     |
-| `name`    | String | Yes      | -                                                                                                | -       | A name of the resource.                  |
-| `type`    | String | Yes      | One of the [those](https://github.com/dmytrostriletskyi/diagrams-yaml/tree/main/docs/resources). | -       | A type of the resource.                  |
-| `relates` | Object | No       | -                                                                                                | -       | A relationship to a resource or a group. |
+| Field     | Type   | Required | Restrictions                                                                                        | Default | Description                              |
+|-----------|--------|----------|-----------------------------------------------------------------------------------------------------|---------|------------------------------------------|
+| `id`      | String | Yes      | -                                                                                                   | -       | A unique identifier of the resource.     |
+| `name`    | String | Yes      | -                                                                                                   | -       | A name of the resource.                  |
+| `type`    | String | Yes      | One of the [those](https://github.com/dmytrostriletskyi/diagrams-as-code/tree/main/docs/resources). | -       | A type of the resource.                  |
+| `relates` | Object | No       | -                                                                                                   | -       | A relationship to a resource or a group. |
 
 This is the table of all available types by a category:
 
@@ -388,9 +388,9 @@ This is the table of all available types by a category:
 
 ## Disclaimer
 
-`diagrams-yaml` is a wrapper around original [diagrams](https://github.com/mingrammer/diagrams). The original `diagrams` 
+`diagrams-as-code` is a wrapper around original [diagrams](https://github.com/mingrammer/diagrams). The original `diagrams` 
 lets you draw the cloud system architecture in `Python` code. It was born for prototyping a new system architecture 
-design without any design tools. Under the hood, `diagrams-yaml` parse a `YAML` file and map to specific set of 
+design without any design tools. Under the hood, `diagrams-as-code` parse a `YAML` file and map to specific set of 
 `diagrams`'s functions and classes, and executes them in proper order.
 
-But you don't have to worry about `diagrams` because `diagrams-yaml` is self-contained and encapsulates it well. 
+But you don't have to worry about `diagrams` because `diagrams-as-code` is self-contained and encapsulates it well. 

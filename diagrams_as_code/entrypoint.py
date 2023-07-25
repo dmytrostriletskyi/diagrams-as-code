@@ -13,12 +13,12 @@ from diagrams import (
     Node,
 )
 
-from diagrams_yaml.enums import (
+from diagrams_as_code.enums import (
     ServiceResourceType,
     RelationDirection,
 )
-from diagrams_yaml.resources import DiagramGroup
-from diagrams_yaml.schema import (
+from diagrams_as_code.resources import DiagramGroup
+from diagrams_as_code.schema import (
     Relationship,
     YamlDiagram,
     YamlDiagramResource,

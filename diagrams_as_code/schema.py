@@ -5,7 +5,7 @@ from __future__ import annotations
 
 from pydantic import BaseModel
 
-from diagrams_yaml.enums import (
+from diagrams_as_code.enums import (
     RelationDirection,
     DiagramDirection,
     DiagramFormat,
