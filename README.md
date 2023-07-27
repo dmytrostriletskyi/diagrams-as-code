@@ -34,11 +34,11 @@ configurations).
 Declarative method of describing things means that a user simply describes the solution they need, how it should look, 
 and everything that would be in the state of the final solution, leaving the process for the software to decide.
 
-`Diagrams as code` brings you the following benefits comparing to drawing architecture on your own, it:
+`Diagrams as code` brings you the following benefits compared to drawing architecture on your own, it:
 
 * Does not require any knowledge about how to properly draw an architecture diagram. Basically, you just define a set of 
   resources, compose them into groups and set relationships, the rest is done for you.
-* Allows you to track an architecture diagram changes with a version control systems such as `Git`.
+* Allows you to track architecture diagram changes with a version control systems such as `Git`.
 * Moves collaboration to the next level: updating an architecture diagram through a pull request with a code review 
   instead of a video session and/or screen sharing.
 * Reduces costs on further updating of an initial architecture diagram. Basically, when you create an image on a web 
@@ -100,7 +100,7 @@ manual operation here.
 
 #### PyCharm
 
-For `PyCharm`, open the settings and proceed to `Languages & Framworks`, then to `Scheams and DTDs`, then to
+For `PyCharm`, open the settings and proceed to `Languages & Frameworks, then to `Scheams and DTDs`, then to
 `JSON Schema Mappings`. After, create a new schema, name it `Diagrams as code`, choose
 `JSON Schema version 7`, paste `https://raw.githubusercontent.com/dmytrostriletskyi/diagrams-as-code/main/json-schemas/0.0.1.json`
 to the `Schema file or URL` field and click `Apply`:
@@ -119,7 +119,7 @@ Right after then, open a `YAML` file and click on `No JSON schema` at to bottom-
   ![](./assets/down-panel-json-schema.png)
 </details>
 
-It will open a panel where you can choose the newly created schema with name `Diagrams as code`:
+It will open a panel where you can choose the newly created schema with the name `Diagrams as code`:
 
 <details>
   <summary>Open Illustration</summary>
@@ -127,7 +127,7 @@ It will open a panel where you can choose the newly created schema with name `Di
   ![](./assets/panel-json-schema.png)
 </details>
 
-As the result, you will experience the syntax highlighting when typing:
+As a result, you will experience syntax highlighting when typing:
 
 <details>
   <summary>Open Illustration</summary>
@@ -149,9 +149,9 @@ $ diagrams-as-code examples/web-services-aws.yaml
 ### Guide
 
 Please, check [all-fields.yaml](./examples/all-fields.yaml) as the example to see all possible configurations
-before diving into detailed explanation about them (and [this](./assets/all-fields.jpg) is the result image).
+before diving into a detailed explanation about them (and [this](./assets/all-fields.jpg) is the result image).
 
-A `YAML` file conceptually contains two configurations: generic information such as name of a diagram, format of an 
+A `YAML` file conceptually contains two configurations: generic information such as a name of a diagram, a format of an 
 image to be generated, style and resources themselves such as `AWS` and `Kubernetes` resources, `Nginx`, `ElasticSearch`
 and all other things you actually want to draw, and relationships among them.
 
@@ -174,7 +174,7 @@ diagram:
     ...
 ```
 
-Generic information schema looks like:
+Generic information schema looks like this:
 
 | Field             | Type    | Required | Restrictions                                                        | Default         | Description                                                            |
 |-------------------|---------|----------|---------------------------------------------------------------------|-----------------|------------------------------------------------------------------------|
@@ -238,7 +238,7 @@ diagram:
 </details>
 
 There is also a type named `group`. It is not a specific resource, it is rather a group **of** resources. It is needed
-for other resource to be able to have a relationship to all group's resources at once. Each group's resource can can
+for other resources to be able to have a relationship with all group's resources at once. Each group's resource can have
 separate relationships as well:
 
 ```yaml
@@ -276,7 +276,7 @@ there might be a cluster of different APIs composed as groups, a cluster of data
 
 > Pay attention that to refer a cluster resource, there are the following identifiers `web-services.graphql-api` and 
 > `web-services.rest-api` what means that you need to chain identifiers of nested resources through a dot to identify a 
-> resource you build a relationship to.
+> resource you build a relationship with.
 
 ```yaml
 diagram:
@@ -347,7 +347,7 @@ Basically, to recap and also clarify:
   relate to a cluster.
 * You should chain identifiers of nested resources through a dot to identify a resource you build a relationship to.
 
-`resources` schema looks like:
+`resources` schema looks like this:
 
 | Field     | Type   | Required | Restrictions                                                                                        | Default | Description                              |
 |-----------|--------|----------|-----------------------------------------------------------------------------------------------------|---------|------------------------------------------|
@@ -390,9 +390,9 @@ This is the table of all available types by a category:
 
 ## Disclaimer
 
-`diagrams-as-code` is a wrapper around original [diagrams](https://github.com/mingrammer/diagrams). The original `diagrams` 
+`diagrams-as-code` is a wrapper around the original [diagrams](https://github.com/mingrammer/diagrams). The original `diagrams` 
 lets you draw the cloud system architecture in `Python` code. It was born for prototyping a new system architecture 
-design without any design tools. Under the hood, `diagrams-as-code` parse a `YAML` file and map to specific set of 
-`diagrams`'s functions and classes, and executes them in proper order.
+design without any design tools. Under the hood, `diagrams-as-code` parse a `YAML` file and map to a specific set of 
+`diagrams`'s functions and classes, and execute them in proper order.
 
 But you don't have to worry about `diagrams` because `diagrams-as-code` is self-contained and encapsulates it well. 
