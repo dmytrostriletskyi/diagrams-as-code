@@ -3,6 +3,8 @@
 [![](https://github.com/dmytrostriletskyi/diagrams-as-code/actions/workflows/main.yaml/badge.svg?branch=main)](https://github.com/dmytrostriletskyi/diagrams-as-code/actions/workflows/main.yaml)
 [![](https://img.shields.io/github/release/dmytrostriletskyi/diagrams-as-code.svg)](https://github.com/dmytrostriletskyi/diagrams-as-code/releases)
 [![](https://img.shields.io/pypi/v/diagrams-as-code.svg)](https://pypi.python.org/pypi/diagrams-as-code)
+
+[![](https://pepy.tech/badge/diagrams-as-code)](https://pepy.tech/project/diagrams-as-code)
 [![](https://img.shields.io/pypi/l/diagrams-as-code.svg)](https://pypi.python.org/pypi/diagrams-as-code/)
 [![](https://img.shields.io/pypi/pyversions/diagrams-as-code.svg)](https://pypi.python.org/pypi/diagrams-as-code/)
 
