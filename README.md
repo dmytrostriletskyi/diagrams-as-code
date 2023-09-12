@@ -19,6 +19,7 @@ Table of content:
   * [Examples](#examples)
   * [Syntax Highlighting](#syntax-highlighting)
     * [PyCharm](#pycharm)
+    * [VSCode](#vs-code)
 * [Usage](#usage)
   * [Command Line Interface](#command-line-interface)
   * [Guide](#guide)
@@ -134,6 +135,14 @@ As a result, you will experience syntax highlighting when typing:
 
   ![](./assets/syntax-highlight.png)
 </details>
+
+#### VS Code
+
+For `VS Code`, install the [RedHat YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) extension and include the following line in the top of your diagrams yaml file:
+
+```yaml
+# yaml-language-server: $schema=https://raw.githubusercontent.com/dmytrostriletskyi/diagrams-as-code/main/json-schemas/0.0.1.json
+```
 
 ## Usage
 
